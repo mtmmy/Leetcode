@@ -3,3 +3,8 @@
 /Users/mtmmy/Documents/GitHub/Leetcode/Csharp/Leetcode/bin/Debug/Leetcode.pdb
 /Users/mtmmy/Documents/GitHub/Leetcode/Csharp/Leetcode/obj/x86/Debug/Leetcode.exe
 /Users/mtmmy/Documents/GitHub/Leetcode/Csharp/Leetcode/obj/x86/Debug/Leetcode.pdb
+D:\Programming\GitHub\Leetcode\Csharp\Leetcode\bin\Debug\Leetcode.exe
+D:\Programming\GitHub\Leetcode\Csharp\Leetcode\bin\Debug\Leetcode.pdb
+D:\Programming\GitHub\Leetcode\Csharp\Leetcode\obj\x86\Debug\Leetcode.csprojResolveAssemblyReference.cache
+D:\Programming\GitHub\Leetcode\Csharp\Leetcode\obj\x86\Debug\Leetcode.exe
+D:\Programming\GitHub\Leetcode\Csharp\Leetcode\obj\x86\Debug\Leetcode.pdb
