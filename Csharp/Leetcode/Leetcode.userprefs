@@ -1,9 +1,10 @@
 ﻿<Properties StartupConfiguration="{CC793BA4-93D1-46C1-86B3-EE9535E42A9F}|Default">
   <MonoDevelop.Ide.ItemProperties.Leetcode PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Solutions/TwoSum.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../LeetcodeTests/Solutions/LeetcodeTests.cs">
     <Files>
-      <File FileName="Program.cs" Line="11" Column="22" />
-      <File FileName="Solutions/TwoSum.cs" Line="12" Column="40" />
+      <File FileName="Program.cs" Line="1" Column="1" />
+      <File FileName="Solutions/TwoSum.cs" Line="1" Column="1" />
+      <File FileName="../LeetcodeTests/Solutions/LeetcodeTests.cs" Line="10" Column="18" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
