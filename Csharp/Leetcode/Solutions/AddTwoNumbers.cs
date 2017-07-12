@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Leetcode {
     public class AddTwoNumbers {
-        public ListNode Solution(ListNode l1, ListNode l2) {
+        public ListNode AddTwoNumbersSolution(ListNode l1, ListNode l2) {
             var result = new ListNode(-1);
             var count = result;
             double carry = 0;

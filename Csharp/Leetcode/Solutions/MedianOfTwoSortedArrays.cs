@@ -8,7 +8,7 @@ namespace Leetcode {
 
     public class MedianOfTwoSortedArrays {
 
-        public double Solution(int[] nums1, int[] nums2) {
+        public double FindMedianSortedArrays(int[] nums1, int[] nums2) {
 
             var total = nums1.Length + nums2.Length;
             if (total % 2 == 0) {
