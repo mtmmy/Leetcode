@@ -35,6 +35,8 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Solutions\AddTwoNumbers.cs" />
+    <Compile Include="Solutions\LongestSubstringWIthoutRepeatingChars.cs" />
+    <Compile Include="Solutions\MedianOfTwoSortedArrays.cs" />
     <Compile Include="Solutions\TwoSum.cs" />
   </ItemGroup>
   <ItemGroup />

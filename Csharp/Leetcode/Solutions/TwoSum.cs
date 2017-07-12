@@ -1,12 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Leetcode
-{
-    public class TwoSum
-    {
-        public TwoSum()
-        {
+namespace Leetcode {
+    public class TwoSum {
+        public TwoSum() {
         }
 
         public static int[] Solution(int[] nums, int target) {
@@ -14,8 +11,7 @@ namespace Leetcode
 
             for (var i = 0; i < nums.Length; i++) {
                 int complement = target - nums[i];
-                if (map.ContainsKey(complement))
-                {
+                if (map.ContainsKey(complement)) {
                     return new int[] { map[complement], i };
                 }
                 map[nums[i]] = i;

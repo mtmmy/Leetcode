@@ -1,11 +1,8 @@
 ﻿using System;
 
-namespace Leetcode
-{
-    class MainClass
-    {
-        public static void Main(string[] args)
-        {
+namespace Leetcode {
+    class MainClass {
+        public static void Main(string[] args) {
             /* test case for #1
 			int[] testAry = { 2, 7, 11, 15 };
 			int target = 9;
@@ -25,6 +22,16 @@ namespace Leetcode
             ListNode result = AddTwoNumbers.Solution(number1, number2);
 
             Console.WriteLine(result.val + " -> " + result.next.val + " -> " + result.next.next.val);
+            */
+
+            /* test case for #3
+            Console.WriteLine(LongestSubstringWIthoutRepeatingChars.Solution("abcabcbb"));
+            */
+
+            /* test case for #4
+            int[] nums1 = { 1, 2 };
+            int[] nums2 = { 3, 4 };
+            Console.WriteLine(MedianOfTwoSortedArrays.Solution(nums1, nums2));
             */
 
             Console.ReadLine();
