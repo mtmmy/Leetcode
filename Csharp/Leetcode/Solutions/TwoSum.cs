@@ -3,10 +3,8 @@ using System.Collections.Generic;
 
 namespace Leetcode {
     public class TwoSum {
-        public TwoSum() {
-        }
 
-        public static int[] Solution(int[] nums, int target) {
+        public int[] Solution(int[] nums, int target) {
             var map = new Dictionary<int, int>();
 
             for (var i = 0; i < nums.Length; i++) {

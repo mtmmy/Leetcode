@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Leetcode {
 
-    class MedianOfTwoSortedArrays {
+    public class MedianOfTwoSortedArrays {
 
-        public static double Solution(int[] nums1, int[] nums2) {
+        public double Solution(int[] nums1, int[] nums2) {
 
             var total = nums1.Length + nums2.Length;
             if (total % 2 == 0) {
@@ -18,7 +18,7 @@ namespace Leetcode {
             }
         }
 
-        public static double FindKth(int[] A, int m, int[] B, int n, int k) {
+        public double FindKth(int[] A, int m, int[] B, int n, int k) {
 
             if (m > n) {
                 return FindKth(B, n, A, m, k);
@@ -46,7 +46,7 @@ namespace Leetcode {
             return A[pa - 1];
         }
 
-        public static int[] SubArray(int[] data, int index, int length) {
+        public int[] SubArray(int[] data, int index, int length) {
             int[] result = new int[length];
             Array.Copy(data, index, result, 0, length);
             return result;

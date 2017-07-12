@@ -5,8 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Leetcode {
-    class LongestSubstringWIthoutRepeatingChars {
-        public static int Solution(string s) {
+    public class LongestSubstringWIthoutRepeatingChars {
+        public int Solution(string s) {
             if (s.Length < 2) {
                 return s.Length;
             }

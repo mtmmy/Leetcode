@@ -5,14 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Leetcode {
-    public class ListNode {
-        public int val;
-        public ListNode next;
-        public ListNode(int x) { val = x; }
-    }
-
-    class AddTwoNumbers {
-        public static ListNode Solution(ListNode l1, ListNode l2) {
+    public class AddTwoNumbers {
+        public ListNode Solution(ListNode l1, ListNode l2) {
             var result = new ListNode(-1);
             var count = result;
             double carry = 0;
