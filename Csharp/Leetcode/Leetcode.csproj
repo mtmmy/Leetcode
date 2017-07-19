@@ -36,12 +36,16 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Solutions\AddTwoNumbers.cs" />
+    <Compile Include="Solutions\ContainerWithMostWater.cs" />
+    <Compile Include="Solutions\IntegerToRoman.cs" />
+    <Compile Include="Solutions\LongestCommonPrefix.cs" />
     <Compile Include="Solutions\LongestPalindromicSubstring.cs" />
     <Compile Include="Solutions\LongestSubstringWIthoutRepeatingChars.cs" />
     <Compile Include="Solutions\MedianOfTwoSortedArrays.cs" />
     <Compile Include="Solutions\PalindromeNumber.cs" />
     <Compile Include="Solutions\ReqularExpressionMatching.cs" />
     <Compile Include="Solutions\ReverseInterger.cs" />
+    <Compile Include="Solutions\RomanToInteger.cs" />
     <Compile Include="Solutions\StringToInteger.cs" />
     <Compile Include="Solutions\TwoSum.cs" />
     <Compile Include="Solutions\ZigZagCoversion.cs" />

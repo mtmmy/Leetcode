@@ -129,5 +129,39 @@ namespace Leetcode.Tests {
             Assert.IsTrue(target.IsMatch("ab", ".*"));
             Assert.IsTrue(target.IsMatch("aab", "c*a*b"));
         }
+
+        //#11
+        [TestMethod()]
+        public void ContainerWithMostWaterTests() {
+
+            ContainerWithMostWater target = new ContainerWithMostWater();
+            Assert.AreEqual(12, target.MaxArea(new[] { 1, 2, 3, 4, 5, 6, 7 }));
+        }
+
+        //#12
+        [TestMethod()]
+        public void IntegerToRomanTests() {
+
+            IntegerToRoman target = new IntegerToRoman();
+            Assert.AreEqual("MMMCMXCIX", target.IntToRoman(3999));
+        }
+
+        //#13
+        [TestMethod()]
+        public void RomanToIntegerTests() {
+
+            RomanToInteger target = new RomanToInteger();
+            Assert.AreEqual(3999, target.RomanToInt("MMMCMXCIX"));
+        }
+
+        //#14
+        [TestMethod()]
+        public void LongestCommonPrefixTests() {
+
+            LongestCommonPrefix target = new LongestCommonPrefix();
+            string[] strs = new string[] {"abc", "abcd", "abcede", "abc" };
+
+            Assert.AreEqual("abc", target.LongestCommonPrefixSolution(strs));
+        }
     }
 }
