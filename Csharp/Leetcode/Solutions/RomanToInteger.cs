@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Leetcode {
+namespace Leetcode.Solutions {
     public class RomanToInteger {
         public int RomanToInt(string s) {
             List<int> ints = new List<int>();

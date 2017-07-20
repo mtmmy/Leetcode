@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Leetcode {
+namespace Leetcode.Tools {
     public class ListNode {
         public int val;
         public ListNode next;
@@ -17,8 +17,8 @@ namespace Leetcode {
             if (toCompareWith == null) {
                 return false;
             } else {
-                while(compare.next != null) {
-                    if (compare.val == toCompareWith.val && toCompareWith.next != null) {
+                while(compare != null) {
+                    if (compare.val == toCompareWith.val && toCompareWith != null) {
                         compare = compare.next;
                         toCompareWith = toCompareWith.next;
                     } else {

@@ -1,5 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Leetcode;
+using Leetcode.Solutions;
+using Leetcode.Tools;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -162,6 +164,93 @@ namespace Leetcode.Tests {
             string[] strs = new string[] {"abc", "abcd", "abcede", "abc" };
 
             Assert.AreEqual("abc", target.LongestCommonPrefixSolution(strs));
+        }
+
+        //#15
+        [TestMethod()]
+        public void ThreeSumTests() {
+
+            ThreeSum target = new ThreeSum();
+            int[] nums = new int[] { -1, 0, 1, 2, -1, -4 };
+            IList<IList<int>> expected = new List<IList<int>>();
+            expected.Add(new List<int> { -1, -1, 2 });
+            expected.Add(new List<int> { -1, 0, 1 });
+
+            //CollectionAssert.AreEqual(expected, target.ThreeSumSolution(nums));
+            Assert.IsTrue(expected.SequenceEqual(target.ThreeSumSolution(nums)));
+        }
+
+        //#17
+        [TestMethod()]
+        public void LetterCombinationsOfPhoneTests() {
+
+            LetterCombinationOfPhone target = new LetterCombinationOfPhone();
+            var expected = new List<string>() { "ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf" };
+            var actual = target.LetterCombinations("23");
+
+            Assert.IsTrue(expected.SequenceEqual(actual));
+        }
+
+        //#19
+        [TestMethod()]
+        public void RemoveNthTests() {
+
+            RemoveNthNode target = new RemoveNthNode();
+            ListNode listNode = new ListNode(1);
+            listNode.next = new ListNode(2);
+            listNode.next.next = new ListNode(3);
+            listNode.next.next.next = new ListNode(4);
+            listNode.next.next.next.next = new ListNode(5);
+
+            ListNode expected = new ListNode(1);
+            expected.next = new ListNode(2);
+            expected.next.next = new ListNode(3);
+            expected.next.next.next = new ListNode(5);
+
+            Assert.AreEqual(expected, target.RemoveNthFromEnd(listNode, 2));
+        }
+
+        //#20
+        [TestMethod()]
+        public void ValidParenthesesTests() {
+
+            ValidParentheses target = new ValidParentheses();
+            Assert.IsTrue(target.IsValid("()(())[[]]{{}{}}"));
+        }
+
+        //#21
+        [TestMethod()]
+        public void MergedTwoSortedTests() {
+
+            MergedTwoSortedList target = new MergedTwoSortedList();
+            ListNode node1 = new ListNode(1);
+            node1.next = new ListNode(3);
+
+            ListNode node2 = new ListNode(2);
+            node2.next = new ListNode(4);
+
+            ListNode expected = new ListNode(1);
+            expected.next = new ListNode(2);
+            expected.next.next = new ListNode(3);
+            expected.next.next.next = new ListNode(4);
+
+            Assert.AreEqual(expected, target.MergeTwoLists(node1, node2));
+        }
+
+        //#22
+        [TestMethod()]
+        public void GenerateParenthesesTests() {
+
+            GenerateParentheses target = new GenerateParentheses();
+        }
+
+        //#26
+        [TestMethod()]
+        public void RemoveDuplicateFromSortedArrayTests() {
+
+            RemoveDuplicateFromSortedArray target = new RemoveDuplicateFromSortedArray();
+
+            Assert.AreEqual(2, target.RemoveDuplicates(new int[] { 1, 1, 2 }));
         }
     }
 }

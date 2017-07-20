@@ -1,4 +1,6 @@
 ﻿using System;
+using Leetcode.Solutions;
+using Leetcode.Tools;
 
 namespace Leetcode {
     class MainClass {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Leetcode {
+namespace Leetcode.Solutions {
     public class TwoSum {
 
         public int[] TwoSumSolution(int[] nums, int target) {

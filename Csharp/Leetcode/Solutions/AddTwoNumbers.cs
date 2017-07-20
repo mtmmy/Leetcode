@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Leetcode.Tools;
 
-namespace Leetcode {
+namespace Leetcode.Solutions {
     public class AddTwoNumbers {
         public ListNode AddTwoNumbersSolution(ListNode l1, ListNode l2) {
             var result = new ListNode(-1);

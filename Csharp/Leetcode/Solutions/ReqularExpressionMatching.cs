@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Leetcode {
+namespace Leetcode.Solutions {
     public class ReqularExpressionMatching {
         public bool IsMatch(string s, string p) {
 
