@@ -46,6 +46,7 @@
     <Compile Include="Solutions\LongestSubstringWIthoutRepeatingChars.cs" />
     <Compile Include="Solutions\MedianOfTwoSortedArrays.cs" />
     <Compile Include="Solutions\MergedTwoSortedList.cs" />
+    <Compile Include="Solutions\MergeKSortedLists.cs" />
     <Compile Include="Solutions\PalindromeNumber.cs" />
     <Compile Include="Solutions\RemoveDuplicateFromSortedArray.cs" />
     <Compile Include="Solutions\RemoveNthNode.cs" />
