@@ -14,33 +14,25 @@ namespace Leetcode.Solutions {
                 return null;
             }
 
-            var nodeList = new List<ListNode>();
-            for (int i=0; i<lists.Length; i++) {
-                nodeList.Add(lists[i]);
-            }
-
-            int nodeListTrueLength = nodeList.Count;
+            int nodeListTrueLength = lists.Length;
             while (nodeListTrueLength > 1) {                
-                for (int i=0; i<nodeList.Count; i++) {
+                for (int i=0; i<lists.Length; i++) {
                     //merge every two nodes
-                    if (2*i+1 < nodeList.Count) {
+                    if (2*i+1 < lists.Length) {
                         //in order to simplify code, I call MergeTwoLists from another class
-                        nodeList[i] = mergeTwo.MergeTwoLists(nodeList[2 * i], nodeList[2 * i + 1]);                        
-                    } else if (2*i+1 == nodeList.Count) {                        
-                        nodeList[i] = nodeList[2 * i];
+                        lists[i] = mergeTwo.MergeTwoLists(lists[2 * i], lists[2 * i + 1]);                        
+                    } else if (2*i+1 == lists.Length) {                        
+                        lists[i] = lists[2 * i];
                     }
                 }
-                if (nodeListTrueLength % 2 == 1) {
-                    nodeListTrueLength = (nodeListTrueLength + 1) / 2;
-                } else {
-                    nodeListTrueLength /= 2;
-                }
-                for (int i=nodeListTrueLength; i<nodeList.Count; i++) {
-                    nodeList[i] = null;
-                }
+                nodeListTrueLength = (nodeListTrueLength + (nodeListTrueLength % 2 == 1 ? 1 : 0)) / 2;
+                Array.Resize<ListNode>(ref lists, nodeListTrueLength);
+                //for (int i=nodeListTrueLength; i<lists.Length; i++) {
+                  //  lists[i] = null;
+                //}
             }
 
-            return nodeList[0];
+            return lists[0];
         }
     }
 }
