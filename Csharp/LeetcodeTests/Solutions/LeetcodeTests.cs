@@ -244,6 +244,31 @@ namespace Leetcode.Tests {
             GenerateParentheses target = new GenerateParentheses();
         }
 
+        //#23
+        [TestMethod()]
+        public void MergeKSortedListsTests() {
+
+            MergeKSortedLists target = new MergeKSortedLists();
+            int size = 10;
+            ListNode[] array = new ListNode[size];
+            for (int i = 0; i < size; i++) {
+                var node = new ListNode(2 * i);
+                node.next = new ListNode(2 * i + 1);
+                array[i] = node;
+            }
+
+            var result = target.MergeKLists(array);
+
+            var expected = new ListNode(0);
+            var cur = expected;
+            for (int i=1; i<20; i++) {
+                cur.next = new ListNode(i);
+                cur = cur.next;
+            }
+
+            Assert.AreEqual(expected, result);
+        }
+
         //#26
         [TestMethod()]
         public void RemoveDuplicateFromSortedArrayTests() {

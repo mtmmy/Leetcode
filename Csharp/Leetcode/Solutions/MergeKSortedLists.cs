@@ -27,9 +27,6 @@ namespace Leetcode.Solutions {
                 }
                 nodeListTrueLength = (nodeListTrueLength + (nodeListTrueLength % 2 == 1 ? 1 : 0)) / 2;
                 Array.Resize<ListNode>(ref lists, nodeListTrueLength);
-                //for (int i=nodeListTrueLength; i<lists.Length; i++) {
-                  //  lists[i] = null;
-                //}
             }
 
             return lists[0];
