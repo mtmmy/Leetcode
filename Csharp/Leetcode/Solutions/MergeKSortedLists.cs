@@ -13,19 +13,18 @@ namespace Leetcode.Solutions {
             if (lists.Length == 0) {
                 return null;
             }
-
-            int nodeListTrueLength = lists.Length;
-            while (nodeListTrueLength > 1) {                
-                for (int i=0; i<lists.Length; i++) {
-                    //merge every two nodes
-                    if (2*i+1 < lists.Length) {
-                        //in order to simplify code, I call MergeTwoLists from another class
-                        lists[i] = mergeTwo.MergeTwoLists(lists[2 * i], lists[2 * i + 1]);                        
-                    } else if (2*i+1 == lists.Length) {                        
-                        lists[i] = lists[2 * i];
-                    }
+            
+            while (lists.Length > 1) {
+                //merge every two nodes
+                var half = lists.Length / 2;
+                for (int i=0; i<half; i++) {                    
+                    //in order to simplify code, I call MergeTwoLists from another class
+                    lists[i] = mergeTwo.MergeTwoLists(lists[2 * i], lists[2 * i + 1]);                    
                 }
-                nodeListTrueLength = (nodeListTrueLength + (nodeListTrueLength % 2 == 1 ? 1 : 0)) / 2;
+                if (lists.Length % 2 == 1) {
+                    lists[lists.Length / 2] = lists[lists.Length - 1];
+                }
+                var nodeListTrueLength = (lists.Length + (lists.Length % 2 == 1 ? 1 : 0)) / 2;
                 Array.Resize<ListNode>(ref lists, nodeListTrueLength);
             }
 

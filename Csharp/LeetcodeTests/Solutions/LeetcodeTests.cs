@@ -261,10 +261,59 @@ namespace Leetcode.Tests {
 
             var expected = new ListNode(0);
             var cur = expected;
-            for (int i=1; i<20; i++) {
+            for (int i = 1; i < 20; i++) {
                 cur.next = new ListNode(i);
                 cur = cur.next;
             }
+
+            Assert.AreEqual(expected, result);
+        }
+
+        //#24
+        [TestMethod()]
+        public void SwapNodesInPairsTests() {
+
+            var target = new SwapNodesInPairs();
+            
+            var test = new ListNode(0);
+            var cur = test;
+            for (int i = 1; i < 5; i++) {
+                cur.next = new ListNode(i);
+                cur = cur.next;
+            }
+
+            var result = target.SwapPairs(test);
+
+            var expected = new ListNode(1);
+            expected.next = new ListNode(0);
+            expected.next.next = new ListNode(3);
+            expected.next.next.next = new ListNode(2);
+            expected.next.next.next.next = new ListNode(4);
+
+            Assert.AreEqual(expected, result);
+        }
+
+        //#24
+        [TestMethod()]
+        public void ReverseNodesInKGroupTests() {
+
+            var target = new ReverseNodesInKGroup();
+
+            var head = new ListNode(-1);
+            var node = new ListNode(0);
+            head.next = node;
+            int length = 4;
+            for (int i = 1; i < length; i++) {
+                node.next = new ListNode(i);
+                node = node.next;
+            }
+
+            var result = target.ReverseKGroup(head.next, 3);
+
+            var expected = new ListNode(2);
+            expected.next = new ListNode(1);
+            expected.next.next = new ListNode(0);
+            expected.next.next.next = new ListNode(3);            
 
             Assert.AreEqual(expected, result);
         }

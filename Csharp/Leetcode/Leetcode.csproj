@@ -52,8 +52,10 @@
     <Compile Include="Solutions\RemoveNthNode.cs" />
     <Compile Include="Solutions\ReqularExpressionMatching.cs" />
     <Compile Include="Solutions\ReverseInterger.cs" />
+    <Compile Include="Solutions\ReverseNodesInKGroup.cs" />
     <Compile Include="Solutions\RomanToInteger.cs" />
     <Compile Include="Solutions\StringToInteger.cs" />
+    <Compile Include="Solutions\SwapNodesInPairs.cs" />
     <Compile Include="Solutions\ThreeSum.cs" />
     <Compile Include="Solutions\ThreeSumClosest.cs" />
     <Compile Include="Solutions\TwoSum.cs" />
