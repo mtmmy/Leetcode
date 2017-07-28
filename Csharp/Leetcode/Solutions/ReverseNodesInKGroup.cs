@@ -17,39 +17,39 @@ namespace Leetcode.Solutions {
 
             var previousLast = root;
             var thisPeriodHead = head;
-            ListNode nextPeriodHead = null;            
+            ListNode nextPeriodHead = null;
             ListNode thisPeriodLast = null;
 
             while (true) {
 
-                bool lastPeriod = false;
+                bool isLastPeriod = false;
                 var cur = thisPeriodHead;
                 for (int i = 0; i < k - 1; i++) {
                     if (cur != null && cur.next != null) {
                         cur = cur.next;
                     } else {
-                        lastPeriod = true;
+                        isLastPeriod = true;
+                        break;
                     }
                 }
                 thisPeriodLast = cur;
 
-                if (lastPeriod) {
+                if (isLastPeriod) {
                     if (root.next == null) {
                         root.next = head;
                     }
                     break;
-                } else {
-                    nextPeriodHead = thisPeriodLast.next;
-                    cur.next = null;
-                    ListNode tempNode = null;
-                    tempNode = thisPeriodHead;
-                    thisPeriodHead = Reverse(thisPeriodHead);
-                    previousLast.next = thisPeriodHead;
-                    thisPeriodLast = tempNode;
-                    previousLast = thisPeriodLast;
-                    thisPeriodLast.next = nextPeriodHead;
-                    thisPeriodHead = nextPeriodHead;
                 }
+                nextPeriodHead = thisPeriodLast.next;
+                cur.next = null;
+                ListNode tempNode = null;
+                tempNode = thisPeriodHead;
+                thisPeriodHead = Reverse(thisPeriodHead);
+                previousLast.next = thisPeriodHead;
+                thisPeriodLast = tempNode;
+                previousLast = thisPeriodLast;
+                thisPeriodLast.next = nextPeriodHead;
+                thisPeriodHead = nextPeriodHead;
             }
 
             return root.next;
