@@ -25,12 +25,11 @@ namespace Leetcode.Solutions {
                 bool isLastPeriod = false;
                 var cur = thisPeriodHead;
                 for (int i = 0; i < k - 1; i++) {
-                    if (cur != null && cur.next != null) {
-                        cur = cur.next;
-                    } else {
+                    if (cur == null || cur.next == null) {
                         isLastPeriod = true;
                         break;
-                    }
+                    }                    
+                    cur = cur.next;                    
                 }
                 thisPeriodLast = cur;
 

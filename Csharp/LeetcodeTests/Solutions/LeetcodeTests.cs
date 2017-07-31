@@ -326,5 +326,27 @@ namespace Leetcode.Tests {
 
             Assert.AreEqual(2, target.RemoveDuplicates(new int[] { 1, 1, 2 }));
         }
+
+        //#27
+        [TestMethod()]
+        public void RemoveElementArrayTests() {
+
+            var target = new RemoveElement();
+            int[] nums = new int[] { 3, 2, 2, 3 };
+
+            Assert.AreEqual(2, target.RemoveElementSolution(nums, 3));
+            Assert.AreEqual(2, target.RemoveElementSolutionAnother(nums, 3));
+        }
+
+        //#28
+        [TestMethod()]
+        public void Implement_strStrTests() {
+
+            var target = new Implement_strStr();
+            string haystack = "mississippi";
+            string needle = "issip";
+
+            Assert.AreEqual(4, target.StrStr(haystack, needle));
+        }
     }
 }

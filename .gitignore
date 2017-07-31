@@ -7,3 +7,4 @@ TestResults/
 packages/
 .vs/
 *.userprefs
+Csharp/Leetcode/Program.cs

@@ -39,6 +39,7 @@
     <Compile Include="Solutions\ContainerWithMostWater.cs" />
     <Compile Include="Solutions\FourSum.cs" />
     <Compile Include="Solutions\GenerateParentheses.cs" />
+    <Compile Include="Solutions\Implement_strStr.cs" />
     <Compile Include="Solutions\IntegerToRoman.cs" />
     <Compile Include="Solutions\LetterCombinationOfPhone.cs" />
     <Compile Include="Solutions\LongestCommonPrefix.cs" />
@@ -49,6 +50,7 @@
     <Compile Include="Solutions\MergeKSortedLists.cs" />
     <Compile Include="Solutions\PalindromeNumber.cs" />
     <Compile Include="Solutions\RemoveDuplicateFromSortedArray.cs" />
+    <Compile Include="Solutions\RemoveElement.cs" />
     <Compile Include="Solutions\RemoveNthNode.cs" />
     <Compile Include="Solutions\ReqularExpressionMatching.cs" />
     <Compile Include="Solutions\ReverseInterger.cs" />
