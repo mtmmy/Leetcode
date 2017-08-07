@@ -37,6 +37,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Solutions\AddTwoNumbers.cs" />
     <Compile Include="Solutions\ContainerWithMostWater.cs" />
+    <Compile Include="Solutions\DevideTwoIntegers.cs" />
     <Compile Include="Solutions\FourSum.cs" />
     <Compile Include="Solutions\GenerateParentheses.cs" />
     <Compile Include="Solutions\Implement_strStr.cs" />
@@ -48,6 +49,7 @@
     <Compile Include="Solutions\MedianOfTwoSortedArrays.cs" />
     <Compile Include="Solutions\MergedTwoSortedList.cs" />
     <Compile Include="Solutions\MergeKSortedLists.cs" />
+    <Compile Include="Solutions\NextPermutation.cs" />
     <Compile Include="Solutions\PalindromeNumber.cs" />
     <Compile Include="Solutions\RemoveDuplicateFromSortedArray.cs" />
     <Compile Include="Solutions\RemoveElement.cs" />

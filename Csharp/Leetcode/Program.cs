@@ -6,13 +6,12 @@ namespace Leetcode {
     class MainClass {
         public static void Main(string[] args) {
 
-            var obj = new Implement_strStr();
-            string haystack = "mississippi";
-            string needle =   "issip";
+            var obj = new NextPermutation();
+            int[] nums = new int[] { 3, 2, 1, 3, 3, 1 };
 
-            var result = obj.StrStr(haystack, needle);
+            obj.NextPermutationSolution(nums);
 
-            Console.WriteLine(result);
+            //Console.WriteLine(result);
             //Console.WriteLine("Leetcode problems!");
             Console.ReadLine();
         }

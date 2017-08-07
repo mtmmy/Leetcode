@@ -15,12 +15,11 @@ namespace Leetcode.Solutions {
                 if (haystack[i].Equals(needle[0])
                     && i + needle.Length - 1 < haystack.Length
                     && haystack[i + needle.Length - 1].Equals(needle[needle.Length - 1])) {
-                                        
-                    int j = 0;
-                    while (j < needle.Length && haystack[i + j].Equals(needle[j])) {
-                        j++;
+
+                    int j;
+                    for (j = 0; j < needle.Length && haystack[i + j].Equals(needle[j]); j++) {
                     }
-                    if (j == needle.Length) {
+                    if (j == needle.Length) {                        
                         return i;
                     }
                 }

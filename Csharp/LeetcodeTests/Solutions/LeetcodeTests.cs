@@ -24,7 +24,6 @@ namespace Leetcode.Tests {
         }
 
         //#2
-        [TestMethod()]
         public void AddTwoNumbersTests() {
             ListNode number1 = new ListNode(2);
             number1.next = new ListNode(4);
@@ -347,6 +346,31 @@ namespace Leetcode.Tests {
             string needle = "issip";
 
             Assert.AreEqual(4, target.StrStr(haystack, needle));
+        }
+
+        //#28
+        [TestMethod()]
+        public void DevideTwoIntegersTests() {
+
+            var target = new DevideTwoIntegers();
+            
+            Assert.AreEqual(10, target.Divide(101, 10));
+            Assert.AreEqual(Int32.MaxValue, target.Divide(Int32.MinValue, -1));
+            Assert.AreEqual(Int32.MinValue, target.Divide(Int32.MinValue, 1));
+        }
+
+        //#31
+        [TestMethod()]
+        public void NextPermutationTests() {
+
+            var target = new NextPermutation();
+            int[] nums = new int[] { 3, 2, 1, 3, 3, 1 };
+            target.NextPermutationSolution(nums);
+            CollectionAssert.AreEqual(new int[] { 3, 2, 3, 1, 1, 3 }, nums);
+
+            nums = new int[] { 5, 4, 3, 2, 1 };
+            target.NextPermutationSolution(nums);
+            CollectionAssert.AreEqual(new int[] { 1, 2, 3, 4, 5 }, nums);
         }
     }
 }
