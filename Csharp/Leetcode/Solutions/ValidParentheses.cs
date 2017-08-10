@@ -16,7 +16,6 @@ namespace Leetcode.Solutions {
                     charStack.Push(c);
                 } else {
                     if (charStack.Count == 0 || !IsClose(charStack.Peek(), c)) {
-                        Console.WriteLine(c);
                         return false;
                     } else {
                         charStack.Pop();

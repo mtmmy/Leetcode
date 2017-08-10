@@ -5,6 +5,9 @@
  */
 package com.mycompany.leetcode;
 
+import java.util.List;
+import java.util.stream.Collectors;
+
 /**
  *
  * @author Hanmin Yang
@@ -12,6 +15,6 @@ package com.mycompany.leetcode;
 public class Application {
     
     public static void main(String[] args) {
-        System.out.println("Call memeroy");
+
     }
 }

@@ -9,3 +9,5 @@ packages/
 *.userprefs
 Csharp/Leetcode/Program.cs
 /Java/Leetcode/target/
+/Java/Leetcode/nbproject/
+Java/Leetcode/src/main/java/com/mycompany/leetcode/Application.java
