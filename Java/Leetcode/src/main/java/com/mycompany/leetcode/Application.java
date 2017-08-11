@@ -16,5 +16,8 @@ public class Application {
     
     public static void main(String[] args) {
 
+        SearchForARange target = new SearchForARange();
+        int[] result = target.searchRange(new int[]{2, 3, 4, 4, 5, 5, 6, 7, 8, 8, 8, 8, 9, 11}, 8);
+        System.out.println("pause");
     }
 }

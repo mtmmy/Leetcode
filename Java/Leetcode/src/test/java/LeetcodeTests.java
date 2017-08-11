@@ -1,4 +1,5 @@
 import com.mycompany.leetcode.LongestValidParentheses;
+import com.mycompany.leetcode.SearchForARange;
 import com.mycompany.leetcode.SearchInRotatedSortedArray;
 import org.junit.After;
 import org.junit.AfterClass;
@@ -57,7 +58,15 @@ public class LeetcodeTests {
         int[] intArray = new int[]{4, 5, 6, 7, 0, 1, 2};
         int result = target.search(intArray, 1);
         Assert.assertEquals(5, result);
-    }    
+    }
+    
+    //#34
+    @Test
+    public void SearchForARange() {
+        SearchForARange target = new SearchForARange();
+        int[] result = target.searchRange(new int[]{2, 3, 4, 4, 5, 5, 6, 7, 8, 8, 8, 8, 9, 11}, 8);
+        Assert.assertArrayEquals(new int[]{8, 11}, result);
+    }
     
     //#35
     @Test
