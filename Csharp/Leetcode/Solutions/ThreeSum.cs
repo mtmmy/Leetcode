@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Leetcode.Solutions {
     public class ThreeSum {
-        IList<IList<int>> result = new List<IList<int>>();
-        public IList<IList<int>> ThreeSumSolution(int[] nums) {
+        List<List<int>> result = new List<List<int>>();
+        public List<List<int>> ThreeSumSolution(int[] nums) {
 
             Array.Sort(nums);
             for (var i = 0; i < nums.Length; i++) {
@@ -50,9 +50,9 @@ namespace Leetcode.Solutions {
         }
 
         public int[] SubArray(int[] data, int index, int length) {
-            int[] result = new int[length];
-            Array.Copy(data, index, result, 0, length);
-            return result;
+            int[] sub = new int[length];
+            Array.Copy(data, index, sub, 0, length);
+            return sub;
         }
     }
 }

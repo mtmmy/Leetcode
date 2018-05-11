@@ -5,7 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Leetcode.Tools {
+	
     public class ListNode {
+		
         public int val;
         public ListNode next;
         public ListNode(int x) { val = x; }
@@ -28,5 +30,5 @@ namespace Leetcode.Tools {
                 return true;
             }
         }
-    }
+	}
 }
