@@ -412,7 +412,7 @@ namespace Leetcode {
             Assert.AreEqual("110001", target.Solution("101111", "10"));
         }
 
-        //#70
+        //#69
         [Test]
         public void SqrtOfXTests() {
             var target = new SqrtOfX();
@@ -424,6 +424,17 @@ namespace Leetcode {
             Assert.AreEqual(15, target.Solution(255));
             Assert.AreEqual(16, target.Solution(257));
             Assert.AreEqual(46340, target.Solution(2147395600));
+        }
+
+        //#70
+        [Test]
+        public void ClimbingStairsTests() {
+            var target = new ClimbingStairs();
+
+            Assert.AreEqual(0, target.Solution(0));
+            Assert.AreEqual(2, target.Solution(2));
+            Assert.AreEqual(8, target.Solution(5));
+            Assert.AreEqual(1836311903, target.Solution(45));
         }
     }
 }
