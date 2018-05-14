@@ -38,7 +38,7 @@ namespace Leetcode.Solutions {
                     return 0;
                 }
                 return result;
-            } catch (OverflowException ex) {
+            } catch {
                 return 0;
             }
         }

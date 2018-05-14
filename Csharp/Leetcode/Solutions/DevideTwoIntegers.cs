@@ -12,7 +12,6 @@ namespace Leetcode.Solutions {
                 return Int32.MaxValue;
             }
             bool positive = (dividend >= 0 && divisor >= 0) || (dividend < 0 && divisor < 0);
-            int i = 0;
             int quotient = 0;
             long absDividend = Math.Abs((long)dividend);
             long absDivisor = Math.Abs((long)divisor);
