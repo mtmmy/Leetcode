@@ -77,6 +77,7 @@
     <Compile Include="Solutions\AddBinary.cs" />
     <Compile Include="Solutions\SqrtOfX.cs" />
     <Compile Include="Solutions\ClimbingStairs.cs" />
+    <Compile Include="Solutions\RemoveDuplicatesFromSortedList.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
