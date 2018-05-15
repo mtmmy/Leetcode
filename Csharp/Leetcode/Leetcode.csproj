@@ -36,7 +36,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GeneralTools\ListNode.cs" />
+    <Compile Include="Utils\ListNode.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Solutions\AddTwoNumbers.cs" />
@@ -49,7 +49,7 @@
     <Compile Include="Solutions\LetterCombinationOfPhone.cs" />
     <Compile Include="Solutions\LongestCommonPrefix.cs" />
     <Compile Include="Solutions\LongestPalindromicSubstring.cs" />
-    <Compile Include="Solutions\LongestSubstringWIthoutRepeatingChars.cs" />
+    <Compile Include="Solutions\LongestSubstringWithoutRepeatingChars.cs" />
     <Compile Include="Solutions\MedianOfTwoSortedArrays.cs" />
     <Compile Include="Solutions\MergedTwoSortedList.cs" />
     <Compile Include="Solutions\MergeKSortedLists.cs" />
@@ -78,6 +78,10 @@
     <Compile Include="Solutions\SqrtOfX.cs" />
     <Compile Include="Solutions\ClimbingStairs.cs" />
     <Compile Include="Solutions\RemoveDuplicatesFromSortedList.cs" />
+    <Compile Include="Utils\ToolKit.cs" />
+    <Compile Include="Solutions\MergeSortedArray.cs" />
+    <Compile Include="Utils\TreeNode.cs" />
+    <Compile Include="Solutions\SameTree.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

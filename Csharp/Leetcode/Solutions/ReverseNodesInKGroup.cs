@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Leetcode.Tools;
+using Leetcode.Utils;
 
 namespace Leetcode.Solutions {
     public class ReverseNodesInKGroup {

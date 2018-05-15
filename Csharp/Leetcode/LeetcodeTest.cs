@@ -1,16 +1,19 @@
 ﻿using System;
 using NUnit.Framework;
 using Leetcode.Solutions;
-using Leetcode.Tools;
+using Leetcode.Utils;
 using System.Collections.Generic;
 using System.Linq;
 
 namespace Leetcode {
     [TestFixture]
     public class LeetcodeTest {
+
+        ToolKit ToolKit = new ToolKit();
+
         //#1
         [Test]
-        public void TwoSumTests() {
+        public void No1_TwoSumTests() {
             TwoSum target = new TwoSum();
             int[] testAry = { 2, 7, 11, 15 };
             int targetNum = 9;
@@ -21,9 +24,9 @@ namespace Leetcode {
 
         //#2
         [Test]
-        public void AddTwoNumbersTests() {
-            var number1 = new ListNode(new[] { 2, 4, 3 });
-            var number2 = new ListNode(new[] { 5, 6, 4 });
+        public void No2_AddTwoNumbersTests() {
+            var number1 = ToolKit.GenerateListNode(new[] { 2, 4, 3 });
+            var number2 = ToolKit.GenerateListNode(new[] { 5, 6, 4 });
             AddTwoNumbers target = new AddTwoNumbers();
 
             Assert.AreEqual("7, 0, 8", target.AddTwoNumbersSolution(number1, number2).ToString());
@@ -31,7 +34,7 @@ namespace Leetcode {
 
         //#3
         [Test]
-        public void LongestSubstringTests() {
+        public void No3_LongestSubstringTests() {
             LongestSubstringWithoutRepeatingChars target = new LongestSubstringWithoutRepeatingChars();
 
             Assert.AreEqual(3, target.LengthOfLongestSubstring("abcabcbb"));
@@ -39,7 +42,7 @@ namespace Leetcode {
 
         //#4
         [Test]
-        public void MedianOfTwoSortedTests() {
+        public void No4_MedianOfTwoSortedTests() {
             MedianOfTwoSortedArrays target = new MedianOfTwoSortedArrays();
             int[] nums1 = { 1, 2 };
             int[] nums2 = { 3, 4 };
@@ -49,7 +52,7 @@ namespace Leetcode {
 
         //#5
         [Test]
-        public void LongestPalindromicSubstringTests() {
+        public void No5_LongestPalindromicSubstringTests() {
             LongestPalindromicSubstring target = new LongestPalindromicSubstring();
             String result = target.LongestPalindromicSubstringSolution("babad");
 
@@ -58,7 +61,7 @@ namespace Leetcode {
 
         //#6
         [Test]
-        public void ZigZagConversionTests() {
+        public void No6_ZigZagConversionTests() {
             ZigZagConversion target = new ZigZagConversion();
             String result = target.Convert("PAYPALISHIRING", 3);
 
@@ -67,7 +70,7 @@ namespace Leetcode {
 
         //#7
         [Test]
-        public void ReverseIntegerTests() {
+        public void No7_ReverseIntegerTests() {
             ReverseInterger target = new ReverseInterger();
 
             Assert.AreEqual(321, target.Reverse(123));
@@ -76,7 +79,7 @@ namespace Leetcode {
 
         //#8
         [Test]
-        public void StringToIntegerTests() {
+        public void No8_StringToIntegerTests() {
             StringToInteger target = new StringToInteger();
 
             Assert.AreEqual(123, target.MyAtoi("0000123"));
@@ -85,7 +88,7 @@ namespace Leetcode {
 
         //#9
         [Test]
-        public void PalindromeNumberTests() {
+        public void No9_PalindromeNumberTests() {
 
             PalindromeNumber target = new PalindromeNumber();
 
@@ -94,7 +97,7 @@ namespace Leetcode {
 
         //#10
         [Test]
-        public void RegExMatchTests() {
+        public void No10_RegExMatchTests() {
             ReqularExpressionMatching target = new ReqularExpressionMatching();
 
             Assert.IsFalse(target.IsMatch("aa", "a"));
@@ -108,7 +111,7 @@ namespace Leetcode {
 
         //#11
         [Test]
-        public void ContainerWithMostWaterTests() {
+        public void No11_ContainerWithMostWaterTests() {
             ContainerWithMostWater target = new ContainerWithMostWater();
 
             Assert.AreEqual(12, target.MaxArea(new[] { 1, 2, 3, 4, 5, 6, 7 }));
@@ -116,7 +119,7 @@ namespace Leetcode {
 
         //#12
         [Test]
-        public void IntegerToRomanTests() {
+        public void No12_IntegerToRomanTests() {
             IntegerToRoman target = new IntegerToRoman();
 
             Assert.AreEqual("MMMCMXCIX", target.IntToRoman(3999));
@@ -124,7 +127,7 @@ namespace Leetcode {
 
         //#13
         [Test]
-        public void RomanToIntegerTests() {
+        public void No13_RomanToIntegerTests() {
             RomanToInteger target = new RomanToInteger();
 
             Assert.AreEqual(3999, target.RomanToInt("MMMCMXCIX"));
@@ -132,7 +135,7 @@ namespace Leetcode {
 
         //#14
         [Test]
-        public void LongestCommonPrefixTests() {
+        public void No14_LongestCommonPrefixTests() {
             LongestCommonPrefix target = new LongestCommonPrefix();
             string[] strs = new string[] { "abc", "abcd", "abcede", "abc" };
 
@@ -141,7 +144,7 @@ namespace Leetcode {
 
         //#15
         [Test]
-        public void ThreeSumTests() {
+        public void No15_ThreeSumTests() {
             ThreeSum target = new ThreeSum();
             int[] nums = new int[] { -1, 0, 1, 2, -1, -4 };
             IList<IList<int>> expected = new List<IList<int>>();
@@ -151,9 +154,15 @@ namespace Leetcode {
             CollectionAssert.AreEqual(expected, target.ThreeSumSolution(nums));
         }
 
+        //#16
+        [Test]
+        public void No16_ThreeSumClosestTests() {
+            
+        }
+
         //#17
         [Test]
-        public void LetterCombinationsOfPhoneTests() {
+        public void No17_LetterCombinationsOfPhoneTests() {
             LetterCombinationOfPhone target = new LetterCombinationOfPhone();
             var expected = new List<string>() { "ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf" };
             var actual = target.LetterCombinations("23");
@@ -161,18 +170,24 @@ namespace Leetcode {
             Assert.IsTrue(expected.SequenceEqual(actual));
         }
 
+        //#18
+        [Test]
+        public void No18_FourSumTests() {
+            
+        }
+
         //#19
         [Test]
-        public void RemoveNthTests() {
+        public void No19_RemoveNthTests() {
             RemoveNthNode target = new RemoveNthNode();
-            var listNode = new ListNode(new[] { 1, 2, 3, 4, 5 });
+            var listNode = ToolKit.GenerateListNode(new[] { 1, 2, 3, 4, 5 });
 
             Assert.AreEqual("1, 2, 3, 5", target.RemoveNthFromEnd(listNode, 2).ToString());
         }
 
         //#20
         [Test]
-        public void ValidParenthesesTests() {
+        public void No20_ValidParenthesesTests() {
             ValidParentheses target = new ValidParentheses();
 
             Assert.IsTrue(target.IsValid("()(())[[]]{{}{}}"));
@@ -180,17 +195,17 @@ namespace Leetcode {
 
         //#21
         [Test]
-        public void MergedTwoSortedTests() {
+        public void No21_MergedTwoSortedTests() {
             MergedTwoSortedList target = new MergedTwoSortedList();
-            var node1 = new ListNode(new[] { 1, 3 });
-            var node2 = new ListNode(new[] { 2, 4 });
+            var node1 = ToolKit.GenerateListNode(new[] { 1, 3 });
+            var node2 = ToolKit.GenerateListNode(new[] { 2, 4 });
 
             Assert.AreEqual("1, 2, 3, 4", target.MergeTwoLists(node1, node2).ToString());
         }
 
         //#22
         [Test]
-        public void GenerateParenthesesTests() {
+        public void No22_GenerateParenthesesTests() {
 
             GenerateParentheses target = new GenerateParentheses();
             var expected = new List<string>() { "((()))", "(()())", "(())()", "()(())", "()()()" };
@@ -200,12 +215,12 @@ namespace Leetcode {
 
         //#23
         [Test]
-        public void MergeKSortedListsTests() {
+        public void No23_MergeKSortedListsTests() {
             MergeKSortedLists target = new MergeKSortedLists();
             int size = 10;
             ListNode[] array = new ListNode[size];
             for (int i = 0; i < size; i++) {
-                var node = new ListNode(new[] { 2 * i, 2 * i + 1 });
+                var node = ToolKit.GenerateListNode(new[] { 2 * i, 2 * i + 1 });
                 array[i] = node;
             }
             var result = target.MergeKLists(array);
@@ -215,19 +230,19 @@ namespace Leetcode {
 
         //#24
         [Test]
-        public void SwapNodesInPairsTests() {
+        public void No24_SwapNodesInPairsTests() {
             var target = new SwapNodesInPairs();
-            var test = new ListNode(new[] { 0, 1, 2, 3, 4 });
+            var test = ToolKit.GenerateListNode(new[] { 0, 1, 2, 3, 4 });
             var result = target.SwapPairs(test);
 
             Assert.AreEqual("1, 0, 3, 2, 4", result.ToString());
         }
 
-        //#24
+        //#25
         [Test]
-        public void ReverseNodesInKGroupTests() {
+        public void No25_ReverseNodesInKGroupTests() {
             var target = new ReverseNodesInKGroup();
-            var head = new ListNode(new[] { 0, 1, 2, 3 });
+            var head = ToolKit.GenerateListNode(new[] { 0, 1, 2, 3 });
             var result = target.ReverseKGroup(head, 3);
 
             Assert.AreEqual("2, 1, 0, 3", result.ToString());
@@ -235,7 +250,7 @@ namespace Leetcode {
 
         //#26
         [Test]
-        public void RemoveDuplicateFromSortedArrayTests() {
+        public void No26_RemoveDuplicateFromSortedArrayTests() {
             RemoveDuplicateFromSortedArray target = new RemoveDuplicateFromSortedArray();
 
             Assert.AreEqual(2, target.RemoveDuplicates(new int[] { 1, 1, 2 }));
@@ -243,7 +258,7 @@ namespace Leetcode {
 
         //#27
         [Test]
-        public void RemoveElementArrayTests() {
+        public void No27_RemoveElementArrayTests() {
             var target = new RemoveElement();
             int[] nums = new int[] { 3, 2, 2, 3 };
 
@@ -253,7 +268,7 @@ namespace Leetcode {
 
         //#28
         [Test]
-        public void Implement_strStrTests() {
+        public void No28_Implement_strStrTests() {
             var target = new Implement_strStr();
             string haystack = "mississippi";
             string needle = "issip";
@@ -261,9 +276,9 @@ namespace Leetcode {
             Assert.AreEqual(4, target.StrStr(haystack, needle));
         }
 
-        //#28
+        //#29
         [Test]
-        public void DevideTwoIntegersTests() {
+        public void No29_DevideTwoIntegersTests() {
             var target = new DevideTwoIntegers();
 
             Assert.AreEqual(10, target.Divide(101, 10));
@@ -271,9 +286,11 @@ namespace Leetcode {
             Assert.AreEqual(Int32.MinValue, target.Divide(Int32.MinValue, 1));
         }
 
+        //#30  in Java
+
         //#31
         [Test]
-        public void NextPermutationTests() {
+        public void No31_NextPermutationTests() {
             var target = new NextPermutation();
             int[] nums = new int[] { 3, 2, 1, 3, 3, 1 };
             target.NextPermutationSolution(nums);
@@ -284,9 +301,14 @@ namespace Leetcode {
             CollectionAssert.AreEqual(new int[] { 1, 2, 3, 4, 5 }, nums);
         }
 
+        //#32 in Java
+        //#33 in Java
+        //#34 in Java
+        //#35 in Java
+
         //#38
         [Test]
-        public void CountAndSayTests() {
+        public void No38_CountAndSayTests() {
             var target = new CountAndSay();
             var result = target.CountAndSaySolution(10);
             Assert.AreEqual("13211311123113112211", result);
@@ -294,21 +316,21 @@ namespace Leetcode {
 
         //#53
         [Test]
-        public void MaximumSubarrayTests() {
+        public void No53_MaximumSubarrayTests() {
             var target = new MaximumSubarray();
             Assert.AreEqual(6, target.MaxSubArray(new[] { -2, 1, -3, 4, -1, 2, 1, -5, 4 }));
         }
 
         //#58
         [Test]
-        public void LengthOfTheLastWordTests() {
+        public void No58_LengthOfTheLastWordTests() {
             var target = new LengthOfLastWord();
             Assert.AreEqual(5, target.Solution("Hello world"));
         }
 
         //#66
         [Test]
-        public void PlusOneTests() {
+        public void No66_PlusOneTests() {
             var target = new PlusOne();
 
             CollectionAssert.AreEqual(new[] { 1 }, target.Solution(new[] { 0 }));
@@ -319,7 +341,7 @@ namespace Leetcode {
 
         //#67
         [Test]
-        public void AddBinaryTests() {
+        public void No67_AddBinaryTests() {
             var target = new AddBinary();
 
             Assert.AreEqual("100", target.Solution("11", "1"));
@@ -328,7 +350,7 @@ namespace Leetcode {
 
         //#69
         [Test]
-        public void SqrtOfXTests() {
+        public void No69_SqrtOfXTests() {
             var target = new SqrtOfX();
 
             Assert.AreEqual(0, target.Solution(0));
@@ -342,7 +364,7 @@ namespace Leetcode {
 
         //#70
         [Test]
-        public void ClimbingStairsTests() {
+        public void No70_ClimbingStairsTests() {
             var target = new ClimbingStairs();
 
             Assert.AreEqual(0, target.Solution(0));
@@ -353,11 +375,44 @@ namespace Leetcode {
 
         //#83
         [Test]
-        public void RemoveDuplicatesFromSortedListTests() {
+        public void No83_RemoveDuplicatesFromSortedListTests() {
             var target = new RemoveDuplicatesFromSortedList();
-            var listNode = new ListNode(new[] { 1, 1, 2, 2, 3, 3 });
-
+            var listNode = ToolKit.GenerateListNode(new[] { 1, 1, 2, 2, 3, 3 });
+            var result = target.Solution(null) == null ? "" : target.Solution(null).ToString();
+                
+            Assert.AreEqual("", result);
             Assert.AreEqual("1, 2, 3", target.Solution(listNode).ToString());
+        }
+
+        //#88
+        [Test]
+        public void No88_MergeSortedArrayTests() {
+            var target = new MergeSortedArray();
+            var nums = new int[] { 0 };
+            target.Solution(nums, 0, new[] { 1 }, 1);
+
+            CollectionAssert.AreEqual(new[] { 1 }, nums);
+
+            nums = new int[] { 1, 2, 3, 0, 0, 0 };
+            target.Solution(nums, 3, new[] { 2, 5, 6 }, 3);
+
+            CollectionAssert.AreEqual(new[] { 1, 2, 2, 3, 5, 6 }, nums);
+        }
+
+        //#100
+        [Test]
+        public void No100_SameTreeTests() {
+            var target = new SameTree();
+
+            var tree1 = ToolKit.GenerateTreeNode(new List<string> { "0", "1", "2", "3" });
+            var tree2 = ToolKit.GenerateTreeNode(new List<string> { "0", "1", "2", "3" });
+
+            Assert.AreEqual(true, target.IsSameTree(tree1, tree2));
+
+            tree1 = ToolKit.GenerateTreeNode(new List<string> { "0", "1", "2", "3", "4" });
+            tree2 = ToolKit.GenerateTreeNode(new List<string> { "0", "1", "2", "3", "null", "4" });
+
+            Assert.AreEqual(false, target.IsSameTree(tree1, tree2));
         }
     }
 }

@@ -2,28 +2,20 @@
 using System.Collections.Generic;
 using System.Linq;
 using Leetcode.Solutions;
-using Leetcode.Tools;
+using Leetcode.Utils;
 
 namespace Leetcode {
     class MainClass {
         public static void Main(string[] args) {
 
-            ListNode listNode = new ListNode(1);
-            listNode.next = new ListNode(1);
-            listNode.next.next = new ListNode(2);
-            listNode.next.next.next = new ListNode(2);
-            listNode.next.next.next.next = new ListNode(3);
-            listNode.next.next.next.next.next = new ListNode(3);
+            var toolKit = new ToolKit();
+            var target = new SameTree();
+            var tree1 = toolKit.GenerateTreeNode(new List<string> { "0", "null", "1", "null", "2", "null", "3", "5", "4" });
+            var tree2 = toolKit.GenerateTreeNode(new List<string> { "0", "1", "2", "3", "null", "null", "4" });
+            var s = tree1.ToString();
+            var result = target.IsSameTree(tree1, tree1);
 
-            var test = new ListNode("1, 1, 2, , 3, 3");
-
-            var target = new RemoveDuplicatesFromSortedList();
-            var result = target.Solution(listNode);
-
-            //while(result != null) {
-            //    Console.WriteLine(result.val);
-            //    result = result.next;
-            //}
+            toolKit.GenerateTreeNode(new List<string> { "0", "1", "2", "3", "null", "null", "4" });
 
 			Console.WriteLine(result);
         }
