@@ -34,60 +34,39 @@ namespace Leetcode.Utils {
         /// <returns>The tree node.</returns>
         /// <param name="vals">String list that contains numbers or the string "null."</param>
         public TreeNode GenerateTreeNode(List<string> vals) {
+            
             if (vals.Count == 0 || vals[0] == "null") {
                 return null;
             }
-            var used = Enumerable.Repeat(false, vals.Count).ToList();
-            used[0] = true;
-            var root = new TreeNode(Int32.Parse(vals[0]));
+            var i = 0;
+            TreeNode node2;
+            var node1 = new TreeNode(Int32.Parse(vals[i++]));
             var queue = new Queue<TreeNode>();
-            queue.Enqueue(root);
+            queue.Enqueue(node1);
+            var root = node1;
 
-            for (int i = 0; i < vals.Count; i++) {
-                var curNode = queue.Dequeue();
-                var firstTwo = FirstTwoUnusedVal(used);
-                if (firstTwo[0] >= 0) {
-                    used[firstTwo[0]] = true;
-                    if (vals[firstTwo[0]] == "null") {
-                        curNode.left = null;
-                    } else {
-                        curNode.left = new TreeNode(Int32.Parse(vals[firstTwo[0]]));
-                        queue.Enqueue(curNode.left);
+            while (queue.Count > 0) {
+                node1 = queue.Dequeue();
+                if (i < vals.Count) {
+                    var val = vals[i++];
+                    if (val != "null") {
+                        node2 = new TreeNode(Int32.Parse(val));
+                        queue.Enqueue(node2);
+                        node1.left = node2;
                     }
-                } else {
-                    break;
                 }
 
-                if (firstTwo[1] >= 0) {
-                    used[firstTwo[1]] = true;
-                    if (vals[firstTwo[1]] == "null") {
-                        curNode.right = null;
-                    } else {
-                        curNode.right = new TreeNode(Int32.Parse(vals[firstTwo[1]]));
-                        queue.Enqueue(curNode.right);
+                if (i < vals.Count) {
+                    var val = vals[i++];
+                    if (val != "null") {
+                        node2 = new TreeNode(Int32.Parse(val));
+                        queue.Enqueue(node2);
+                        node1.right = node2;
                     }
                 }
             }
 
             return root;
-        }
-
-        private List<int> FirstTwoUnusedVal(List<bool> used) {
-            var result = new List<int>();
-            for (int i = 0; i < used.Count; i++) {
-                if (result.Count == 2) {
-                    break;
-                }
-                if (used[i] == false) {
-                    result.Add(i);
-                }
-            }
-
-            for (int i = result.Count; i < 2; i++) {
-                result.Add(-1);
-            }
-
-            return result;
         }
     }
 }
