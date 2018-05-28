@@ -82,6 +82,13 @@
     <Compile Include="Solutions\MergeSortedArray.cs" />
     <Compile Include="Utils\TreeNode.cs" />
     <Compile Include="Solutions\SameTree.cs" />
+    <Compile Include="Solutions\SymmetricTree.cs" />
+    <Compile Include="Solutions\MaximumDepthOfBinaryTree.cs" />
+    <Compile Include="Solutions\BinaryTreeLevelOrderTraversal2.cs" />
+    <Compile Include="Solutions\ConvertSortedArrayToBinarySearchTree.cs" />
+    <Compile Include="Solutions\BalancedBinaryTree.cs" />
+    <Compile Include="Solutions\MinimumDepthOfBinaryTree.cs" />
+    <Compile Include="Solutions\PathSum.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

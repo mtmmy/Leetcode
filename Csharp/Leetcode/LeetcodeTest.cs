@@ -9,7 +9,7 @@ namespace Leetcode {
     [TestFixture]
     public class LeetcodeTest {
 
-        ToolKit ToolKit = new ToolKit();
+        static ToolKit ToolKit = new ToolKit();
 
         //#1
         [Test]
@@ -412,7 +412,83 @@ namespace Leetcode {
             tree1 = ToolKit.GenerateTreeNode(new List<string> { "0", "1", "2", "3", "4" });
             tree2 = ToolKit.GenerateTreeNode(new List<string> { "0", "1", "2", "3", "null", "4" });
 
-            Assert.AreEqual(false, target.IsSameTree(tree1, tree2));
+            Assert.False(target.IsSameTree(tree1, tree2));
+        }
+
+        //#101
+        [Test]
+        public void No101_SymmetricTreeTests() {
+            var target = new SymmetricTree();
+            var tree1 = ToolKit.GenerateTreeNode(new List<string> { "1", "2", "2", "3", "4", "4", "3" });
+            var tree2 = ToolKit.GenerateTreeNode(new List<string> { "1", "2", "2", "3", "3", "4", "4" });
+
+            Assert.True(target.IsSymmetric(tree1));
+            Assert.False(target.IsSymmetric(tree2));
+        }
+
+        //#104
+        [Test]
+        public void No104_MaximumDepthOfBinaryTreeTests() {
+            var target = new MaximumDepthOfBinaryTree();
+            var tree1 = ToolKit.GenerateTreeNode(new List<string> { "3", "9", "20", "null", "null", "15", "7" });
+
+            Assert.AreEqual(3, target.MaxDepth(tree1));
+        }
+
+        //#107
+        [Test]
+        public void No107_BinaryTreeLevelOrderTraversal2Tests() {
+            var target = new BinaryTreeLevelOrderTraversal2();
+
+            var expected = new List<IList<int>> {
+                new List<int> { 15, 7 },
+                new List<int> { 9, 20 },
+                new List<int> { 3 }
+            };
+
+            var treeNode = ToolKit.GenerateTreeNode(new List<string> { "3", "9", "20", "null", "null", "15", "7" });
+            CollectionAssert.AreEqual(expected, target.LevelOrderBottom(treeNode));
+        }
+
+        //#108
+        [Test]
+        public void No108_ConvertSortedArrayToBinarySearchTreeTets() {
+            var target = new ConvertSortedArrayToBinarySearchTree();
+
+            Assert.AreEqual("0, -3, 9, -10, null, 5", target.SortedArrayToBST(new int[] { -10, -3, 0, 5, 9 }).ToString());
+        }
+
+        //#110
+        [Test]
+        public void No110_BalancedBinaryTreeTests() {
+            var target = new BalancedBinaryTree();
+
+            var treeNode = ToolKit.GenerateTreeNode(new List<string> { "3", "9", "20", "null", "null", "15", "7" });
+            Assert.True(target.IsBalanced(treeNode));
+
+            treeNode = ToolKit.GenerateTreeNode(new List<string> { "1", "2", "2", "3", "3", "null", "null", "4", "4"});
+            Assert.False(target.IsBalanced(treeNode));
+        }
+
+        //#111
+        [Test]
+        public void No111_MinimumDepthOfBinaryTreeTests() {
+            var target = new MinimumDepthOfBinaryTree();
+
+            var treeNode = ToolKit.GenerateTreeNode(new List<string> { "3", "9", "20", "null", "null", "15", "7" });
+
+            Assert.AreEqual(2, target.MinDepth(treeNode));
+        }
+
+        //#112
+        [Test]
+        public void No112_PathSumTests() {
+            var target = new PathSum();
+
+            var treeNode = ToolKit.GenerateTreeNode(new List<string> { "5", "4", "8", "11", "null", "13", "4", "7", "2", "null", "null", "null", "1" });
+
+            Assert.True(target.HasPathSum(treeNode, 22));
+            Assert.False(target.HasPathSum(treeNode, 21));
         }
     }
 }

@@ -9,15 +9,12 @@ namespace Leetcode {
         public static void Main(string[] args) {
 
             var toolKit = new ToolKit();
-            var target = new SameTree();
-            var tree1 = toolKit.GenerateTreeNode(new List<string> { "0", "null", "1", "null", "2", "null", "3", "5", "4" });
-            var tree2 = toolKit.GenerateTreeNode(new List<string> { "0", "1", "2", "3", "null", "null", "4" });
-            var s = tree1.ToString();
-            var result = target.IsSameTree(tree1, tree1);
+            var target = new PathSum();
+            var tree1 = toolKit.GenerateTreeNode(new List<string> { "5", "4", "8", "11", "null", "13", "4", "7", "2", "null", "null", "null", "1" });
 
-            toolKit.GenerateTreeNode(new List<string> { "0", "1", "2", "3", "null", "null", "4" });
-
-			Console.WriteLine(result);
+            var result = target.HasPathSum(tree1, 22);
+            Console.WriteLine();
+            Console.WriteLine(result);
         }
     }
 }
