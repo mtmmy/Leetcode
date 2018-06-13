@@ -9,12 +9,21 @@ namespace Leetcode {
         public static void Main(string[] args) {
 
             var toolKit = new ToolKit();
-            var target = new PathSum();
-            var tree1 = toolKit.GenerateTreeNode(new List<string> { "5", "4", "8", "11", "null", "13", "4", "7", "2", "null", "null", "null", "1" });
+            var target = new LinkedListCycle();
+            var node1 = new ListNode(0);
+            var node2 = new ListNode(1);
+            var node3 = new ListNode(2);
+            var node4 = new ListNode(3);
+            var node5 = new ListNode(4);
 
-            var result = target.HasPathSum(tree1, 22);
-            Console.WriteLine();
-            Console.WriteLine(result);
+            node1.next = node2;
+            node2.next = node3;
+            node3.next = node4;
+            node4.next = node5;
+            node5.next = node1;
+
+
+            Console.WriteLine(target.HasCycle(node1));
         }
     }
 }

@@ -89,6 +89,12 @@
     <Compile Include="Solutions\BalancedBinaryTree.cs" />
     <Compile Include="Solutions\MinimumDepthOfBinaryTree.cs" />
     <Compile Include="Solutions\PathSum.cs" />
+    <Compile Include="Solutions\PascalsTriangle.cs" />
+    <Compile Include="Solutions\PascalsTriangle2.cs" />
+    <Compile Include="Solutions\BestTimeToBuyAndSellStock.cs" />
+    <Compile Include="Solutions\ValidPalindrome.cs" />
+    <Compile Include="Solutions\SingleNumber.cs" />
+    <Compile Include="Solutions\LinkedListCycle.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

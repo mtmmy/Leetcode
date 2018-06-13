@@ -490,5 +490,84 @@ namespace Leetcode {
             Assert.True(target.HasPathSum(treeNode, 22));
             Assert.False(target.HasPathSum(treeNode, 21));
         }
+
+        //#118
+        [Test]
+        public void No118_PascalsTriangleTests() {
+            var target = new PascalsTriangle();
+
+            var expected = new List<IList<int>> {
+                new List<int> { 1 },
+                new List<int> { 1, 1 },
+                new List<int> { 1, 2, 1 },
+                new List<int> { 1, 3, 3, 1 },
+                new List<int> { 1, 4, 6, 4, 1 }
+            };
+
+            CollectionAssert.AreEqual(expected, target.Generate(5));
+        }
+
+        //#119
+        [Test]
+        public void No119_PascalsTriangle2Tests() {
+            var target = new PascalsTriangle2();
+
+            var expected = new List<int> { 1, 5, 10, 10, 5, 1 };
+
+            CollectionAssert.AreEqual(expected, target.GetRow(5));
+        }
+
+        //#121 and #122
+        [Test]
+        public void No121No122_BestTimeToBuyAndSellStockTests() {
+            var target = new BestTimeToBuyAndSellStock();
+
+            Assert.AreEqual(5, target.MaxProfit(new int[] { 7, 1, 5, 3, 6, 4 }));
+            Assert.AreEqual(7, target.MaxProfitII(new int[] { 7, 1, 5, 3, 6, 4 }));
+        }
+
+        //#125
+        [Test]
+        public void No125_ValidPalindromeTests() {
+            var target = new ValidPalindrome();
+
+            Assert.True(target.IsPalindrome("A man, a plan, a canal: Panama"));
+            Assert.False(target.IsPalindrome("race a car"));
+        }
+
+        //#136
+        [Test]
+        public void No136_SingleNumber() {
+            var target = new SingleNumber();
+
+            Assert.AreEqual(4, target.FindSingleNumber(new int[] { 4, 1, 2, 1, 2 }));
+        }
+
+        //#141
+        [Test]
+        public void No141_LinkedListCycleTests() {
+            var target = new LinkedListCycle();
+
+            var node1 = new ListNode(0);
+
+            Assert.False(target.HasCycle(null));
+            Assert.False(target.HasCycle(node1));
+
+            node1.next = node1;
+            Assert.True(target.HasCycle(node1));
+
+            var node2 = new ListNode(1);
+            var node3 = new ListNode(2);
+            var node4 = new ListNode(3);
+            var node5 = new ListNode(4);
+
+            node1.next = node2;
+            node2.next = node3;
+            node3.next = node4;
+            node4.next = node5;
+            node5.next = node1;
+
+            Assert.True(target.HasCycle(node1));
+        }
     }
 }
