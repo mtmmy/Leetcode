@@ -6,35 +6,6 @@ namespace Leetcode.Solutions {
     public class BinaryTreeLevelOrderTraversal2 {
         public IList<IList<int>> LevelOrderBottom(TreeNode root) {
             var result = new List<IList<int>>();
-            //if (root == null) {
-            //    return result;
-            //}
-
-            //var queue = new Queue<TreeNode>();
-            //queue.Enqueue(root);
-            //queue.Enqueue(null);
-
-            //result.Add(new List<int>());
-            //while (queue.Count > 1) {
-            //    var curNode = queue.Dequeue();
-            //    if (curNode != null) {
-            //        result[result.Count - 1].Add(curNode.val);
-            //        if (curNode.left != null) {
-            //            queue.Enqueue(curNode.left);
-            //        }
-            //        if (curNode.right != null) {
-            //            queue.Enqueue(curNode.right);
-            //        }
-            //    } else {
-            //        queue.Enqueue(null);
-            //        result.Add(new List<int>());
-            //    }
-            //}
-
-            //result.Reverse();
-
-            // BFS solution
-            //LevelMaker(result, root, 0);
 
             // DFS solution
             var queue = new Queue<TreeNode>();
@@ -44,9 +15,9 @@ namespace Leetcode.Solutions {
             }
             queue.Enqueue(root);
             while (queue.Count > 0) {
-                var levelNum = queue.Count;
+                var nodesCountInLevel = queue.Count;
                 var subList = new List<int>();
-                for (int i = 0; i < levelNum; i++) {
+                for (int i = 0; i < nodesCountInLevel; i++) {
                     var node = queue.Dequeue();
                     if (node.left != null) {
                         queue.Enqueue(node.left);
@@ -61,40 +32,48 @@ namespace Leetcode.Solutions {
 
             return result;
         }
-
-        private void LevelMaker(List<IList<int>> list, TreeNode root, int level) {
-            if (root == null) {
-                return;
-            }
-
-            if (level >= list.Count) {
-                list.Insert(0, new List<int>());
-            }
-            LevelMaker(list, root.left, level + 1);
-            LevelMaker(list, root.right, level + 1);
-            list[list.Count - level - 1].Add(root.val);
-        }
     }
 }
 
-//public class Solution {
-//    public List<List<Integer>> levelOrderBottom(TreeNode root) {
-//        Queue<TreeNode> queue = new LinkedList<TreeNode>();
-//        List<List<Integer>> wrapList = new LinkedList<List<Integer>>();
 
-//        if (root == null) return wrapList;
+//======
+/* 
+    //======
+        #107 Binary Tree Level Order Traversal II
+    //======
+        Given a binary tree, return the bottom-up level order traversal of its nodes' values. (ie, from left to right, level by level from leaf to root).
 
-//        queue.offer(root);
-//        while (!queue.isEmpty()) {
-//            int levelNum = queue.size();
-//            List<Integer> subList = new LinkedList<Integer>();
-//            for (int i = 0; i < levelNum; i++) {
-//                if (queue.peek().left != null) queue.offer(queue.peek().left);
-//                if (queue.peek().right != null) queue.offer(queue.peek().right);
-//                subList.add(queue.poll().val);
-//            }
-//            wrapList.add(0, subList);
-//        }
-//        return wrapList;
-//    }
-//}
+        For example:
+        Given binary tree [3,9,20,null,null,15,7],
+        //example
+            3
+           / \
+          9  20
+            /  \
+           15   7
+        //example
+        return its bottom-up level order traversal as:
+        //example
+        [
+          [15,7],
+          [9,20],
+          [3]
+        ]
+        //example
+    //======
+        We use DFS. First we put the root node into a queue and create a loop which runs until the queue is empty.
+        Inside the loop we have another loop that runs same amount of times of the length of queue. And we need to keep this value becaase in the loop we will add nodes into the queue.
+        For example, at the beginning there is only the root node in the queue, this inner loop is executed once. 
+        In the inner loop, we dequeue each node and store the value of the node to a temporary list and add its child into the queue.
+        After the execution of the inner loop, we insert the temporary list to the beginning place of the result list.
+        If there are no nodes in the queue, the programm ends and returns the result. Otherwise the programm keeps running.
+    //======
+        Tree, DFS
+    //======
+        05/13/2018
+    //======
+        Leetcode
+    //======
+        https://leetcode.com/problems/binary-tree-level-order-traversal-ii/description/
+    //======
+*/

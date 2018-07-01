@@ -95,6 +95,9 @@
     <Compile Include="Solutions\ValidPalindrome.cs" />
     <Compile Include="Solutions\SingleNumber.cs" />
     <Compile Include="Solutions\LinkedListCycle.cs" />
+    <Compile Include="Solutions\MinStack.cs" />
+    <Compile Include="Solutions\IntersectionOfTwoLinkedLists.cs" />
+    <Compile Include="Solutions\TwoSum2_InputArrayIsSorted.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

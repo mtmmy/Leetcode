@@ -9,21 +9,11 @@ namespace Leetcode {
         public static void Main(string[] args) {
 
             var toolKit = new ToolKit();
-            var target = new LinkedListCycle();
-            var node1 = new ListNode(0);
-            var node2 = new ListNode(1);
-            var node3 = new ListNode(2);
-            var node4 = new ListNode(3);
-            var node5 = new ListNode(4);
+            var target = new TwoSum2_InputArrayIsSorted();
 
-            node1.next = node2;
-            node2.next = node3;
-            node3.next = node4;
-            node4.next = node5;
-            node5.next = node1;
+            var result = target.Solution(new int[] {2, 3, 4}, 6);
+            Console.WriteLine(result);
 
-
-            Console.WriteLine(target.HasCycle(node1));
         }
     }
 }

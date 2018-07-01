@@ -17,7 +17,6 @@ namespace Leetcode.Solutions {
             while (runOne != null && runTwo != null) {
                 count++;
                 if (ReferenceEquals(runOne, runTwo)) {
-                    Console.WriteLine(count);
                     return true;
                 }
 
@@ -27,7 +26,6 @@ namespace Leetcode.Solutions {
                 }
                 runTwo = runTwo.next.next;
             }
-            Console.WriteLine(count);
             return false;
         }
     }

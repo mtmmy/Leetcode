@@ -523,7 +523,7 @@ namespace Leetcode {
             var target = new BestTimeToBuyAndSellStock();
 
             Assert.AreEqual(5, target.MaxProfit(new int[] { 7, 1, 5, 3, 6, 4 }));
-            Assert.AreEqual(7, target.MaxProfitII(new int[] { 7, 1, 5, 3, 6, 4 }));
+            //Assert.AreEqual(7, target.MaxProfitII(new int[] { 7, 1, 5, 3, 6, 4 }));
         }
 
         //#125
@@ -568,6 +568,45 @@ namespace Leetcode {
             node5.next = node1;
 
             Assert.True(target.HasCycle(node1));
+        }
+
+        //#155
+        [Test]
+        public void No155_MinStackTests() {
+            var target = new MinStack();
+
+            target.Push(-2);
+            target.Push(0);
+            target.Push(-3);
+            Assert.AreEqual(-3, target.GetMin());
+            target.Pop();
+            Assert.AreEqual(0, target.Top());
+            Assert.AreEqual(-2, target.GetMin());
+        }
+
+        //#160
+        [Test]
+        public void No160_IntersectionOfTwoLinkedListsTests() {
+            var target = new IntersectionOfTwoLinkedLists();
+
+            var list1 = new ListNode(1);
+            var list2 = new ListNode(2);
+
+            var intersection = ToolKit.GenerateListNode(new int[] { 3, 4, 5, 6 });
+            list1.next = new ListNode(2);
+            list1.next.next = intersection;
+            list2.next = intersection;
+
+            Assert.AreEqual(3, target.Solution(list1, list2).val);
+            Assert.AreEqual(3, target.Solution2(list1, list2).val);
+        }
+
+        //#167
+        [Test]
+        public void No167_TwoSum2_InputArrayIsSortedTests() {
+            var target = new TwoSum2_InputArrayIsSorted();
+
+            CollectionAssert.AreEqual(new int[] { 1, 3 }, target.Solution(new int[] { 2, 3, 4 }, 6));
         }
     }
 }
