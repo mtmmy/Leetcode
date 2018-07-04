@@ -608,5 +608,59 @@ namespace Leetcode {
 
             CollectionAssert.AreEqual(new int[] { 1, 3 }, target.Solution(new int[] { 2, 3, 4 }, 6));
         }
+
+        //#168
+        [Test]
+        public void No168_ExcelSheetColumnTitleTests() {
+            var target = new ExcelSheetColumnTitle();
+
+            Assert.AreEqual("FXSHRXW", target.Solution(2147483647));
+        }
+
+        //#169
+        [Test]
+        public void No169_MajorityElementTests() {
+            var target = new MajorityElement();
+            Assert.AreEqual(2, target.Solution(new int[] { 2, 2, 1, 1, 1, 2, 2 }));
+        }
+
+        //#171
+        [Test]
+        public void No171_ExcelSheetColumnNumberTests() {
+            var target = new ExcelSheetColumnNumber();
+            Assert.AreEqual(2147483647, target.Solution("FXSHRXW"));
+        }
+
+        //#36
+        [Test]
+        public void No36_ValidSudokuTests() {
+            var target = new ValidSudoku();
+            var board = new char[,] {
+                {'5', '3', '.', '.', '7', '.', '.', '.', '.'},
+                {'6', '.', '.', '1', '9', '5', '.', '.', '.'},
+                {'.', '9', '8', '.', '.', '.', '.', '6', '.'},
+                {'8', '.', '.', '.', '6', '.', '.', '.', '3'},
+                {'4', '.', '.', '8', '.', '3', '.', '.', '1'},
+                {'7', '.', '.', '.', '2', '.', '.', '.', '6'},
+                {'.', '6', '.', '.', '.', '.', '2', '8', '.'},
+                {'.', '.', '.', '4', '1', '9', '.', '.', '5'},
+                {'.', '.', '.', '.', '8', '.', '.', '7', '9'}
+            };
+
+            Assert.IsTrue(target.Solution(board));
+        }
+
+        //#39
+        [Test]
+        public void No39_CombinationSumTests() {
+            var target = new CombinationSum();
+
+            var expected = new List<IList<int>> {
+                new List<int> { 2, 2, 3 },
+                new List<int> { 7 }
+            };
+
+            CollectionAssert.AreEqual(expected, target.Solution(new int[] { 2, 3, 6, 7 }, 7));
+        }
     }
 }

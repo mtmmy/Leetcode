@@ -98,6 +98,11 @@
     <Compile Include="Solutions\MinStack.cs" />
     <Compile Include="Solutions\IntersectionOfTwoLinkedLists.cs" />
     <Compile Include="Solutions\TwoSum2_InputArrayIsSorted.cs" />
+    <Compile Include="Solutions\ExcelSheetColumnTitle.cs" />
+    <Compile Include="Solutions\MajorityElement.cs" />
+    <Compile Include="Solutions\ExcelSheetColumnNumber.cs" />
+    <Compile Include="Solutions\ValidSudoku.cs" />
+    <Compile Include="Solutions\CombinationSum.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
