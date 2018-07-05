@@ -103,6 +103,7 @@
     <Compile Include="Solutions\ExcelSheetColumnNumber.cs" />
     <Compile Include="Solutions\ValidSudoku.cs" />
     <Compile Include="Solutions\CombinationSum.cs" />
+    <Compile Include="Solutions\CombinationSum2.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

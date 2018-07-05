@@ -9,8 +9,8 @@ namespace Leetcode {
         public static void Main(string[] args) {
             
             var toolKit = new ToolKit();
-            var target = new CombinationSum();
-            var result = target.Solution(new int[] { 2, 3, 6, 7 }, 8);
+            var target = new CombinationSum2();
+            var result = target.Solution(new int[] { 2, 5, 2, 1, 2 }, 5);
             Console.WriteLine(result);
         }
     }

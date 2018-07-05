@@ -662,5 +662,18 @@ namespace Leetcode {
 
             CollectionAssert.AreEqual(expected, target.Solution(new int[] { 2, 3, 6, 7 }, 7));
         }
+
+        //#40
+        [Test]
+        public void No40_CombinationSum2Tests() {
+            var target = new CombinationSum2();
+
+            var expected = new List<IList<int>> {
+                new List<int> { 1, 2, 2 },
+                new List<int> { 5 }
+            };
+
+            CollectionAssert.AreEqual(expected, target.Solution(new int[] { 2, 5, 2, 1, 2 }, 5));
+        }
     }
 }
