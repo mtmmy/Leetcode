@@ -74,7 +74,7 @@ A solution set is:
     In each level of the recursive stack, if we met duplicate elements, we use only one of them to call recursive functions.
     By doing this, we can only take a solution which duplicate elements are comming from different levels and avoid duplicate results.
 
-    The time complexity is same as #39 which is O(NlogN).
+    The time complexity is same as #39 which is O(N!).
     
     //======
         Recursion, Sum, Combination

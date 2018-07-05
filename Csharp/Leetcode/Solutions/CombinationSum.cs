@@ -69,7 +69,9 @@ A solution set is:
     This recursive function stops when the sum is greater than target.
 
     We start from the 0 of the candidates to the end and do not go back. And we only check for those number whose index is greater than the index of our current number in the recursive function.
-    Since we don't look back for calculated candidates, the time complexity is O(NlogN).
+
+    For the time complexity, if we have an array whose length is 10, it will call a function contains a 9-element array and keep calling a function.
+    So the executed time will be 10 * 9 * 8 * ........ * 1 which is N * (N - 1) * (N - 2) * ........ * 1 so that the time complexity is O(N!).
     //======
         Recursion, Sum, Combination
     //======
