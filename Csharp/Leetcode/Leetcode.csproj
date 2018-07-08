@@ -104,6 +104,10 @@
     <Compile Include="Solutions\ValidSudoku.cs" />
     <Compile Include="Solutions\CombinationSum.cs" />
     <Compile Include="Solutions\CombinationSum2.cs" />
+    <Compile Include="Solutions\MultiplyStrings.cs" />
+    <Compile Include="Solutions\Permutations.cs" />
+    <Compile Include="Solutions\Permutations2.cs" />
+    <Compile Include="Solutions\RotateImage.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

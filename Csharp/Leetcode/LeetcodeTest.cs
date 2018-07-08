@@ -675,5 +675,55 @@ namespace Leetcode {
 
             CollectionAssert.AreEqual(expected, target.Solution(new int[] { 2, 5, 2, 1, 2 }, 5));
         }
+
+        //#43
+        [Test]
+        public void No43_MultiplyStringTests() {
+            var target = new MultiplyStrings();
+
+            Assert.AreEqual("56088", target.Solution("123", "456"));
+        }
+
+        //#46
+        [Test]
+        public void No46_PermutationsTests() {
+            var target = new Permutations();
+
+            var expected = new List<IList<int>> {
+                new List<int> { 1, 2, 3 },
+                new List<int> { 1, 3, 2 },
+                new List<int> { 2, 1, 3 },
+                new List<int> { 2, 3, 1 },
+                new List<int> { 3, 1, 2 },
+                new List<int> { 3, 2, 1 },
+            };
+
+            CollectionAssert.AreEquivalent(expected, target.Solution(new int[] { 1, 2, 3 }));
+        }
+
+        //#47
+        [Test]
+        public void No47_Permutations2Tests() {
+            var target = new Permutations2();
+            var expected = new List<IList<int>> {
+                new List<int> { 1, 1, 2 },
+                new List<int> { 1, 2, 1 },
+                new List<int> { 2, 1, 1 },
+            };
+
+            CollectionAssert.AreEquivalent(expected, target.Solution(new int[] { 1, 1, 2 }));
+        }
+
+        //#48
+        [Test]
+        public void No48_RotateImageTests() {
+            var target = new RotateImage();
+            var matrix = new int[,] { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+            target.Solution(matrix);
+
+            var expected = new int[,] { { 7, 4, 1 }, { 8, 5, 2 }, { 9, 6, 3 } };
+
+            CollectionAssert.AreEqual(expected, matrix);
+        }
     }
 }

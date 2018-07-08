@@ -10,12 +10,12 @@ namespace Leetcode.Solutions {
             var result = new List<IList<int>>();
             var subResult = new List<int>();
 
-            CombinationSumDFS(candidates, target, 0, result, subResult, 0);
+            CombinationSumDFS(candidates, target, 0, result, subResult);
 
             return result;
         }
 
-        private void CombinationSumDFS(int[] candidates, int target, int start, List<IList<int>> result, List<int> subResult, int level) {
+        private void CombinationSumDFS(int[] candidates, int target, int start, List<IList<int>> result, List<int> subResult) {
             if (target < 0) {
                 return;
             }
@@ -28,7 +28,7 @@ namespace Leetcode.Solutions {
                         continue;
                     }
                     subResult.Add(candidates[i]);
-                    CombinationSumDFS(candidates, target - candidates[i], i + 1, result, subResult, level + 1);
+                    CombinationSumDFS(candidates, target - candidates[i], i + 1, result, subResult);
                     subResult.RemoveAt(subResult.Count - 1);
                 }
             }
