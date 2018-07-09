@@ -10,12 +10,9 @@ namespace Leetcode {
         public static void Main(string[] args) {
 
             var toolKit = new ToolKit();
-            var nums = new int[] { 1, 2, 3, 4, 5 };
-            var target = new Permutations();
-            var result = target.Solution(nums);
+            var target = new AddBinary();
 
-            var target2 = new Permutations2();
-            result = target2.Solution(nums);
+            Console.WriteLine(target.Solution("01", "101"));
         }
 
         static void PrintResult<T>(IList<IList<T>> result) {

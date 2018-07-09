@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Leetcode.Solutions {
-    public class ReqularExpressionMatching {
+    public class RegularExpressionMatching {
         public bool IsMatch(string s, string p) {
 
             var m = s.Length;

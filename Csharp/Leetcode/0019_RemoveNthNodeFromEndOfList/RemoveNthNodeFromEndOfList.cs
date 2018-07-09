@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 using Leetcode.Utils;
 
 namespace Leetcode.Solutions {
-    public class RemoveNthNode {
-        public ListNode RemoveNthFromEnd(ListNode head, int n) {
+    public class RemoveNthNodeFromEndOfList {
+        public ListNode Solution(ListNode head, int n) {
 
             var pre = head;
             var cur = head;
