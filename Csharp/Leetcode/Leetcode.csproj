@@ -113,6 +113,7 @@
   <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="0002_AddTwoNumbers\README.md" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="0067_AddBinary\" />
