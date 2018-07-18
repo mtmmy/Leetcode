@@ -1,4 +1,5 @@
-### Leetcode Solutions| ID | Title | Language | Leetcode 
+### Leetcode Solutions
+| ID | Title | Language | Leetcode 
 |:---:|:---:|:---:|:---:|
 |1|[Two Sum](https://github.com/mtmmy/Leetcode/blob/master/Csharp/Leetcode/0001_TwoSum)|C#|[Leetcode](https://leetcode.com/problems/two-sum)|
 |2|[Add Two Numbers](https://github.com/mtmmy/Leetcode/blob/master/Csharp/Leetcode/0002_AddTwoNumbers)|C#|[Leetcode](https://leetcode.com/problems/add-two-numbers)|
