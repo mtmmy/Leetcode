@@ -2,7 +2,7 @@
 
 This repository shows all of leetcode problems I'd accomplished. I use C# as my primary language to solve problems because I want to get familiar with it by utilizing it more but sometimes I use Java as well.
 
-| ID | Title | Acceptance | Difficulty | Language | 
+| # | Title | Acceptance | Difficulty | Language | 
 |:---:|:---|:---:|:---:|:---:|
 |1|[Two Sum](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0001_TwoSum)|38.6%|Easy|C#|
 |2|[Add Two Numbers](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0002_AddTwoNumbers)|28.9%|Medium|C#|
