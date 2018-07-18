@@ -98,7 +98,7 @@ namespace Leetcode {
         //#10
         [Test]
         public void No10_RegExMatchTests() {
-            ReqularExpressionMatching target = new ReqularExpressionMatching();
+            RegularExpressionMatching target = new RegularExpressionMatching();
 
             Assert.IsFalse(target.IsMatch("aa", "a"));
             Assert.IsTrue(target.IsMatch("aa", "aa"));
@@ -179,10 +179,10 @@ namespace Leetcode {
         //#19
         [Test]
         public void No19_RemoveNthTests() {
-            RemoveNthNode target = new RemoveNthNode();
+            RemoveNthNodeFromEndOfList target = new RemoveNthNodeFromEndOfList();
             var listNode = ToolKit.GenerateListNode(new[] { 1, 2, 3, 4, 5 });
 
-            Assert.AreEqual("1, 2, 3, 5", target.RemoveNthFromEnd(listNode, 2).ToString());
+            Assert.AreEqual("1, 2, 3, 5", target.Solution(listNode, 2).ToString());
         }
 
         //#20

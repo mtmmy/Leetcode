@@ -1,30 +1,44 @@
-﻿# [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/)
+# [36. Valid Sudoku](https://leetcode.com/problems/valid-sudoku)
 
 ## Description
-You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
 
-You may assume the two numbers do not contain any leading zero, except the number 0 itself.
-
-Example:
+Determine if a 9x9 Sudoku board is valid. Only the filled cells need to be validated according to the following rules:
+A partially filled sudoku which is valid.
+The Sudoku board could be partially filled, where empty cells are filled with the character '.'.
+Example 1:
 ```
-Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
-Output: 7 -> 0 -> 8
-Explanation: 342 + 465 = 807.
+Input:
+[
+  ["5","3",".",".","7",".",".",".","."],
+  ["6",".",".","1","9","5",".",".","."],
+  [".","9","8",".",".",".",".","6","."],
+  ["8",".",".",".","6",".",".",".","3"],
+  ["4",".",".","8",".","3",".",".","1"],
+  ["7",".",".",".","2",".",".",".","6"],
+  [".","6",".",".",".",".","2","8","."],
+  [".",".",".","4","1","9",".",".","5"],
+  [".",".",".",".","8",".",".","7","9"]
+]
+Output: true
 ```
+Example 2:
+```
+Input:
+[
+  ["8","3",".",".","7",".",".",".","."],
+  ["6",".",".","1","9","5",".",".","."],
+  [".","9","8",".",".",".",".","6","."],
+  ["8",".",".",".","6",".",".",".","3"],
+  ["4",".",".","8",".","3",".",".","1"],
+  ["7",".",".",".","2",".",".",".","6"],
+  [".","6",".",".",".",".","2","8","."],
+  [".",".",".","4","1","9",".",".","5"],
+  [".",".",".",".","8",".",".","7","9"]
+]
+Output: false
+Explanation: Same as Example 1, except with the 5 in the top left corner being 
+    modified to 8. Since there are two 8's in the top left 3x3 sub-box, it is invalid.
+```
+Note:
 ## Solution
-We use a loop to go through 2 linked lists and sum them up node by node. If there is a carryover, we store it and add it when the loop executes next time.
-At the end of a single execution of the loop, we need to check if the next node is null or not for both linked lists.
-The loop keeps executing until both linked list reach to the end and no carryover exits.
 
-The executing times depends on the length of the longer linked list. So the time complexity is O(n).
-And we need extra space to store the result, which makes the space complexity O(n) as well.
-
-## Category
-Leetcode
-
-## Tags
-Linked List
-
-## Date
-04/01/2018
-        

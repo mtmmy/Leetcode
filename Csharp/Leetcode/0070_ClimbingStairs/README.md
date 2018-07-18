@@ -1,30 +1,26 @@
-﻿# [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/)
+# [70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs)
 
 ## Description
-You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
 
-You may assume the two numbers do not contain any leading zero, except the number 0 itself.
-
-Example:
+You are climbing a stair case. It takes n steps to reach to the top.
+Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
+Note: Given n will be a positive integer.
+Example 1:
 ```
-Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
-Output: 7 -> 0 -> 8
-Explanation: 342 + 465 = 807.
+Input: 2
+Output: 2
+Explanation: There are two ways to climb to the top.
+1. 1 step + 1 step
+2. 2 steps
+```
+Example 2:
+```
+Input: 3
+Output: 3
+Explanation: There are three ways to climb to the top.
+1. 1 step + 1 step + 1 step
+2. 1 step + 2 steps
+3. 2 steps + 1 step
 ```
 ## Solution
-We use a loop to go through 2 linked lists and sum them up node by node. If there is a carryover, we store it and add it when the loop executes next time.
-At the end of a single execution of the loop, we need to check if the next node is null or not for both linked lists.
-The loop keeps executing until both linked list reach to the end and no carryover exits.
 
-The executing times depends on the length of the longer linked list. So the time complexity is O(n).
-And we need extra space to store the result, which makes the space complexity O(n) as well.
-
-## Category
-Leetcode
-
-## Tags
-Linked List
-
-## Date
-04/01/2018
-        

@@ -1,30 +1,33 @@
-﻿# [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/)
+# [6. ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion)
 
 ## Description
-You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
 
-You may assume the two numbers do not contain any leading zero, except the number 0 itself.
-
-Example:
+The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for better legibility)
 ```
-Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
-Output: 7 -> 0 -> 8
-Explanation: 342 + 465 = 807.
+P   A   H   N
+A P L S I I G
+Y   I   R
+```
+And then read line by line: "PAHNAPLSIIGYIR"
+Write the code that will take a string and make this conversion given a number of rows:
+```
+string convert(string s, int numRows);
+```
+Example 1:
+```
+Input: s = "PAYPALISHIRING", numRows = 3
+Output: "PAHNAPLSIIGYIR"
+```
+Example 2:
+```
+Input: s = "PAYPALISHIRING", numRows = 4
+Output: "PINALSIGYAHRPI"
+Explanation:
+
+P     I    N
+A   L S  I G
+Y A   H R
+P     I
 ```
 ## Solution
-We use a loop to go through 2 linked lists and sum them up node by node. If there is a carryover, we store it and add it when the loop executes next time.
-At the end of a single execution of the loop, we need to check if the next node is null or not for both linked lists.
-The loop keeps executing until both linked list reach to the end and no carryover exits.
 
-The executing times depends on the length of the longer linked list. So the time complexity is O(n).
-And we need extra space to store the result, which makes the space complexity O(n) as well.
-
-## Category
-Leetcode
-
-## Tags
-Linked List
-
-## Date
-04/01/2018
-        

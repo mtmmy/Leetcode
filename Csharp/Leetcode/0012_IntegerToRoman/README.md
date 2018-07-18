@@ -1,30 +1,47 @@
-﻿# [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/)
+# [12. Integer to Roman](https://leetcode.com/problems/integer-to-roman)
 
 ## Description
-You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
 
-You may assume the two numbers do not contain any leading zero, except the number 0 itself.
-
-Example:
+Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
 ```
-Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
-Output: 7 -> 0 -> 8
-Explanation: 342 + 465 = 807.
+Symbol       Value
+I             1
+V             5
+X             10
+L             50
+C             100
+D             500
+M             1000
+```
+For example, two is written as II in Roman numeral, just two one's added together. Twelve is written as, XII, which is simply X + II. The number twenty seven is written as XXVII, which is XX + V + II.
+Roman numerals are usually written largest to smallest from left to right. However, the numeral for four is not IIII. Instead, the number four is written as IV. Because the one is before the five we subtract it making four. The same principle applies to the number nine, which is written as IX. There are six instances where subtraction is used:
+Given an integer, convert it to a roman numeral. Input is guaranteed to be within the range from 1 to 3999.
+Example 1:
+```
+Input: 3
+Output: "III"
+```
+Example 2:
+```
+Input: 4
+Output: "IV"
+```
+Example 3:
+```
+Input: 9
+Output: "IX"
+```
+Example 4:
+```
+Input: 58
+Output: "LVIII"
+Explanation: C = 100, L = 50, XXX = 30 and III = 3.
+```
+Example 5:
+```
+Input: 1994
+Output: "MCMXCIV"
+Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
 ```
 ## Solution
-We use a loop to go through 2 linked lists and sum them up node by node. If there is a carryover, we store it and add it when the loop executes next time.
-At the end of a single execution of the loop, we need to check if the next node is null or not for both linked lists.
-The loop keeps executing until both linked list reach to the end and no carryover exits.
 
-The executing times depends on the length of the longer linked list. So the time complexity is O(n).
-And we need extra space to store the result, which makes the space complexity O(n) as well.
-
-## Category
-Leetcode
-
-## Tags
-Linked List
-
-## Date
-04/01/2018
-        

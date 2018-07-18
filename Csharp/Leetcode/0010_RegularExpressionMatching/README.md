@@ -1,30 +1,52 @@
-﻿# [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/)
+# [10. Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching)
 
 ## Description
-You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
 
-You may assume the two numbers do not contain any leading zero, except the number 0 itself.
-
-Example:
+Given an input string (s) and a pattern (p), implement regular expression matching with support for '.' and '*'.
 ```
-Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
-Output: 7 -> 0 -> 8
-Explanation: 342 + 465 = 807.
+'.' Matches any single character.
+'*' Matches zero or more of the preceding element.
+```
+The matching should cover the entire input string (not partial).
+Note:
+Example 1:
+```
+Input:
+s = "aa"
+p = "a"
+Output: false
+Explanation: "a" does not match the entire string "aa".
+```
+Example 2:
+```
+Input:
+s = "aa"
+p = "a*"
+Output: true
+Explanation: '*' means zero or more of the precedeng element, 'a'. Therefore, by repeating 'a' once, it becomes "aa".
+```
+Example 3:
+```
+Input:
+s = "ab"
+p = ".*"
+Output: true
+Explanation: ".*" means "zero or more (*) of any character (.)".
+```
+Example 4:
+```
+Input:
+s = "aab"
+p = "c*a*b"
+Output: true
+Explanation: c can be repeated 0 times, a can be repeated 1 time. Therefore it matches "aab".
+```
+Example 5:
+```
+Input:
+s = "mississippi"
+p = "mis*is*p*."
+Output: false
 ```
 ## Solution
-We use a loop to go through 2 linked lists and sum them up node by node. If there is a carryover, we store it and add it when the loop executes next time.
-At the end of a single execution of the loop, we need to check if the next node is null or not for both linked lists.
-The loop keeps executing until both linked list reach to the end and no carryover exits.
 
-The executing times depends on the length of the longer linked list. So the time complexity is O(n).
-And we need extra space to store the result, which makes the space complexity O(n) as well.
-
-## Category
-Leetcode
-
-## Tags
-Linked List
-
-## Date
-04/01/2018
-        
