@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.leetcode;
+package com.leetcode._0035_SearchInsertPosition;
 
 /**
  *

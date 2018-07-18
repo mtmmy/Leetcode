@@ -1,4 +1,4 @@
-package com.mycompany.leetcode;
+package com.leetcode._0034_FindFirstAndLastPositionOfElementInSortedArray;
 
 public class SearchForARange {
     public int[] searchRange(int[] nums, int target) {

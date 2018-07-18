@@ -1,4 +1,4 @@
-package com.mycompany.leetcode;
+package com.leetcode._0032_LongestValidParentheses;
 
 import java.util.ArrayList;
 import java.util.Collections;
