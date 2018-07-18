@@ -3,9 +3,13 @@
 ## Description
 
 Given a binary tree, determine if it is height-balanced.
+
 For this problem, a height-balanced binary tree is defined as:
+
 Example 1:
+
 Given the following tree [3,9,20,null,null,15,7]:
+
 ```
     3
    / \
@@ -13,10 +17,13 @@ Given the following tree [3,9,20,null,null,15,7]:
     /  \
    15   7
 ```
+
 Return true.
 
 Example 2:
+
 Given the following tree [1,2,2,3,3,null,null,4,4]:
+
 ```
        1
       / \
@@ -26,6 +33,8 @@ Given the following tree [1,2,2,3,3,null,null,4,4]:
   / \
  4   4
 ```
+
 Return false.
+
 ## Solution
 

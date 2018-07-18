@@ -3,7 +3,9 @@
 ## Description
 
 Given a collection of distinct integers, return all possible permutations.
+
 Example:
+
 ```
 Input: [1,2,3]
 Output:
@@ -16,5 +18,6 @@ Output:
   [3,2,1]
 ]
 ```
+
 ## Solution
 

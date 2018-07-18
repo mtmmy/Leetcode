@@ -3,7 +3,9 @@
 ## Description
 
 Merge k sorted linked lists and return it as one sorted list. Analyze and describe its complexity.
+
 Example:
+
 ```
 Input:
 [
@@ -13,5 +15,6 @@ Input:
 ]
 Output: 1->1->2->3->4->4->5->6
 ```
+
 ## Solution
 
