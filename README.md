@@ -33,12 +33,12 @@ This repository shows all of leetcode problems I'd accomplished. I use C# as my 
 |27|[Remove Element](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0027_RemoveElement)|41.5%|Easy|C#|
 |28|[Implement strStr()](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0028_Implement_strStr)|29.5%|Easy|C#|
 |29|[Divide Two Integers](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0029_DevideTwoIntegers)|15.7%|Medium|C#|
-|30|[Substring with Concatenation of All Words](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/_0030_SubstringWithConcatenationOfAllWords)|22.3%|Hard|JAVA|
+|30|[Substring with Concatenation of All Words](https://github.com/mtmmy/Leetcode/tree/master/Java/Leetcode/src/main/java/com/leetcode_0030_SubstringWithConcatenationOfAllWords)|22.3%|Hard|JAVA|
 |31|[Next Permutation](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0031_NextPermutation)|29.2%|Medium|C#|
-|32|[Longest Valid Parentheses](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/_0032_LongestValidParentheses)|23.5%|Hard|JAVA|
-|33|[Search in Rotated Sorted Array](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/_0033_SearchInRotatedSortedArray)|32.0%|Medium|JAVA|
-|34|[Find First and Last Position of Element in Sorted Array](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/_0034_FindFirstAndLastPositionOfElementInSortedArray)|31.8%|Medium|JAVA|
-|35|[Search Insert Position](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/_0035_SearchInsertPosition)|40.0%|Easy|JAVA|
+|32|[Longest Valid Parentheses](https://github.com/mtmmy/Leetcode/tree/master/Java/Leetcode/src/main/java/com/leetcode_0032_LongestValidParentheses)|23.5%|Hard|JAVA|
+|33|[Search in Rotated Sorted Array](https://github.com/mtmmy/Leetcode/tree/master/Java/Leetcode/src/main/java/com/leetcode_0033_SearchInRotatedSortedArray)|32.0%|Medium|JAVA|
+|34|[Find First and Last Position of Element in Sorted Array](https://github.com/mtmmy/Leetcode/tree/master/Java/Leetcode/src/main/java/com/leetcode_0034_FindFirstAndLastPositionOfElementInSortedArray)|31.8%|Medium|JAVA|
+|35|[Search Insert Position](https://github.com/mtmmy/Leetcode/tree/master/Java/Leetcode/src/main/java/com/leetcode_0035_SearchInsertPosition)|40.0%|Easy|JAVA|
 |36|[Valid Sudoku](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0036_ValidSudoku)|38.6%|Medium|C#|
 |38|[Count and Say](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0038_CountAndSay)|37.4%|Easy|C#|
 |39|[Combination Sum](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0039_CombinationSum)|42.6%|Medium|C#|
