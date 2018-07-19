@@ -6,6 +6,8 @@ Given a non-negative index k where k ≤ 33, return the kth index row of the Pas
 
 Note that the row index starts from 0.
 
+![image](https://upload.wikimedia.org/wikipedia/commons/0/0d/PascalTriangleAnimated2.gif)
+
 In Pascal's triangle, each number is the sum of the two numbers directly above it.
 
 Example:

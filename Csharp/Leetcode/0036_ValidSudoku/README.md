@@ -4,6 +4,8 @@
 
 Determine if a 9x9 Sudoku board is valid. Only the filled cells need to be validated according to the following rules:
 
+![image](https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Sudoku-by-L2G-20050714.svg/250px-Sudoku-by-L2G-20050714.svg.png)
+
 A partially filled sudoku which is valid.
 
 The Sudoku board could be partially filled, where empty cells are filled with the character '.'.
