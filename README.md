@@ -50,8 +50,8 @@ This repository shows all of leetcode problems I'd accomplished. I use C# as my 
 |49|[Group Anagrams](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0049_GroupAnagrams)|40.0%|Medium|C#|
 |50|[Pow(x, n)](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0050_PowX_N)|26.3%|Medium|C#|
 |53|[Maximum Subarray](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0053_MaximumSubarray)|40.8%|Easy|C#|
-|54|[Spiral Matrix](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0054_Spiral Matrix)|27.8%|Medium|C#|
-|55|[Jump Game](https://github.com/mtmmy/Leetcode/tree/master/Python0055_JumpGame)|29.9%|Medium|Python|
+|54|[Spiral Matrix](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0054_SpiralMatrix)|27.8%|Medium|C#|
+|55|[Jump Game](https://github.com/mtmmy/Leetcode/tree/master/Python/0055_JumpGame)|29.9%|Medium|Python|
 |58|[Length of Last Word](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0058_LengthOfLastWord)|32.1%|Easy|C#|
 |66|[Plus One](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0066_PlusOne)|39.9%|Easy|C#|
 |67|[Add Binary](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0067_AddBinary)|35.0%|Easy|C#|
