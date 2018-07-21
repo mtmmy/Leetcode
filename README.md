@@ -33,12 +33,12 @@ This repository shows all of leetcode problems I'd accomplished. I use C# as my 
 |27|[Remove Element](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0027_RemoveElement)|41.5%|Easy|C#|
 |28|[Implement strStr()](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0028_Implement_strStr)|29.5%|Easy|C#|
 |29|[Divide Two Integers](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0029_DevideTwoIntegers)|15.7%|Medium|C#|
-|30|[Substring with Concatenation of All Words](https://github.com/mtmmy/Leetcode/tree/master/Java/Leetcode/src/main/java/com/leetcode/_0030_SubstringWithConcatenationOfAllWords)|22.3%|Hard|JAVA|
+|30|[Substring with Concatenation of All Words](https://github.com/mtmmy/Leetcode/tree/master/Java/Leetcode/src/main/java/com/leetcode/_0030_SubstringWithConcatenationOfAllWords)|22.3%|Hard|Java|
 |31|[Next Permutation](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0031_NextPermutation)|29.2%|Medium|C#|
-|32|[Longest Valid Parentheses](https://github.com/mtmmy/Leetcode/tree/master/Java/Leetcode/src/main/java/com/leetcode/_0032_LongestValidParentheses)|23.5%|Hard|JAVA|
-|33|[Search in Rotated Sorted Array](https://github.com/mtmmy/Leetcode/tree/master/Java/Leetcode/src/main/java/com/leetcode/_0033_SearchInRotatedSortedArray)|32.0%|Medium|JAVA|
-|34|[Find First and Last Position of Element in Sorted Array](https://github.com/mtmmy/Leetcode/tree/master/Java/Leetcode/src/main/java/com/leetcode/_0034_FindFirstAndLastPositionOfElementInSortedArray)|31.8%|Medium|JAVA|
-|35|[Search Insert Position](https://github.com/mtmmy/Leetcode/tree/master/Java/Leetcode/src/main/java/com/leetcode/_0035_SearchInsertPosition)|40.0%|Easy|JAVA|
+|32|[Longest Valid Parentheses](https://github.com/mtmmy/Leetcode/tree/master/Java/Leetcode/src/main/java/com/leetcode/_0032_LongestValidParentheses)|23.5%|Hard|Java|
+|33|[Search in Rotated Sorted Array](https://github.com/mtmmy/Leetcode/tree/master/Java/Leetcode/src/main/java/com/leetcode/_0033_SearchInRotatedSortedArray)|32.0%|Medium|Java|
+|34|[Find First and Last Position of Element in Sorted Array](https://github.com/mtmmy/Leetcode/tree/master/Java/Leetcode/src/main/java/com/leetcode/_0034_FindFirstAndLastPositionOfElementInSortedArray)|31.8%|Medium|Java|
+|35|[Search Insert Position](https://github.com/mtmmy/Leetcode/tree/master/Java/Leetcode/src/main/java/com/leetcode/_0035_SearchInsertPosition)|40.0%|Easy|Java|
 |36|[Valid Sudoku](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0036_ValidSudoku)|38.6%|Medium|C#|
 |38|[Count and Say](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0038_CountAndSay)|37.4%|Easy|C#|
 |39|[Combination Sum](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0039_CombinationSum)|42.6%|Medium|C#|
@@ -51,6 +51,7 @@ This repository shows all of leetcode problems I'd accomplished. I use C# as my 
 |50|[Pow(x, n)](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0050_PowX_N)|26.3%|Medium|C#|
 |53|[Maximum Subarray](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0053_MaximumSubarray)|40.8%|Easy|C#|
 |54|[Spiral Matrix](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0054_Spiral Matrix)|27.8%|Medium|C#|
+|55|[Jump Game](https://github.com/mtmmy/Leetcode/tree/master/Python0055_JumpGame)|29.9%|Medium|Python|
 |58|[Length of Last Word](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0058_LengthOfLastWord)|32.1%|Easy|C#|
 |66|[Plus One](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0066_PlusOne)|39.9%|Easy|C#|
 |67|[Add Binary](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0067_AddBinary)|35.0%|Easy|C#|
@@ -78,4 +79,4 @@ This repository shows all of leetcode problems I'd accomplished. I use C# as my 
 |167|[Two Sum II - Input array is sorted](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0167_TwoSum2_InputArrayIsSorted)|47.3%|Easy|C#|
 |168|[Excel Sheet Column Title](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0168_ExcelSheetColumnTitle)|27.7%|Easy|C#|
 |169|[Majority Element](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0169_MajorityElement)|48.9%|Easy|C#|
-|171|[Excel Sheet Column Number](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0171_ExcelSheetColumnNumber)|49.2%|Easy|C#|
+|171|[Excel Sheet Column Number](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0171_ExcelSheetColumnNumber)|49.3%|Easy|C#|
