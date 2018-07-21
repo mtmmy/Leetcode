@@ -14,6 +14,7 @@ namespace Leetcode.Solutions {
 
             var used = Enumerable.Repeat(false, nums.Length).ToList();
             var list = new List<int>();
+            Array.Sort(nums);
             GeneratePermutations(nums, used, list, result);
             return result;
         }

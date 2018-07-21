@@ -725,5 +725,39 @@ namespace Leetcode {
 
             CollectionAssert.AreEqual(expected, matrix);
         }
+
+        //#49
+        [Test]
+        public void No49_GroupAnagramsTests() {
+            var target = new GroupAnagrams();
+
+            var expected = new List<IList<string>> {
+                new List<string> {"eat", "tea", "ate"},
+                new List<string> {"tan", "nat"},
+                new List<string> {"bat"}
+            };
+            var result = target.Solution(new string[] {"eat", "tea", "tan", "ate", "nat", "bat"});
+
+            CollectionAssert.AreEquivalent(expected, result);
+        }
+
+        //#50
+        [Test]
+        public void No50_PowX_NTests() {
+            var target = new PowX_N();
+
+            Assert.AreEqual(0.0, target.Solution(0.00001, 2147483647));
+            Assert.AreEqual(1024, target.Solution(2.0, 10));
+        }
+
+        //#54
+        [Test]
+        public void No53_SpiralMatrixTests() {
+            var target = new SpiralMatrix();
+            var expected = new List<int> { 1, 2, 3, 4, 8, 12, 11, 10, 9, 5, 6, 7 };
+            var matrix = new int[,] { { 1, 2, 3, 4 }, { 5, 6, 7, 8 }, { 9, 10, 11, 12 } };
+
+            Assert.AreEqual(expected, target.Solution(matrix));
+        }
     }
 }

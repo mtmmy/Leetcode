@@ -10,9 +10,21 @@ namespace Leetcode {
         public static void Main(string[] args) {
 
             var toolKit = new ToolKit();
-            var target = new AddBinary();
+            var target = new SpiralMatrix();
 
-            Console.WriteLine(target.Solution("01", "101"));
+            var matrix = new int[,] { { 1, 2, 3, 1, 2, 3, 4 }, { 4, 5, 6, 6, 5, 4, 3 }, { 7, 8, 9, 12, 13, 11, 10 } };
+            var result = target.Solution(matrix);
+            PrintResult(result);
+        }
+
+        static void PrintResult<T>(T result) {
+            Console.WriteLine(result);
+        }
+
+        static void PrintResult<T>(IList<T> result) {
+            Console.Write("[");
+            Console.Write(string.Join(",", result));
+            Console.Write("]");
         }
 
         static void PrintResult<T>(IList<IList<T>> result) {
@@ -20,7 +32,7 @@ namespace Leetcode {
             var resultString = new StringBuilder();
             var internalList = new List<string>();
 
-            foreach (List<int> r in result) {
+            foreach (List<T> r in result) {
                 var sb = new StringBuilder();
                 sb.Append("[");
                 sb.Append(string.Join(",", r));

@@ -18,7 +18,7 @@ This repository shows all of leetcode problems I'd accomplished. I use C# as my 
 |12|[Integer to Roman](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0012_IntegerToRoman)|46.9%|Medium|C#|
 |13|[Roman to Integer](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0013_RomanToInteger)|48.8%|Easy|C#|
 |14|[Longest Common Prefix](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0014_LongestCommonPrefix)|31.8%|Easy|C#|
-|15|[3Sum](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0015_ThreeSum)|21.8%|Medium|C#|
+|15|[3Sum](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0015_ThreeSum)|21.9%|Medium|C#|
 |16|[3Sum Closest](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0016_ThreeSumClosest)|32.1%|Medium|C#|
 |17|[Letter Combinations of a Phone Number](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0017_LetterCombinationOfPhone)|37.4%|Medium|C#|
 |18|[4Sum](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0018_4Sum)|28.0%|Medium|C#|
@@ -45,8 +45,12 @@ This repository shows all of leetcode problems I'd accomplished. I use C# as my 
 |40|[Combination Sum II](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0040_CombinationSum2)|37.0%|Medium|C#|
 |43|[Multiply Strings](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0043_MultiplyStrings.cs)|28.3%|Medium|C#|
 |46|[Permutations](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0046_Permutations)|48.8%|Medium|C#|
+|47|[Permutations II](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0047_Permutations2)|36.0%|Medium|C#|
 |48|[Rotate Image](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0048_RotateImage)|43.1%|Medium|C#|
+|49|[Group Anagrams](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0049_GroupAnagrams)|40.0%|Medium|C#|
+|50|[Pow(x, n)](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0050_PowX_N)|26.3%|Medium|C#|
 |53|[Maximum Subarray](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0053_MaximumSubarray)|40.8%|Easy|C#|
+|54|[Spiral Matrix](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0054_Spiral Matrix)|27.8%|Medium|C#|
 |58|[Length of Last Word](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0058_LengthOfLastWord)|32.1%|Easy|C#|
 |66|[Plus One](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0066_PlusOne)|39.9%|Easy|C#|
 |67|[Add Binary](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0067_AddBinary)|35.0%|Easy|C#|
@@ -54,12 +58,12 @@ This repository shows all of leetcode problems I'd accomplished. I use C# as my 
 |70|[Climbing Stairs](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0070_ClimbingStairs)|41.7%|Easy|C#|
 |83|[Remove Duplicates from Sorted List](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0083_RemoveDuplicatesFromSortedList)|40.6%|Easy|C#|
 |88|[Merge Sorted Array](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0088_MergeSortedArray)|32.8%|Easy|C#|
-|100|[Same Tree](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0100_SameTree)|48.1%|Easy|C#|
+|100|[Same Tree](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0100_SameTree)|48.2%|Easy|C#|
 |101|[Symmetric Tree](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0101_SymmetricTree)|41.0%|Easy|C#|
 |104|[Maximum Depth of Binary Tree](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0104_MaximumDepthOfBinaryTree)|56.1%|Easy|C#|
 |107|[Binary Tree Level Order Traversal II](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0107_BinaryTreeLevelOrderTraversal2)|43.1%|Easy|C#|
 |108|[Convert Sorted Array to Binary Search Tree](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0108_ConvertSortedArrayToBinarySearchTree)|45.6%|Easy|C#|
-|110|[Balanced Binary Tree](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0110_BalancedBinaryTree)|38.8%|Easy|C#|
+|110|[Balanced Binary Tree](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0110_BalancedBinaryTree)|38.9%|Easy|C#|
 |111|[Minimum Depth of Binary Tree](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0111_MinimumDepthOfBinaryTree)|33.8%|Easy|C#|
 |112|[Path Sum](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0112_PathSum)|35.4%|Easy|C#|
 |118|[Pascal's Triangle](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0118_PascalsTriangle)|41.2%|Easy|C#|
