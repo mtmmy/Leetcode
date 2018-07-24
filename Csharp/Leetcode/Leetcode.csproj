@@ -111,7 +111,9 @@
     <Compile Include="0006_ZigZagCoversion\ZigZagCoversion.cs" />
     <Compile Include="0049_GroupAnagrams\GroupAnagrams.cs" />
     <Compile Include="0050_PowX_N\PowX_N.cs" />
-    <Compile Include="0054_Spiral Matrix\SpiralMatrix.cs" />
+    <Compile Include="0054_SpiralMatrix\SpiralMatrix.cs" />
+    <Compile Include="0060_PermutationSequence\PermutationSequence.cs" />
+    <Compile Include="0061_RotateList\RotateList.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -183,6 +185,7 @@
     <None Include="0168_ExcelSheetColumnTitle\README.md" />
     <None Include="0169_MajorityElement\README.md" />
     <None Include="0171_ExcelSheetColumnNumber\README.md" />
+    <None Include="0054_SpiralMatrix\README.md" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="0067_AddBinary\" />
@@ -254,7 +257,8 @@
     <Folder Include="0006_ZigZagCoversion\" />
     <Folder Include="0049_GroupAnagrams\" />
     <Folder Include="0050_PowX_N\" />
-    <Folder Include="0054_Spiral Matrix\" />
+    <Folder Include="0060_PermutationSequence\" />
+    <Folder Include="0061_RotateList\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>

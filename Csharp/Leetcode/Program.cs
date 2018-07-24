@@ -10,10 +10,9 @@ namespace Leetcode {
         public static void Main(string[] args) {
 
             var toolKit = new ToolKit();
-            var target = new SpiralMatrix();
+            var target = new RotateList();
 
-            var matrix = new int[,] { { 1, 2, 3, 1, 2, 3, 4 }, { 4, 5, 6, 6, 5, 4, 3 }, { 7, 8, 9, 12, 13, 11, 10 } };
-            var result = target.Solution(matrix);
+            var result = target.Solution(toolKit.GenerateListNode(new int[] {1, 2, 3, 4, 5}), 20000001);
             PrintResult(result);
         }
 

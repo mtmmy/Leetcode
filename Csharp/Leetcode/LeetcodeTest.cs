@@ -759,5 +759,21 @@ namespace Leetcode {
 
             Assert.AreEqual(expected, target.Solution(matrix));
         }
+
+        //#60
+        [Test]
+        public void No60_PermutationSequenceTests() {
+            var target = new PermutationSequence();
+            Assert.AreEqual("2314", target.Solution(4, 9));
+        }
+
+        //#61
+        [Test]
+        public void No61_RotateListTests() {
+            var target = new RotateList();
+
+            Assert.AreEqual("3, 4, 5, 1, 2", target.Solution(ToolKit.GenerateListNode(new int[] { 1, 2, 3, 4, 5 }), 3).ToString());
+            Assert.AreEqual("5, 1, 2, 3, 4", target.Solution(ToolKit.GenerateListNode(new int[] { 1, 2, 3, 4, 5 }), 20000001).ToString());
+        }
     }
 }
