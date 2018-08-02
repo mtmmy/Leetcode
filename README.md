@@ -69,7 +69,7 @@ This repository shows all of leetcode problems I'd accomplished. I use C# as my 
 |74|[Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix)|34.5%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0074_SearchA2DMatrix)|
 |75|[Sort Colors](https://leetcode.com/problems/sort-colors)|39.6%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0075_SortColors)|
 |77|[Combinations](https://leetcode.com/problems/combinations)|42.7%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0077_Combinations)|
-|78|[Subsets](https://leetcode.com/problems/subsets)|46.7%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0078_ Subsets)|
+|78|[Subsets](https://leetcode.com/problems/subsets)|46.7%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0078_Subsets)|
 |79|[Word Search](https://leetcode.com/problems/word-search)|28.6%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0079_WordSearch)|
 |80|[Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii)|37.7%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0080_RemoveDuplicatesFromSortedArray2)|
 |81|[Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii)|32.5%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0081_SearchInRotatedSortedArray2)|
