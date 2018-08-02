@@ -114,6 +114,8 @@
     <Compile Include="0054_SpiralMatrix\SpiralMatrix.cs" />
     <Compile Include="0060_PermutationSequence\PermutationSequence.cs" />
     <Compile Include="0061_RotateList\RotateList.cs" />
+    <Compile Include="0082_RemoveDuplicatesFromSortedList2\RemoveDuplicatesFromSortedList2.cs" />
+    <Compile Include="0086_PartitionList\PartitionList.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -259,6 +261,8 @@
     <Folder Include="0050_PowX_N\" />
     <Folder Include="0060_PermutationSequence\" />
     <Folder Include="0061_RotateList\" />
+    <Folder Include="0082_RemoveDuplicatesFromSortedList2\" />
+    <Folder Include="0086_PartitionList\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>

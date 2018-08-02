@@ -775,5 +775,16 @@ namespace Leetcode {
             Assert.AreEqual("3, 4, 5, 1, 2", target.Solution(ToolKit.GenerateListNode(new int[] { 1, 2, 3, 4, 5 }), 3).ToString());
             Assert.AreEqual("5, 1, 2, 3, 4", target.Solution(ToolKit.GenerateListNode(new int[] { 1, 2, 3, 4, 5 }), 20000001).ToString());
         }
+
+        //#82
+        [Test]
+        public void No82_RemoveDuplicatesFromSortedList2Tests() {
+            var target = new RemoveDuplicatesFromSortedList2();
+
+            Assert.AreEqual(null, target.Solution(ToolKit.GenerateListNode(new int[] { 1, 1 })));
+            Assert.AreEqual("2, 3", target.Solution(ToolKit.GenerateListNode(new int[] { 1, 1, 1, 2, 3 })).ToString());
+            Assert.AreEqual("1, 2, 5", target.Solution(ToolKit.GenerateListNode(new int[] { 1, 2, 3, 3, 4, 4, 5 })).ToString());
+            Assert.AreEqual("1, 2, 3, 4", target.Solution(ToolKit.GenerateListNode(new int[] { 1, 2, 3, 4, 5, 5, 5, 5, 5 })).ToString());
+        }
     }
 }

@@ -10,10 +10,9 @@ namespace Leetcode {
         public static void Main(string[] args) {
 
             var toolKit = new ToolKit();
-            var target = new RotateList();
+            var target = new PartitionList();
 
-            var result = target.Solution(toolKit.GenerateListNode(new int[] {1, 2, 3, 4, 5}), 20000001);
-            PrintResult(result);
+            PrintResult(target.Solution(toolKit.GenerateListNode(new int[] {1, 4, 3, 2, 5, 2}), 3));
         }
 
         static void PrintResult<T>(T result) {
