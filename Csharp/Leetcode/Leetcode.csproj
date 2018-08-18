@@ -116,6 +116,8 @@
     <Compile Include="0061_RotateList\RotateList.cs" />
     <Compile Include="0082_RemoveDuplicatesFromSortedList2\RemoveDuplicatesFromSortedList2.cs" />
     <Compile Include="0086_PartitionList\PartitionList.cs" />
+    <Compile Include="0092_ReverseLinkedList2\ReverseBetween.cs" />
+    <Compile Include="0094_BinaryTreeInorderTraversal\InorderTraversal.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -263,6 +265,8 @@
     <Folder Include="0061_RotateList\" />
     <Folder Include="0082_RemoveDuplicatesFromSortedList2\" />
     <Folder Include="0086_PartitionList\" />
+    <Folder Include="0092_ReverseLinkedList2\" />
+    <Folder Include="0094_BinaryTreeInorderTraversal\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>

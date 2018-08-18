@@ -10,13 +10,21 @@ namespace Leetcode {
         public static void Main(string[] args) {
 
             var toolKit = new ToolKit();
-            var target = new PartitionList();
+            var target = new InorderTraversal();
 
-            PrintResult(target.Solution(toolKit.GenerateListNode(new int[] {1, 4, 3, 2, 5, 2}), 3));
+            PrintResult(target.Solution(toolKit.GenerateTreeNode(new List<string>() {"1", "null", "2", "3"})));
+            PrintResult(target.Solution(toolKit.GenerateTreeNode(new List<string>() { "1", "2", "3" })));
+            PrintResult(target.Solution(toolKit.GenerateTreeNode(new List<string>() { "1", "2", "null", "3" })));
+            PrintResult(target.Solution(toolKit.GenerateTreeNode(new List<string>() { "1", "2", "3", "4", "5", "null", "null", "null", "null", "6", "7", "null", "null", "8", "9" })));
+
         }
 
         static void PrintResult<T>(T result) {
-            Console.WriteLine(result);
+            if (result == null) {
+                Console.WriteLine("null");
+            } else {
+                Console.WriteLine(result);
+            }
         }
 
         static void PrintResult<T>(IList<T> result) {
