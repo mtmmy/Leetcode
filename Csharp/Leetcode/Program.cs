@@ -30,7 +30,7 @@ namespace Leetcode {
         static void PrintResult<T>(IList<T> result) {
             Console.Write("[");
             Console.Write(string.Join(",", result));
-            Console.Write("]");
+            Console.Write("]\n");
         }
 
         static void PrintResult<T>(IList<IList<T>> result) {

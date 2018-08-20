@@ -787,6 +787,14 @@ namespace Leetcode {
             Assert.AreEqual("1, 2, 3, 4", target.Solution(ToolKit.GenerateListNode(new int[] { 1, 2, 3, 4, 5, 5, 5, 5, 5 })).ToString());
         }
 
+        //#86
+        [Test]
+        public void No86_PartitionListTests() {
+            var target = new PartitionList();
+
+            Assert.AreEqual("1, 2, 2, 4, 3, 5", target.Solution(ToolKit.GenerateListNode(new int[] { 1, 4, 3, 2, 5, 2 }), 3).ToString());
+        }
+
         //#92
         [Test]
         public void No92_ReverseLinkedList2Tests() {
@@ -796,6 +804,15 @@ namespace Leetcode {
             Assert.AreEqual(null, target.Solution(ToolKit.GenerateListNode(new int[] { 1, 2, 3, 4, 5 }), 0, 4));
             Assert.AreEqual(null, target.Solution(ToolKit.GenerateListNode(new int[] { 1, 2, 3, 4, 5 }), 1, 6));
             Assert.AreEqual(null, target.Solution(ToolKit.GenerateListNode(new int[0]), 1, 4));
+        }
+
+        //#94
+        [Test]
+        public void No94_BinaryTreeInorderTraversalTests() {
+            var target = new InorderTraversal();
+            var expected = new List<int>(new int[] { 4, 2, 6, 5, 8, 7, 9, 1, 3 });
+
+            CollectionAssert.AreEqual(expected, target.Solution(ToolKit.GenerateTreeNode(new List<string>() { "1", "2", "3", "4", "5", "null", "null", "null", "null", "6", "7", "null", "null", "8", "9" })));
         }
     }
 }
