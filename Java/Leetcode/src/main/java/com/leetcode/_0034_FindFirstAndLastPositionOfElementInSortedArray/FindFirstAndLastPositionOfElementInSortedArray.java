@@ -1,7 +1,7 @@
 package com.leetcode._0034_FindFirstAndLastPositionOfElementInSortedArray;
 
-public class SearchForARange {
-    public int[] searchRange(int[] nums, int target) {
+public class FindFirstAndLastPositionOfElementInSortedArray {
+    public int[] solution(int[] nums, int target) {
      
         int[] result = new int[]{-1, -1};
         if (nums.length == 0) {

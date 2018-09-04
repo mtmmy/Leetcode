@@ -17,7 +17,7 @@ class Reader4 {
     }
 }
 
-public class Solution extends Reader4 {
+public class Read4MultipleTimes extends Reader4 {
     /**
      * @param buf Destination buffer
      * @param n   Maximum number of characters to read
@@ -26,7 +26,7 @@ public class Solution extends Reader4 {
     private int buffPtr = 0;
     private int buffCnt = 0;
     private char[] buff = new char[4];
-    public int read(char[] buf, int n) {
+    public int solution(char[] buf, int n) {
         int ptr = 0;
         while (ptr < n) {
             if (buffPtr == 0) {

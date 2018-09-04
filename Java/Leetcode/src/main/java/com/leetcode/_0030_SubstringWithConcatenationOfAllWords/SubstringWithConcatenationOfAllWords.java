@@ -15,7 +15,7 @@ import java.util.Map;
  * @author Hanmin Yang
  */
 public class SubstringWithConcatenationOfAllWords {
-    public List<Integer> findSubstring(String s, String[] words) {
+    public List<Integer> solution(String s, String[] words) {
         
         List<Integer> result = new ArrayList<>();
         if (words.length == 0 || s.isEmpty()) {

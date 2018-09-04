@@ -10,7 +10,7 @@ package com.leetcode._0035_SearchInsertPosition;
  * @author Hanmin Yang
  */
 public class SearchInsertPosition {
-    public int SearchInsert(int[] nums, int target) {
+    public int solution(int[] nums, int target) {
         
         for (int i=0; i<nums.length; i++) {
             if (nums[i] >= target) {

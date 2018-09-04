@@ -6,7 +6,7 @@ import java.util.List;
 
 public class LongestValidParentheses {
 
-    public int longestValidParentheses(String s) {
+    public int solution(String s) {
 
         int longest = 0;
         List<Integer> dp = new ArrayList<>(Collections.nCopies(s.length() + 1, 0));
