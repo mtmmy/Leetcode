@@ -1,5 +1,5 @@
 import unittest
-
+from math import log2
 class Interval:
     def __init__(self, s=0, e=0):
         self.start = s
@@ -24,4 +24,3 @@ class Solution:
                 start = min(start, interval.start)
                 end = max(end, interval.end)
         return left + [Interval(start, end)] + right
-        
