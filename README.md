@@ -16,7 +16,7 @@ This repository shows all of leetcode problems I'd accomplished. I use C# as my 
 |10|[Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching)|24.4%|Hard|[C#](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0010_RegularExpressionMatching), [Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0010_RegularExpressionMatching)|
 |11|[Container With Most Water](https://leetcode.com/problems/container-with-most-water)|38.6%|Medium|[C#](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0011_ContainerWIthMostWater)|
 |12|[Integer to Roman](https://leetcode.com/problems/integer-to-roman)|47.6%|Medium|[C#](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0012_IntegerToRoman)|
-|13|[Roman to Integer](https://leetcode.com/problems/roman-to-integer)|49.4%|Easy|[C#](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0013_RomanToInteger)|
+|13|[Roman to Integer](https://leetcode.com/problems/roman-to-integer)|49.5%|Easy|[C#](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0013_RomanToInteger)|
 |14|[Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix)|31.9%|Easy|[C#](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0014_LongestCommonPrefix)|
 |15|[3Sum](https://leetcode.com/problems/3sum)|22.1%|Medium|[C#](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0015_ThreeSum), [Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0015_3Sum)|
 |16|[3Sum Closest](https://leetcode.com/problems/3sum-closest)|32.6%|Medium|[C#](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0016_ThreeSumClosest)|
@@ -43,32 +43,32 @@ This repository shows all of leetcode problems I'd accomplished. I use C# as my 
 |38|[Count and Say](https://leetcode.com/problems/count-and-say)|37.8%|Easy|[C#](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0038_CountAndSay)|
 |39|[Combination Sum](https://leetcode.com/problems/combination-sum)|43.5%|Medium|[C#](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0039_CombinationSum)|
 |40|[Combination Sum II](https://leetcode.com/problems/combination-sum-ii)|37.7%|Medium|[C#](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0040_CombinationSum2)|
-|41|[First Missing Positive](https://leetcode.com/problems/first-missing-positive)|26.7%|Hard|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0041_FirstMissingPositive)|
+|41|[First Missing Positive](https://leetcode.com/problems/first-missing-positive)|26.8%|Hard|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0041_FirstMissingPositive)|
 |42|[Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water)|39.1%|Hard|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0042_TrappingRainWater)|
 |43|[Multiply Strings](https://leetcode.com/problems/multiply-strings)|28.7%|Medium|[C#](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0043_MultiplyStrings.cs)|
 |44|[Wildcard Matching](https://leetcode.com/problems/wildcard-matching)|21.6%|Hard|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0044_WildcardMatching)|
 |45|[Jump Game II](https://leetcode.com/problems/jump-game-ii)|26.3%|Hard|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0045_JumpGame2)|
-|46|[Permutations](https://leetcode.com/problems/permutations)|49.8%|Medium|[C#](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0046_Permutations)|
+|46|[Permutations](https://leetcode.com/problems/permutations)|49.9%|Medium|[C#](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0046_Permutations)|
 |47|[Permutations II](https://leetcode.com/problems/permutations-ii)|36.8%|Medium|[C#](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0047_Permutations2)|
 |48|[Rotate Image](https://leetcode.com/problems/rotate-image)|44.0%|Medium|[C#](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0048_RotateImage)|
-|49|[Group Anagrams](https://leetcode.com/problems/group-anagrams)|41.1%|Medium|[C#](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0049_GroupAnagrams)|
-|50|[Pow(x, n)](https://leetcode.com/problems/powx-n)|26.5%|Medium|[C#](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0050_PowX_N)|
+|49|[Group Anagrams](https://leetcode.com/problems/group-anagrams)|41.2%|Medium|[C#](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0049_GroupAnagrams)|
+|50|[Pow(x, n)](https://leetcode.com/problems/powx-n)|26.6%|Medium|[C#](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0050_PowX_N)|
 |53|[Maximum Subarray](https://leetcode.com/problems/maximum-subarray)|41.2%|Easy|[C#](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0053_MaximumSubarray)|
 |54|[Spiral Matrix](https://leetcode.com/problems/spiral-matrix)|28.2%|Medium|[C#](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0054_SpiralMatrix)|
 |55|[Jump Game](https://leetcode.com/problems/jump-game)|30.2%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0055_JumpGame)|
 |56|[Merge Intervals](https://leetcode.com/problems/merge-intervals)|33.0%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0056_MergeIntervals)|
 |57|[Insert Interval](https://leetcode.com/problems/insert-interval)|29.7%|Hard|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0057_InsertInterval)|
 |58|[Length of Last Word](https://leetcode.com/problems/length-of-last-word)|32.1%|Easy|[C#](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0058_LengthOfLastWord)|
-|59|[Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii)|42.9%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0059_SpiralMatrix2)|
+|59|[Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii)|43.0%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0059_SpiralMatrix2)|
 |60|[Permutation Sequence](https://leetcode.com/problems/permutation-sequence)|30.6%|Medium|[C#](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0060_PermutationSequence)|
-|61|[Rotate List](https://leetcode.com/problems/rotate-list)|25.3%|Medium|[C#](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0061_RotateList)|
+|61|[Rotate List](https://leetcode.com/problems/rotate-list)|25.4%|Medium|[C#](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0061_RotateList)|
 |62|[Unique Paths](https://leetcode.com/problems/unique-paths)|44.3%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0062_UniquePaths)|
 |63|[Unique Paths II](https://leetcode.com/problems/unique-paths-ii)|32.6%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0063_UniquePaths2)|
 |64|[Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum)|42.8%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0064_MinimumPathSum)|
 |65|[Valid Number](https://leetcode.com/problems/valid-number)|13.1%|Hard|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0065_ValidNumber)|
 |66|[Plus One](https://leetcode.com/problems/plus-one)|40.0%|Easy|[C#](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0066_PlusOne)|
 |67|[Add Binary](https://leetcode.com/problems/add-binary)|35.7%|Easy|[C#](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0067_AddBinary)|
-|68|[Text Justification](https://leetcode.com/problems/text-justification)|20.9%|Hard|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0068_TextJustification)|
+|68|[Text Justification](https://leetcode.com/problems/text-justification)|21.0%|Hard|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0068_TextJustification)|
 |69|[Sqrt(x)](https://leetcode.com/problems/sqrtx)|29.5%|Easy|[C#](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0069_SqrtOfX)|
 |70|[Climbing Stairs](https://leetcode.com/problems/climbing-stairs)|42.0%|Easy|[C#](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0070_ClimbingStairs)|
 |71|[Simplify Path](https://leetcode.com/problems/simplify-path)|27.0%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0071_SimplifyPath)|
@@ -77,8 +77,8 @@ This repository shows all of leetcode problems I'd accomplished. I use C# as my 
 |74|[Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix)|34.5%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0074_SearchA2DMatrix)|
 |75|[Sort Colors](https://leetcode.com/problems/sort-colors)|39.9%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0075_SortColors)|
 |76|[Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring)|28.1%|Hard|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0076_MinimumWindowSubstring)|
-|77|[Combinations](https://leetcode.com/problems/combinations)|43.3%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0077_Combinations)|
-|78|[Subsets](https://leetcode.com/problems/subsets)|47.5%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0078_Subsets)|
+|77|[Combinations](https://leetcode.com/problems/combinations)|43.4%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0077_Combinations)|
+|78|[Subsets](https://leetcode.com/problems/subsets)|47.6%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0078_Subsets)|
 |79|[Word Search](https://leetcode.com/problems/word-search)|28.9%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0079_WordSearch)|
 |80|[Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii)|38.1%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0080_RemoveDuplicatesFromSortedArray2)|
 |81|[Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii)|32.5%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0081_SearchInRotatedSortedArray2)|
@@ -91,7 +91,7 @@ This repository shows all of leetcode problems I'd accomplished. I use C# as my 
 |90|[Subsets II](https://leetcode.com/problems/subsets-ii)|39.7%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0090_Subsets2)|
 |91|[Decode Ways](https://leetcode.com/problems/decode-ways)|20.9%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0091_DecodeWays)|
 |92|[Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii)|32.5%|Medium|[C#](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0092_ReverseLinkedList2)|
-|93|[Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses)|29.3%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0093_RestoreIPAddresses)|
+|93|[Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses)|29.4%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0093_RestoreIPAddresses)|
 |94|[Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal)|52.1%|Medium|[C#](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0094_BinaryTreeInorderTraversal)|
 |98|[Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree)|24.4%|Medium|[Java](https://github.com/mtmmy/Leetcode/tree/master/Java/Leetcode/src/main/java/com/leetcode/_0098_ValidateBinarySearchTree)|
 |100|[Same Tree](https://leetcode.com/problems/same-tree)|48.4%|Easy|[C#](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0100_SameTree)|
@@ -130,7 +130,7 @@ This repository shows all of leetcode problems I'd accomplished. I use C# as my 
 |151|[Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string)|15.7%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0151_ReverseWordsInAString)|
 |152|[Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray)|27.4%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0152_MaximumProductSubarray)|
 |153|[Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array)|41.6%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0153_FindMinimuminRotatedSortedArray)|
-|155|[Min Stack](https://leetcode.com/problems/min-stack)|33.0%|Easy|[C#](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0155_MinStack)|
+|155|[Min Stack](https://leetcode.com/problems/min-stack)|33.1%|Easy|[C#](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0155_MinStack)|
 |158|[Read N Characters Given Read4 II - Call multiple times](https://leetcode.com/problems/read-n-characters-given-read4-ii-call-multiple-times)|24.3%|Hard|[Java](https://github.com/mtmmy/Leetcode/tree/master/Java/Leetcode/src/main/java/com/leetcode/_0158_ReadNCharactersGivenRead4_2CallMultipleTimes)|
 |159|[Longest Substring with At Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters)|43.9%|Hard|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0159_LongestSubstringWithAtMostTwoDistinctCharacters)|
 |160|[Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists)|30.8%|Easy|[C#](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0160_IntersectionOfTwoLinkedLists)|
@@ -146,10 +146,10 @@ This repository shows all of leetcode problems I'd accomplished. I use C# as my 
 |200|[Number of Islands](https://leetcode.com/problems/number-of-islands)|37.9%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0200_NumberOfIslands)|
 |203|[Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements)|34.2%|Easy|[Java](https://github.com/mtmmy/Leetcode/tree/master/Java/Leetcode/src/main/java/com/leetcode/_0203_RemoveLinkedListElements)|
 |204|[Count Primes](https://leetcode.com/problems/count-primes)|27.1%|Easy|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0204_CountPrimes)|
-|205|[Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings)|35.4%|Easy|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0205_IsomorphicStrings)|
-|206|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list)|49.2%|Easy|[Java](https://github.com/mtmmy/Leetcode/tree/master/Java/Leetcode/src/main/java/com/leetcode/_0206_ReverseLinkedList)|
+|205|[Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings)|35.5%|Easy|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0205_IsomorphicStrings)|
+|206|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list)|49.3%|Easy|[Java](https://github.com/mtmmy/Leetcode/tree/master/Java/Leetcode/src/main/java/com/leetcode/_0206_ReverseLinkedList)|
 |207|[Course Schedule](https://leetcode.com/problems/course-schedule)|34.8%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0207_CourseSchedule)|
-|208|[Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree)|33.4%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0208_ImplementTrie(Prefix Tree))|
+|208|[Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree)|33.4%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0208_ImplementTriePrefixTree)|
 |215|[Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array)|42.7%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0215_KthLargestElementInAnArray)|
 |224|[Basic Calculator](https://leetcode.com/problems/basic-calculator)|29.8%|Hard|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0224_BasicCalculator)|
 |227|[Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii)|31.0%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0227_BasicCalculator2)|
@@ -158,14 +158,14 @@ This repository shows all of leetcode problems I'd accomplished. I use C# as my 
 |237|[Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list)|49.1%|Easy|[Java](https://github.com/mtmmy/Leetcode/tree/master/Java/Leetcode/src/main/java/com/leetcode/_0237_DeleteNodeInALinkedList)|
 |238|[Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self)|51.6%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0238_ProductOfArrayExceptSelf)|
 |239|[Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum)|35.3%|Hard|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0239_SlidingWindowMaximum)|
-|240|[Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii)|39.4%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0240_SearchA2DMatrix2)|
+|240|[Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii)|39.3%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0240_SearchA2DMatrix2)|
 |242|[Valid Anagram](https://leetcode.com/problems/valid-anagram)|48.8%|Easy|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0242_ValidAnagram)|
 |247|[Strobogrammatic Number II](https://leetcode.com/problems/strobogrammatic-number-ii)|41.8%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0247_StrobogrammaticNumber2)|
 |253|[Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii)|40.1%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0253_MeetingRooms2)|
 |257|[Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths)|43.0%|Easy|[Java](https://github.com/mtmmy/Leetcode/tree/master/Java/Leetcode/src/main/java/com/leetcode/_0257_BinaryTreePaths)|
 |269|[Alien Dictionary](https://leetcode.com/problems/alien-dictionary)|27.5%|Hard|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0269_AlienDictionary)|
 |273|[Integer to English Words](https://leetcode.com/problems/integer-to-english-words)|23.1%|Hard|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0273_IntegerToEnglishWords)|
-|277|[Find the Celebrity](https://leetcode.com/problems/find-the-celebrity)|35.2%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0277_FindTheCelebrity)|
+|277|[Find the Celebrity](https://leetcode.com/problems/find-the-celebrity)|35.3%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0277_FindTheCelebrity)|
 |283|[Move Zeroes](https://leetcode.com/problems/move-zeroes)|52.3%|Easy|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0283_MoveZeroes)|
 |287|[Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number)|45.9%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0287_FindTheDuplicateNumber)|
 |289|[Game of Life](https://leetcode.com/problems/game-of-life)|39.4%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0289_GameOfLife)|
@@ -181,7 +181,7 @@ This repository shows all of leetcode problems I'd accomplished. I use C# as my 
 |347|[Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements)|50.9%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0347_TopKFrequentElements)|
 |348|[Design Tic-Tac-Toe](https://leetcode.com/problems/design-tic-tac-toe)|46.8%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0348_DesignTicTacToe)|
 |349|[Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays)|49.6%|Easy|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0349_IntersectionOfTwoArrays)|
-|364|[Nested List Weight Sum II](https://leetcode.com/problems/nested-list-weight-sum-ii)|54.5%|Medium|[Java](https://github.com/mtmmy/Leetcode/tree/master/Java/Leetcode/src/main/java/com/leetcode/_0364_NestedListWeightSum2)|
+|364|[Nested List Weight Sum II](https://leetcode.com/problems/nested-list-weight-sum-ii)|54.6%|Medium|[Java](https://github.com/mtmmy/Leetcode/tree/master/Java/Leetcode/src/main/java/com/leetcode/_0364_NestedListWeightSum2)|
 |380|[Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1)|40.5%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0380_InsertDeleteGetRandomO(1))|
 |387|[First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string)|47.6%|Easy|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0387_FirstUniqueCharacterInAString)|
 |393|[UTF-8 Validation](https://leetcode.com/problems/utf-8-validation)|34.9%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0393_UTF-8Validation)|
@@ -196,9 +196,10 @@ This repository shows all of leetcode problems I'd accomplished. I use C# as my 
 |438|[Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string)|34.3%|Easy|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0438_FindAllAnagramsInAString)|
 |442|[Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array)|58.1%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0442_FindAllDuplicatesInAnArray)|
 |443|[String Compression](https://leetcode.com/problems/string-compression)|35.8%|Easy|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0443_StringCompression)|
+|445|[Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii)|47.3%|Medium|[Java](https://github.com/mtmmy/Leetcode/tree/master/Java/Leetcode/src/main/java/com/leetcode/_0445_AddTwoNumbers2)|
 |457|[Circular Array Loop](https://leetcode.com/problems/circular-array-loop)|24.1%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0457_CircularArrayLoop)|
 |461|[Hamming Distance](https://leetcode.com/problems/hamming-distance)|69.5%|Easy|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0461_HammingDistance)|
-|482|[License Key Formatting](https://leetcode.com/problems/license-key-formatting)|39.0%|Easy|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0482_LicenseKeyFormatting)|
+|482|[License Key Formatting](https://leetcode.com/problems/license-key-formatting)|39.1%|Easy|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0482_LicenseKeyFormatting)|
 |535|[Encode and Decode TinyURL](https://leetcode.com/problems/encode-and-decode-tinyurl)|74.2%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0535_EncodeAndDecodeTinyURL)|
 |543|[Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree)|45.2%|Easy|[Java](https://github.com/mtmmy/Leetcode/tree/master/Java/Leetcode/src/main/java/com/leetcode/_0543_DiameterOfBinaryTree)|
 |547|[Friend Circles](https://leetcode.com/problems/friend-circles)|50.0%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0547_FriendCircles)|
@@ -211,21 +212,23 @@ This repository shows all of leetcode problems I'd accomplished. I use C# as my 
 |621|[Task Scheduler](https://leetcode.com/problems/task-scheduler)|42.7%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0621_TaskScheduler)|
 |635|[Design Log Storage System](https://leetcode.com/problems/design-log-storage-system)|49.8%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0635_DesignLogStorageSystem)|
 |636|[Exclusive Time of Functions](https://leetcode.com/problems/exclusive-time-of-functions)|45.3%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0636_ExclusiveTimeOfFunctions)|
+|642|[Design Search Autocomplete System](https://leetcode.com/problems/design-search-autocomplete-system)|31.6%|Hard|[Java](https://github.com/mtmmy/Leetcode/tree/master/Java/Leetcode/src/main/java/com/leetcode/_0642_DesignSearchAutocompleteSystem)|
 |680|[Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii)|32.6%|Easy|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0680_ValidPalindrome2)|
 |681|[Next Closest Time](https://leetcode.com/problems/next-closest-time)|41.4%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0681_NextClosestTime)|
 |683|[K Empty Slots](https://leetcode.com/problems/k-empty-slots)|33.5%|Hard|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0683_KEmptySlots)|
 |686|[Repeated String Match](https://leetcode.com/problems/repeated-string-match)|31.5%|Easy|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0686_RepeatedStringMatch)|
 |689|[Maximum Sum of 3 Non-Overlapping Subarrays](https://leetcode.com/problems/maximum-sum-of-3-non-overlapping-subarrays)|42.0%|Hard|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0689_MaximumSumOf3NonOverlappingSubarrays)|
 |692|[Top K Frequent Words](https://leetcode.com/problems/top-k-frequent-words)|42.3%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0692_TopKFrequentWords)|
-|695|[Max Area of Island](https://leetcode.com/problems/max-area-of-island)|53.0%|Easy|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0695_MaxAreaOfIsland)|
-|716|[Max Stack](https://leetcode.com/problems/max-stack)|37.2%|Hard|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0716_MaxStack)|
+|695|[Max Area of Island](https://leetcode.com/problems/max-area-of-island)|53.1%|Easy|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0695_MaxAreaOfIsland)|
+|716|[Max Stack](https://leetcode.com/problems/max-stack)|37.3%|Hard|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0716_MaxStack)|
 |721|[Accounts Merge](https://leetcode.com/problems/accounts-merge)|35.4%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0721_AccountsMerge)|
 |722|[Remove Comments](https://leetcode.com/problems/remove-comments)|28.9%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0722_RemoveComments)|
 |735|[Asteroid Collision](https://leetcode.com/problems/asteroid-collision)|36.9%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0735_AsteroidCollision)|
 |739|[Daily Temperatures](https://leetcode.com/problems/daily-temperatures)|55.1%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0739_DailyTemperatures)|
-|740|[Delete and Earn](https://leetcode.com/problems/delete-and-earn)|44.2%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0740_DeleteAndEarn)|
+|740|[Delete and Earn](https://leetcode.com/problems/delete-and-earn)|44.3%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0740_DeleteAndEarn)|
+|759|[Employee Free Time](https://leetcode.com/problems/employee-free-time)|54.0%|Hard|[Java](https://github.com/mtmmy/Leetcode/tree/master/Java/Leetcode/src/main/java/com/leetcode/_0759_EmployeeFreeTime)|
 |771|[Jewels and Stones](https://leetcode.com/problems/jewels-and-stones)|81.7%|Easy|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0771_JewelsAndStones)|
 |804|[Unique Morse Code Words](https://leetcode.com/problems/unique-morse-code-words)|71.7%|Easy||
-|819|[Most Common Word](https://leetcode.com/problems/most-common-word)|46.7%|Easy|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0819_MostCommonWord)|
+|819|[Most Common Word](https://leetcode.com/problems/most-common-word)|46.3%|Easy|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0819_MostCommonWord)|
 |822|[Card Flipping Game](https://leetcode.com/problems/card-flipping-game)|37.7%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0822_CardFlippingGame)|
-|843|[Guess the Word](https://leetcode.com/problems/guess-the-word)|35.9%|Hard|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0843_GuessTheWord)|
+|843|[Guess the Word](https://leetcode.com/problems/guess-the-word)|35.8%|Hard|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0843_GuessTheWord)|
