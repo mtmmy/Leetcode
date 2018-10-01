@@ -18,4 +18,4 @@ return [0, 1].
  
 
 ## Solution
-
+The solution is straightforward. We just go through every number in the list. And when we visit a specific number, we calculate the difference between the number and the target number. If this number exists in the dictionary, we retrieve its index and return the answer Immediately. Otherwise, we store the current number to the dictionary with value as key and index as value. If we can't find such a pair, we will go through the whole list and return null. Since the ContainsKey() and accessing by key in the dictionary are both O(1), the time complexity of the solution is O(1). The space complexity is O(n) because we need to keep the value-index pair for each number in the list.

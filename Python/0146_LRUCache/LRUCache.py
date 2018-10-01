@@ -7,9 +7,7 @@ class LRUCache:
         :type capacity: int
         """
         self.capacity = capacity
-        self.cache = collections.OrderedDict()
-        self.used = 0
-        
+        self.cache = collections.OrderedDict()        
 
     def get(self, key):        
         """
@@ -34,14 +32,18 @@ class LRUCache:
             self.cache.move_to_end(key)
             self.cache[key] = value
         else:
-            if self.used < self.capacity:
-                self.used += 1
-            else:
+            if len(self.cache) >= self.capacity:
                 self.cache.popitem(last = False)
             self.cache[key] = value
 
 if __name__ == "__main__":
-    target = LRUCache(3)
+    target = LRUCache(2)
+    target.put(1,1)
+    target.put(2,2)
     print(target.get(1))
-    target.put(1, 1)
+    target.put(3,3)
+    print(target.get(2))
+    target.put(4,4)
     print(target.get(1))
+    print(target.get(3))
+    print(target.get(4))

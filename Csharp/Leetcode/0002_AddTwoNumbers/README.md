@@ -17,4 +17,4 @@ Explanation: 342 + 465 = 807.
 
 
 ## Solution
-
+The soltion is just like the vertical addition. We start from the heads of two lists and sum them up and add the carry if there is. One thing we need to be care of is the condition of the while loop. Since the length of two linked list may be different, we have to keep looping if one of them is not null or we have a carry. Once the loop has finished, we get the answer of the porbplem. The time complexity is O(M+N).

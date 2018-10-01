@@ -30,3 +30,10 @@ cache.get(4);       // returns 4
 
 ## Solution
 
+When the cache reaches its capacity, we have to remove the one which is least recently used item. In the solution, we use ordered dictionary which helps us to keep the order of entries.
+
+For get function, when a key has been accessed, we move it to the end of the dictionary. The purpose of this movement is that we can keep the least recently used item at the top of the dictionary so that we can remove it easily.
+
+For put function, if key already exists, we update its value and move it to the end. Otherwise, we need to check the capacity. If there is still room in the cache, we simply add the data. Otherwise, we pop the top item of the dictionary which is our least recently used item and put the new one.
+
+The accessing time of the dictionary is O(1). Hence the operation of get and put are both O(1).

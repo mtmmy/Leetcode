@@ -32,18 +32,18 @@ namespace Leetcode.Solutions {
                 return Math.Min(A[0], B[0]);
             }
 
-            var pa = Math.Min(k / 2, m);
-            var pb = k - pa;
-            if (A[pa - 1] < B[pb - 1]) {
-                int[] newA = SubArray(A, pa, A.Length - pa);
-                return FindKth(newA, m - pa, B, n, k - pa);
+            var idxA = Math.Min(k / 2, m);
+            var idxB = k - idxA;
+            if (A[idxA - 1] < B[idxB - 1]) {
+                int[] newA = SubArray(A, idxA, A.Length - idxA);
+                return FindKth(newA, m - idxA, B, n, k - idxA);
             }
 
-            if (A[pa - 1] > B[pb - 1]) {
-                int[] newB = SubArray(B, pb, B.Length - pb);
-                return FindKth(A, m, newB, n - pb, k - pb);
+            if (A[idxA - 1] > B[idxB - 1]) {
+                int[] newB = SubArray(B, idxB, B.Length - idxB);
+                return FindKth(A, m, newB, n - idxB, k - idxB);
             }
-            return A[pa - 1];
+            return A[idxA - 1];
         }
 
         public int[] SubArray(int[] data, int index, int length) {

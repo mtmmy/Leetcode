@@ -1,6 +1,6 @@
 # Leetcode Solutions
 
-This repository shows all of leetcode problems I'd accomplished. I use C# as my primary language to solve problems because I want to get familiar with it by utilizing it more but sometimes I use Java as well.
+This repository shows all of leetcode problems I'd accomplished. I use Python as my primary language to solve problems. I want to get familiar with it and the best way is to keep using it. Sometimes I use C# for the same reason but I use it less recently. Java is one of my most familiar language. In case I loose that sense of Java, I solve problems in Java ocassionally.
 
 | # | Title | Acceptance | Difficulty | Language | 
 |:---:|:---|:---:|:---:|:---:|
