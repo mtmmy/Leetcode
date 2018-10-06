@@ -15,8 +15,8 @@ First, we create a copy node for each node and point it from the original node l
 ```
 A -> B -> C -> D
 |    |    |    |
-|	 null   |    +--> A 
-|		      |
+|   null  |    +--> A 
+|         |
 +--> C    +--> B
 
 to
