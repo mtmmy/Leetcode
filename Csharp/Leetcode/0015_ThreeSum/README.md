@@ -22,3 +22,10 @@ A solution set is:
 
 ## Solution
 
+First, we can consider this as an extended problem from [Two Sum](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0001_TwoSum). The solution will be as following:  
+
+1. Sort the list  
+2. Pick a current number in ascending order  
+3. Finding the two-sum result from numbers greater than the current number in the list with the target number of two-sum is the negative current number.  
+
+Sorting helps us skipping duplicates easily and making searching for two-sum results easier. The time complexity is O(n^2) since the time complexity of two-sum in a sorted array is O(n) and we have a size of n list.

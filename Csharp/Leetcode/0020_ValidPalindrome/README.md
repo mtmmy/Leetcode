@@ -45,3 +45,4 @@ Output: true
 
 ## Solution
 
+We can use stack to solve this problem. When we read left parentheses, we just push it into the stack. If we read right parentheses, we need to check if it's valid. If we can't find the corresponding left parentheses at the top of the stack, then it's not valid. Otherwise, it's valid and we keep reading new parentheses.

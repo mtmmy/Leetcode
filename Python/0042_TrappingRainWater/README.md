@@ -17,3 +17,23 @@ Output: 6
 
 ## Solution
 
+There are two way to solve this problem.
+
+First, we can use the stack.
+
+We iterate the list and push the index of the current number into the stack if the stack is empty or the current number is less or equal to the top of the stack. And when the current number is greater than the number corresponding to the indxe at the top of the stack, there may be a trap.  
+
+We pop the index from the stack which is the bottom of the puddle. The index of two ends of the puddle are the current index and the number at the top of the stack. And we choose the smaller one from them which is the top surface of the puddle; the width is the distance of two ends. And we can get the area of the puddle by height and width.
+
+Time complexity of this solution is O(n).
+
+_________
+Secondly, we can solve it by two pointers.
+
+Initially we set pointers at head(left) and tail(right) of the array and keep their values which are previous heights (heightL and heightR). 
+
+If heightL is smaller than heightR, we move left to right with one and compare the current hight of left (height[left]) to the previous height(heightL). If the current height is smaller, it means it must be abble to form a puddle with height of heightL - height[left] because heightL is less than heightR and then we add this height to the grand total of water. If new height isn't less than old height, we simply update old height by new height. 
+
+On the contrary if heightL isn't less than heightR, we do the simliar thing. Once left go over right, we calculate all water.
+
+Time complexity of this solution is O(n) as well.

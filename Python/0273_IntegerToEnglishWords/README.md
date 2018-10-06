@@ -2,7 +2,7 @@
 
 ## Description
 
-Convert a non-negative integer to its english words representation. Given input is guaranteed to be less than 231 - 1.
+Convert a non-negative integer to its english words representation. Given input is guaranteed to be less than 2^{31} - 1.
 
 Example 1:
 
@@ -34,3 +34,4 @@ Output: "One Billion Two Hundred Thirty Four Million Five Hundred Sixty Seven Th
 
 ## Solution
 
+This is a tedious problem. The key is taking care details. We use a recursive function to get the number of each digit and its decimal units. Nothin special.

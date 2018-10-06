@@ -20,8 +20,6 @@ class LRUCache:
         self.cache.move_to_end(key)
         return self.cache[key]
             
-        
-
     def put(self, key, value):
         """
         :type key: int

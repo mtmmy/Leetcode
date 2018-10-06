@@ -22,3 +22,5 @@ A solution set is:
 
 ## Solution
 
+Same as [solution.](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0015_ThreeSum)
+

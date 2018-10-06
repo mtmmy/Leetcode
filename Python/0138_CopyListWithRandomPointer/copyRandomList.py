@@ -32,10 +32,11 @@ class Solution(object):
         result = curNode.next
         while copyNode.next is not None:
             curNode.next = curNode.next.next
-            curNode = curNode.next
+            curNode = curNode.next            
             
             copyNode.next = copyNode.next.next
             copyNode = copyNode.next
+
         curNode.next = curNode.next.next
         
         return result

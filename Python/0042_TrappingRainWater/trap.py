@@ -21,26 +21,25 @@ class Solution:
         # return water
 
         water = 0
-        if height is None or len(height) == 0:
+        if not height:
             return 0
 
-        i, j = 0, len(height) - 1
-        heightL, heightR = height[i], height[j]
+        left, right = 0, len(height) - 1
+        heightL, heightR = height[left], height[right]
 
-        while i < j:
+        while left < right:
             if heightL < heightR:
-                i += 1
-                if height[i] < heightL:
-                    water += heightL - height[i]
+                left += 1
+                if height[left] < heightL:
+                    water += heightL - height[left]
                 else:
-                    heightL = height[i]
+                    heightL = height[left]
             else:
-                j -= 1
-                if height[j] < heightR:
-                    water += heightR - height[j]
+                right -= 1
+                if height[right] < heightR:
+                    water += heightR - height[right]
                 else:
-                    heightR = height[j]                
-
+                    heightR = height[right]                
         return water
 
 

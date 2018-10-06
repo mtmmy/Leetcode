@@ -8,3 +8,4 @@ Note: You may not slant the container and n is at least 2.
 
 ## Solution
 
+We set two pointers to the head and the tail of the list and calculate the volume of the container and store the maximum volume. After calculating, we compare the height of height[i] and hiegh[j] and move the smaller one. Once i goes over j, we terminate the iteration. Meanwhile, we get the volume of the maximum container. 
