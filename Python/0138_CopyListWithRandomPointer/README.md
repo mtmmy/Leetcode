@@ -24,7 +24,7 @@ to
 A -> A' -> B -> B' -> C -> C' -> D -> D'
 |          |          |          |
 |         null        |          +--> A
-|		                  |
+|                     |
 +--> C                +--> B
 ```
 The horizontal arrows represent next, and go-down arrows represent random.  
