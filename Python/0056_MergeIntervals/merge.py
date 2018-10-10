@@ -9,24 +9,25 @@ class Solution:
         :type intervals: List[Interval]
         :rtype: List[Interval]
         """
+        if not intervals:
+            return []
+        
         result = []
-        if len(intervals) == 0:
-            return result       
-        
         intervals = sorted (intervals, key=lambda x: (x.start, x.end))
+        start, end, i, n = intervals[0].start, intervals[0].end, 0, len(intervals)
         
-        start = intervals[0].start
-        end = intervals[0].end
-        for interval in intervals:
+        while i < n:
+            interval = intervals[i]
             if interval.start <= end and interval.end >= end:
-                end = interval.end
+                end = interval.end                
             elif interval.end < end:
-                continue
+                end = end
             else:
-                result.append(Interval(start, end))
-            if len(result) > 0 and start == result[-1].start and end == result[-1].end:
+                result.append(Interval(start, end))                
                 start = interval.start
                 end = interval.end
+            i += 1
+                
         result.append(Interval(start, end))
         return result
 
