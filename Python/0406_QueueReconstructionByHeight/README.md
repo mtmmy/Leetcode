@@ -21,3 +21,6 @@ Output:
 
 ## Solution
 
+Since k indicates how many eqal or higher people infront of that people, we can sort the list by height descendingly and then k ascendingly. After that, we go through the sorted list and insert each element to the new list depending on its k value. Like the example above, after sorting, we get [[7,0], [7,1], [6,1],  [5,0], [5,2], [4,4]]. And we insert [7, 0] at the 0th position of the new list because we want that there's no one in front of it. Next we put [7, 1] at 1st position. And then [6, 1], here the conflict happens. There's already [7, 1] at the 1st position. And this is the reason we sort the list by height. We can simply insert [6, 1] to the 1st position and force [7, 1] to the 2nd position which will not violate the constrain of [7, 1] that there is only one eqal of higher person in front of it.
+
+The time complexity of this greedy approch is O(nlogn) since we need sort the queue first and the reconstructing part only takes O(n). And we need O(n) auxiliary space to store the reconstructed queue.

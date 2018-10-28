@@ -13,11 +13,10 @@ class Solution:
             return []
         
         result = []
-        intervals = sorted (intervals, key=lambda x: (x.start, x.end))
-        start, end, i, n = intervals[0].start, intervals[0].end, 0, len(intervals)
+        intervals = sorted(intervals, key=lambda x: (x.start, x.end))
+        start, end = intervals[0].start, intervals[0].end
         
-        while i < n:
-            interval = intervals[i]
+        for interval in intervals:
             if interval.start <= end and interval.end >= end:
                 end = interval.end                
             elif interval.end < end:
@@ -26,10 +25,6 @@ class Solution:
                 result.append(Interval(start, end))                
                 start = interval.start
                 end = interval.end
-            i += 1
-                
-        result.append(Interval(start, end))
-        return result
 
 if __name__ == "__main__":
     target = Solution()

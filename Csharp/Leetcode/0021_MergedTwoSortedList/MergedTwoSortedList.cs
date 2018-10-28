@@ -7,22 +7,20 @@ using System.Threading.Tasks;
 
 namespace Leetcode.Solutions {
     public class MergedTwoSortedList {
-        public ListNode MergeTwoLists(ListNode l1, ListNode l2) {
-
-            ListNode head = null; ;
-            ListNode cur = null;
+        public ListNode Solution(ListNode l1, ListNode l2) {
 
             if (l1 == null && l2 == null) {
-                return head;
-            }
-
-            if (l1 == null) {
-                head = new ListNode(l2.val);
-                l2 = l2.next;
+                return null;
+            } else if (l1 == null) {
+                return l2;
             } else if (l2 == null) {
-                head = new ListNode(l1.val);
-                l1 = l1.next;
-            } else if (l1.val <= l2.val) {
+                return l1;
+            }
+            
+            ListNode head = null;;
+            ListNode cur = null;
+            
+            if (l1.val <= l2.val) {
                 head = new ListNode(l1.val);
                 l1 = l1.next;
             } else {
@@ -30,13 +28,12 @@ namespace Leetcode.Solutions {
                 l2 = l2.next;
             }
             cur = head;
-
+            
             while (l1 != null || l2 != null) {
-
                 if (l1 == null) {
                     cur.next = new ListNode(l2.val);
                     l2 = l2.next;
-                } else if (l2 == null) {
+                } else if (l2 == null){
                     cur.next = new ListNode(l1.val);
                     l1 = l1.next;
                 } else if (l1.val <= l2.val) {

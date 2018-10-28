@@ -64,3 +64,25 @@ Output: false
 
 ## Solution
 
+To solve this problem, we can use dynamic programming. First of all, we allocate a two dimensional array of boolean where dp[i][j] denotes s[:i-1] matches p[:j-1]. Since the empty string matches the empty string, so dp[0][0] must be True and we can start from this. We use nested loop to go through dp array and check if string matches at the corresponding indices. First step, we ignore special characters "*" and ".", and only focus on the letters:
+
+```
+dp[i][j] = i > 0 and s[i - 1] == p[j - 1] and dp[i - 1][j - 1]
+```
+which means if s[i-1] and p[j-1] are the same character and s[:i-2] matches p[:j-2], s[:i-1] matches p[:j-1].
+
+Next, we need to consider special characters. We first check ".", which matches any single characters so that we can only check if s[:i-2] matches p[:j-2] or not:
+
+```
+dp[i][j] = i > 0 and dp[i - 1][j - 1]
+```
+
+After that, we look at *, which means zero or more of the character before the *.
+
+```
+dp[i][j] = (dp[i][j - 2]) or 
+	(i > 0 and dp[i - 1][j] and (p[j - 2] == s[i - 1] or p[j - 2] == "."))
+```
+We have to check two parts. First, does s[:i-1] matches p[:j-3]? This check means we consider .* as zero characters. Second, we check if s[:i-2] matches p[:j-1] which means does s[:i-2] matches the p before the * and check the charcter before the * matches.
+
+After all, the element at the last columne of the last row is our answer because it means if s matches p or not. Total amount of checking operations of this solution is (m + 1)(n + 1) = mn + m + n + 1. Hence the time complexity is O(mn) and the space complexity is also O(mn).

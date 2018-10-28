@@ -37,4 +37,3 @@ Explanation: In this case, no transaction is done, i.e. max profit = 0.
 
 ## Solution
 
-There's a simple O(n) solution. We just iterate the list from index 1 and compare the value of current position with that of previous position. If the current one is greater than the previous one, we add the difference of them to the accumulator. This step implies we buy the stock on the previous and sell it on the current day. After done iterating, we get our maximum profit in the accumulator.
