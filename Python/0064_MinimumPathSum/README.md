@@ -21,3 +21,12 @@ Explanation: Because the path 1→3→1→1→1 minimizes the sum.
 
 ## Solution
 
+
+
+## Related Topics
+
+[Array](https://leetcode.com/tag/array/) , [Dynamic Programming](https://leetcode.com/tag/dynamic-programming/) 
+
+## Similar Questions
+
+[Unique Paths](https://leetcode.com/problems/unique-paths/), [Dungeon Game](https://leetcode.com/problems/dungeon-game/), [Cherry Pickup](https://leetcode.com/problems/cherry-pickup/)

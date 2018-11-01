@@ -18,3 +18,12 @@ The signature of the C++ function had been updated. If you still see your functi
 
 ## Solution
 
+
+
+## Related Topics
+
+[Math](https://leetcode.com/tag/math/) , [String](https://leetcode.com/tag/string/) 
+
+## Similar Questions
+
+[String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)

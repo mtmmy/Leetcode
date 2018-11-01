@@ -14,3 +14,12 @@ Given "pwwkew", the answer is "wke", with the length of 3. Note that the answer 
 
 ## Solution
 First, we create a container to keep the last index of the apperence for each characters. Secondly, we create a varaible to keep our start point for every time we calculate the lenght of substring. Afterword, we start looping the target string. In the interation, we first compare the last apperence of the current character and the current starting point and pick the greater one. If the starting point is less than the last apperence of the current character, it means the current character repeats so that we need counting our substring from the index of the last apperence of the current character plus one. And then we update the last index of the current character. The final step we update the longest value.
+
+
+## Related Topics
+
+[Hash Table](https://leetcode.com/tag/hash-table/) , [Two Pointers](https://leetcode.com/tag/two-pointers/) , [String](https://leetcode.com/tag/string/) 
+
+## Similar Questions
+
+[Longest Substring with At Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/)

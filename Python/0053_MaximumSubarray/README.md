@@ -21,3 +21,11 @@ If you have figured out the O(n) solution, try coding another solution using the
 Simple dp solution. We use a variable to keep the maximum summation we can get at the current index. To get this value, we compare the number itself and the sum of previos max and the number. And we use another variable to keep global maximum value. Once we finished iteration, we get the maximum sum.
 
 [Follow up solution is here](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0053_MaximumSubarray)
+
+## Related Topics
+
+[Array](https://leetcode.com/tag/array/) , [Divide and Conquer](https://leetcode.com/tag/divide-and-conquer/) , [Dynamic Programming](https://leetcode.com/tag/dynamic-programming/) 
+
+## Similar Questions
+
+[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/), [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/), [Degree of an Array](https://leetcode.com/problems/degree-of-an-array/)

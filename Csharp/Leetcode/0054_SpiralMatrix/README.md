@@ -30,3 +30,12 @@ Output: [1,2,3,4,8,12,11,10,9,5,6,7]
 
 ## Solution
 
+
+
+## Related Topics
+
+[Array](https://leetcode.com/tag/array/) 
+
+## Similar Questions
+
+[Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/)

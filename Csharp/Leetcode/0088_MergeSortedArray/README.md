@@ -18,3 +18,12 @@ Output: [1,2,2,3,5,6]
 
 ## Solution
 
+
+
+## Related Topics
+
+[Array](https://leetcode.com/tag/array/) , [Two Pointers](https://leetcode.com/tag/two-pointers/) 
+
+## Similar Questions
+
+[Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)

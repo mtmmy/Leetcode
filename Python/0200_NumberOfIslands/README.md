@@ -30,3 +30,12 @@ Output: 3
 
 ## Solution
 
+
+
+## Related Topics
+
+[Depth-first Search](https://leetcode.com/tag/depth-first-search/) , [Breadth-first Search](https://leetcode.com/tag/breadth-first-search/) , [Union Find](https://leetcode.com/tag/union-find/) 
+
+## Similar Questions
+
+[Surrounded Regions](https://leetcode.com/problems/surrounded-regions/), [Walls and Gates](https://leetcode.com/problems/walls-and-gates/), [Number of Islands II](https://leetcode.com/problems/number-of-islands-ii/), [Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/), [Number of Distinct Islands](https://leetcode.com/problems/number-of-distinct-islands/), [Max Area of Island](https://leetcode.com/problems/max-area-of-island/)

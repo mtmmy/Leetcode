@@ -31,3 +31,12 @@ Your algorithm should run in O(n) time and uses constant extra space.
 
 ## Solution
 
+
+
+## Related Topics
+
+[Array](https://leetcode.com/tag/array/) 
+
+## Similar Questions
+
+[Missing Number](https://leetcode.com/problems/missing-number/), [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/), [Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/), [Couples Holding Hands](https://leetcode.com/problems/couples-holding-hands/)

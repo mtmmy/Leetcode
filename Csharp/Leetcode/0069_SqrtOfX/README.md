@@ -26,3 +26,12 @@ Explanation: The square root of 8 is 2.82842..., and since
 
 ## Solution
 
+
+
+## Related Topics
+
+[Math](https://leetcode.com/tag/math/) , [Binary Search](https://leetcode.com/tag/binary-search/) 
+
+## Similar Questions
+
+[Pow(x, n)](https://leetcode.com/problems/powx-n/), [Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square/)

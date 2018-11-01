@@ -24,3 +24,12 @@ A solution set is:
 
 Same as [solution.](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0015_ThreeSum)
 
+
+
+## Related Topics
+
+[Array](https://leetcode.com/tag/array/) , [Two Pointers](https://leetcode.com/tag/two-pointers/) 
+
+## Similar Questions
+
+[Two Sum](https://leetcode.com/problems/two-sum/), [3Sum Closest](https://leetcode.com/problems/3sum-closest/), [4Sum](https://leetcode.com/problems/4sum/), [3Sum Smaller](https://leetcode.com/problems/3sum-smaller/)

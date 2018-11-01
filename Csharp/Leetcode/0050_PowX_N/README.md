@@ -30,3 +30,12 @@ Note:
 
 ## Solution
 
+
+
+## Related Topics
+
+[Math](https://leetcode.com/tag/math/) , [Binary Search](https://leetcode.com/tag/binary-search/) 
+
+## Similar Questions
+
+[Sqrt(x)](https://leetcode.com/problems/sqrtx/), [Super Pow](https://leetcode.com/problems/super-pow/)

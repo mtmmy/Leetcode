@@ -86,3 +86,11 @@ dp[i][j] = (dp[i][j - 2]) or
 We have to check two parts. First, does s[:i-1] matches p[:j-3]? This check means we consider .* as zero characters. Second, we check if s[:i-2] matches p[:j-1] which means does s[:i-2] matches the p before the * and check the charcter before the * matches.
 
 After all, the element at the last columne of the last row is our answer because it means if s matches p or not. Total amount of checking operations of this solution is (m + 1)(n + 1) = mn + m + n + 1. Hence the time complexity is O(mn) and the space complexity is also O(mn).
+
+## Related Topics
+
+[String](https://leetcode.com/tag/string/) , [Dynamic Programming](https://leetcode.com/tag/dynamic-programming/) , [Backtracking](https://leetcode.com/tag/backtracking/) 
+
+## Similar Questions
+
+[Wildcard Matching](https://leetcode.com/problems/wildcard-matching/)

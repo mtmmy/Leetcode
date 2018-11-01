@@ -22,3 +22,12 @@ Note:
 
 ## Solution
 
+
+
+## Related Topics
+
+[Array](https://leetcode.com/tag/array/) , [Two Pointers](https://leetcode.com/tag/two-pointers/) , [Binary Search](https://leetcode.com/tag/binary-search/) 
+
+## Similar Questions
+
+[First Missing Positive](https://leetcode.com/problems/first-missing-positive/), [Single Number](https://leetcode.com/problems/single-number/), [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/), [Missing Number](https://leetcode.com/problems/missing-number/), [Set Mismatch](https://leetcode.com/problems/set-mismatch/)

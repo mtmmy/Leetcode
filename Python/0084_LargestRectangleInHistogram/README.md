@@ -25,3 +25,12 @@ Output: 10
 
 ## Solution
 
+
+
+## Related Topics
+
+[Array](https://leetcode.com/tag/array/) , [Stack](https://leetcode.com/tag/stack/) 
+
+## Similar Questions
+
+[Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle/)

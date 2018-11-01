@@ -24,3 +24,12 @@ Explanation: All root-to-leaf paths are: 1->2->5, 1->3
 
 ## Solution
 
+
+
+## Related Topics
+
+[Tree](https://leetcode.com/tag/tree/) , [Depth-first Search](https://leetcode.com/tag/depth-first-search/) 
+
+## Similar Questions
+
+[Path Sum II](https://leetcode.com/problems/path-sum-ii/)

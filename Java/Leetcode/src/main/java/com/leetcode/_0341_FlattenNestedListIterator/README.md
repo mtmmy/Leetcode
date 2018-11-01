@@ -10,3 +10,12 @@ Example 1:
 
 ## Solution
 
+
+
+## Related Topics
+
+[Stack](https://leetcode.com/tag/stack/) , [Design](https://leetcode.com/tag/design/) 
+
+## Similar Questions
+
+[Flatten 2D Vector](https://leetcode.com/problems/flatten-2d-vector/), [Zigzag Iterator](https://leetcode.com/problems/zigzag-iterator/), [Mini Parser](https://leetcode.com/problems/mini-parser/), [Array Nesting](https://leetcode.com/problems/array-nesting/)

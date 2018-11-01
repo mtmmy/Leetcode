@@ -40,3 +40,12 @@ Output: "1211"
 
 ## Solution
 
+
+
+## Related Topics
+
+[String](https://leetcode.com/tag/string/) 
+
+## Similar Questions
+
+[Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/), [String Compression](https://leetcode.com/problems/string-compression/)

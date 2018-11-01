@@ -23,3 +23,12 @@ Although the above answer is in lexicographical order, your answer could be in a
 
 ## Solution
 
+
+
+## Related Topics
+
+[String](https://leetcode.com/tag/string/) , [Backtracking](https://leetcode.com/tag/backtracking/) 
+
+## Similar Questions
+
+[Generate Parentheses](https://leetcode.com/problems/generate-parentheses/), [Combination Sum](https://leetcode.com/problems/combination-sum/), [Binary Watch](https://leetcode.com/problems/binary-watch/)

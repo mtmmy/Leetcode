@@ -27,3 +27,12 @@ Note:
 
 ## Solution
 
+
+
+## Related Topics
+
+[Greedy](https://leetcode.com/tag/greedy/) 
+
+## Similar Questions
+
+[Course Schedule](https://leetcode.com/problems/course-schedule/), [Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)

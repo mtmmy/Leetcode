@@ -12,3 +12,8 @@ Note: There will be exactly one celebrity if he/she is in the party. Return the 
 
 ## Solution
 
+
+
+## Related Topics
+
+[Array](https://leetcode.com/tag/array/) 

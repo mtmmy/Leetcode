@@ -20,3 +20,12 @@ Output: 1
 
 ## Solution
 
+
+
+## Related Topics
+
+[Heap](https://leetcode.com/tag/heap/) , [Greedy](https://leetcode.com/tag/greedy/) , [Sort](https://leetcode.com/tag/sort/) 
+
+## Similar Questions
+
+[Merge Intervals](https://leetcode.com/problems/merge-intervals/), [Meeting Rooms](https://leetcode.com/problems/meeting-rooms/), [Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/)

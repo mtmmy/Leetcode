@@ -31,3 +31,12 @@ Note:
 
 ## Solution
 
+
+
+## Related Topics
+
+[Design](https://leetcode.com/tag/design/) 
+
+## Similar Questions
+
+[Min Stack](https://leetcode.com/problems/min-stack/)

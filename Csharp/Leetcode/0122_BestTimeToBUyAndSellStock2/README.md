@@ -38,3 +38,11 @@ Explanation: In this case, no transaction is done, i.e. max profit = 0.
 ## Solution
 
 There's a simple O(n) solution. We just iterate the list from index 1 and compare the value of current position with that of previous position. If the current one is greater than the previous one, we add the difference of them to the accumulator. This step implies we buy the stock on the previous and sell it on the current day. After done iterating, we get our maximum profit in the accumulator.
+
+## Related Topics
+
+[Array](https://leetcode.com/tag/array/) , [Greedy](https://leetcode.com/tag/greedy/) 
+
+## Similar Questions
+
+[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/), [Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/), [Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/), [Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/), [Best Time to Buy and Sell Stock with Transaction Fee](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/)

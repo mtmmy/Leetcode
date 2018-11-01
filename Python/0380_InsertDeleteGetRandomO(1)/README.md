@@ -40,3 +40,12 @@ randomSet.getRandom();
 
 ## Solution
 
+
+
+## Related Topics
+
+[Array](https://leetcode.com/tag/array/) , [Hash Table](https://leetcode.com/tag/hash-table/) , [Design](https://leetcode.com/tag/design/) 
+
+## Similar Questions
+
+[Insert Delete GetRandom O(1) - Duplicates allowed](https://leetcode.com/problems/insert-delete-getrandom-o1-duplicates-allowed/)

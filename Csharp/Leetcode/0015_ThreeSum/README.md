@@ -29,3 +29,11 @@ First, we can consider this as an extended problem from [Two Sum](https://github
 3. Finding the two-sum result from numbers greater than the current number in the list with the target number of two-sum is the negative current number.  
 
 Sorting helps us skipping duplicates easily and making searching for two-sum results easier. The time complexity is O(n^2) since the time complexity of two-sum in a sorted array is O(n) and we have a size of n list.
+
+## Related Topics
+
+[Array](https://leetcode.com/tag/array/) , [Two Pointers](https://leetcode.com/tag/two-pointers/) 
+
+## Similar Questions
+
+[Two Sum](https://leetcode.com/problems/two-sum/), [3Sum Closest](https://leetcode.com/problems/3sum-closest/), [4Sum](https://leetcode.com/problems/4sum/), [3Sum Smaller](https://leetcode.com/problems/3sum-smaller/)

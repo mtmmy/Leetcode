@@ -32,3 +32,12 @@ The flattened tree should look like:
 
 ## Solution
 
+
+
+## Related Topics
+
+[Tree](https://leetcode.com/tag/tree/) , [Depth-first Search](https://leetcode.com/tag/depth-first-search/) 
+
+## Similar Questions
+
+[Flatten a Multilevel Doubly Linked List](https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/)

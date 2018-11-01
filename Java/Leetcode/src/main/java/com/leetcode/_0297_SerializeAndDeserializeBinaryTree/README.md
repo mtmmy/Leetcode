@@ -26,3 +26,12 @@ Note: Do not use class member/global/static variables to store states. Your seri
 
 ## Solution
 
+
+
+## Related Topics
+
+[Tree](https://leetcode.com/tag/tree/) , [Design](https://leetcode.com/tag/design/) 
+
+## Similar Questions
+
+[Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/), [Serialize and Deserialize BST](https://leetcode.com/problems/serialize-and-deserialize-bst/), [Find Duplicate Subtrees](https://leetcode.com/problems/find-duplicate-subtrees/), [Serialize and Deserialize N-ary Tree](https://leetcode.com/problems/serialize-and-deserialize-n-ary-tree/)

@@ -24,3 +24,12 @@ Note:
 
 ## Solution
 
+
+
+## Related Topics
+
+[Array](https://leetcode.com/tag/array/) , [Greedy](https://leetcode.com/tag/greedy/) , [Queue](https://leetcode.com/tag/queue/) 
+
+## Similar Questions
+
+[Rearrange String k Distance Apart](https://leetcode.com/problems/rearrange-string-k-distance-apart/), [Reorganize String](https://leetcode.com/problems/reorganize-string/)

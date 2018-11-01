@@ -31,3 +31,12 @@ Explanation: The input is: [5,1,4,null,null,3,6]. The root node's value
 
 ## Solution
 
+
+
+## Related Topics
+
+[Tree](https://leetcode.com/tag/tree/) , [Depth-first Search](https://leetcode.com/tag/depth-first-search/) 
+
+## Similar Questions
+
+[Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/), [Find Mode in Binary Search Tree](https://leetcode.com/problems/find-mode-in-binary-search-tree/)

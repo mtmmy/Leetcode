@@ -40,3 +40,12 @@ Output: 701
 
 ## Solution
 
+
+
+## Related Topics
+
+[Math](https://leetcode.com/tag/math/) 
+
+## Similar Questions
+
+[Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/)

@@ -35,3 +35,12 @@ Note: The length of each dimension in the given grid does not exceed 50.
 
 ## Solution
 
+
+
+## Related Topics
+
+[Array](https://leetcode.com/tag/array/) , [Depth-first Search](https://leetcode.com/tag/depth-first-search/) 
+
+## Similar Questions
+
+[Number of Islands](https://leetcode.com/problems/number-of-islands/), [Island Perimeter](https://leetcode.com/problems/island-perimeter/)

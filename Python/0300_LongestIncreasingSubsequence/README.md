@@ -18,3 +18,12 @@ Follow up: Could you improve it to O(n log n) time complexity?
 
 ## Solution
 
+
+
+## Related Topics
+
+[Binary Search](https://leetcode.com/tag/binary-search/) , [Dynamic Programming](https://leetcode.com/tag/dynamic-programming/) 
+
+## Similar Questions
+
+[Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence/), [Russian Doll Envelopes](https://leetcode.com/problems/russian-doll-envelopes/), [Maximum Length of Pair Chain](https://leetcode.com/problems/maximum-length-of-pair-chain/), [Number of Longest Increasing Subsequence](https://leetcode.com/problems/number-of-longest-increasing-subsequence/), [Minimum ASCII Delete Sum for Two Strings](https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/)

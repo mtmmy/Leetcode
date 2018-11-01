@@ -51,3 +51,12 @@ for (int i = 0; i < len; i++) {
 
 ## Solution
 
+
+
+## Related Topics
+
+[Array](https://leetcode.com/tag/array/) , [Two Pointers](https://leetcode.com/tag/two-pointers/) 
+
+## Similar Questions
+
+[Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/), [Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/), [Move Zeroes](https://leetcode.com/problems/move-zeroes/)

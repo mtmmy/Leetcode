@@ -64,3 +64,12 @@ Output: false
 
 ## Solution
 
+
+
+## Related Topics
+
+[String](https://leetcode.com/tag/string/) , [Dynamic Programming](https://leetcode.com/tag/dynamic-programming/) , [Backtracking](https://leetcode.com/tag/backtracking/) , [Greedy](https://leetcode.com/tag/greedy/) 
+
+## Similar Questions
+
+[Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/)

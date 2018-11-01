@@ -38,3 +38,7 @@ And then we reach the core of the devide and conquer. We first get an index of A
 3. A[idxA - 1] == B[idxB - 1]: We found the median.
 
 Everytime we enter the recursive function, we cut the input to half. So the time complexity of the solution is O(log(m + n)).
+
+## Related Topics
+
+[Array](https://leetcode.com/tag/array/) , [Binary Search](https://leetcode.com/tag/binary-search/) , [Divide and Conquer](https://leetcode.com/tag/divide-and-conquer/) 

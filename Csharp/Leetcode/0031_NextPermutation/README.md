@@ -16,3 +16,12 @@ Here are some examples. Inputs are in the left-hand column and its corresponding
 
 ## Solution
 
+
+
+## Related Topics
+
+[Array](https://leetcode.com/tag/array/) 
+
+## Similar Questions
+
+[Permutations](https://leetcode.com/problems/permutations/), [Permutations II](https://leetcode.com/problems/permutations-ii/), [Permutation Sequence](https://leetcode.com/problems/permutation-sequence/), [Palindrome Permutation II](https://leetcode.com/problems/palindrome-permutation-ii/)

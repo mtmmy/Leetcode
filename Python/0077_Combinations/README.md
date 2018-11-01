@@ -21,3 +21,12 @@ Output:
 
 ## Solution
 
+
+
+## Related Topics
+
+[Backtracking](https://leetcode.com/tag/backtracking/) 
+
+## Similar Questions
+
+[Combination Sum](https://leetcode.com/problems/combination-sum/), [Permutations](https://leetcode.com/problems/permutations/)

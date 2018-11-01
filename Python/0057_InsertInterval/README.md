@@ -23,3 +23,12 @@ Explanation: Because the new interval [4,8] overlaps with [3,5],[6,7],[8,10].
 
 ## Solution
 
+
+
+## Related Topics
+
+[Array](https://leetcode.com/tag/array/) , [Sort](https://leetcode.com/tag/sort/) 
+
+## Similar Questions
+
+[Merge Intervals](https://leetcode.com/problems/merge-intervals/), [Range Module](https://leetcode.com/problems/range-module/)

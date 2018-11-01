@@ -43,3 +43,12 @@ The substring with start index = 2 is "ab", which is an anagram of "ab".
 
 ## Solution
 
+
+
+## Related Topics
+
+[Hash Table](https://leetcode.com/tag/hash-table/) 
+
+## Similar Questions
+
+[Valid Anagram](https://leetcode.com/problems/valid-anagram/), [Permutation in String](https://leetcode.com/problems/permutation-in-string/)

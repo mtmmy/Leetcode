@@ -22,3 +22,12 @@ Explanation: The longest valid parentheses substring is "()()"
 
 ## Solution
 
+
+
+## Related Topics
+
+[String](https://leetcode.com/tag/string/) , [Dynamic Programming](https://leetcode.com/tag/dynamic-programming/) 
+
+## Similar Questions
+
+[Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)

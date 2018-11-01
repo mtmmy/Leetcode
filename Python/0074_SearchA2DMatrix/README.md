@@ -32,3 +32,12 @@ Output: false
 
 ## Solution
 
+
+
+## Related Topics
+
+[Array](https://leetcode.com/tag/array/) , [Binary Search](https://leetcode.com/tag/binary-search/) 
+
+## Similar Questions
+
+[Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/)

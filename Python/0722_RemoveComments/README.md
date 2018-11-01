@@ -74,3 +74,12 @@ Note:
 
 ## Solution
 
+
+
+## Related Topics
+
+[String](https://leetcode.com/tag/string/) 
+
+## Similar Questions
+
+[Mini Parser](https://leetcode.com/problems/mini-parser/), [Ternary Expression Parser](https://leetcode.com/problems/ternary-expression-parser/)

@@ -37,3 +37,12 @@ Explanation:
 
 ## Solution
 
+
+
+## Related Topics
+
+[Hash Table](https://leetcode.com/tag/hash-table/) , [Math](https://leetcode.com/tag/math/) 
+
+## Similar Questions
+
+[Line Reflection](https://leetcode.com/problems/line-reflection/)

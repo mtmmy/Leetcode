@@ -26,3 +26,12 @@ You may assume that all inputs are consist of lowercase letters a-z.
 
 ## Solution
 
+
+
+## Related Topics
+
+[Backtracking](https://leetcode.com/tag/backtracking/) , [Trie](https://leetcode.com/tag/trie/) 
+
+## Similar Questions
+
+[Word Search](https://leetcode.com/problems/word-search/)

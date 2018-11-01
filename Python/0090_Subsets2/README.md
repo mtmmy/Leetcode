@@ -23,3 +23,12 @@ Output:
 
 ## Solution
 
+
+
+## Related Topics
+
+[Array](https://leetcode.com/tag/array/) , [Backtracking](https://leetcode.com/tag/backtracking/) 
+
+## Similar Questions
+
+[Subsets](https://leetcode.com/problems/subsets/)

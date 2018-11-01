@@ -63,3 +63,12 @@ Note:
 
 ## Solution
 
+
+
+## Related Topics
+
+[Stack](https://leetcode.com/tag/stack/) 
+
+## Similar Questions
+
+[Can Place Flowers](https://leetcode.com/problems/can-place-flowers/)

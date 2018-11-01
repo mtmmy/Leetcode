@@ -24,3 +24,12 @@ return its minimum depth = 2.
 
 ## Solution
 
+
+
+## Related Topics
+
+[Tree](https://leetcode.com/tag/tree/) , [Depth-first Search](https://leetcode.com/tag/depth-first-search/) , [Breadth-first Search](https://leetcode.com/tag/breadth-first-search/) 
+
+## Similar Questions
+
+[Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/), [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)

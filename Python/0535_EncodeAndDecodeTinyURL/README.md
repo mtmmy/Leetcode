@@ -8,3 +8,8 @@ Design the encode and decode methods for the TinyURL service. There is no restri
 
 ## Solution
 
+
+
+## Related Topics
+
+[Hash Table](https://leetcode.com/tag/hash-table/) , [Math](https://leetcode.com/tag/math/) 

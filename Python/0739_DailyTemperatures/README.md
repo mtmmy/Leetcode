@@ -10,3 +10,12 @@ Note: The length of temperatures will be in the range [1, 30000]. Each temperatu
 
 ## Solution
 
+
+
+## Related Topics
+
+[Hash Table](https://leetcode.com/tag/hash-table/) , [Stack](https://leetcode.com/tag/stack/) 
+
+## Similar Questions
+
+[Next Greater Element I](https://leetcode.com/problems/next-greater-element-i/)

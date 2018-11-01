@@ -34,3 +34,12 @@ A solution set is:
 
 ## Solution
 
+
+
+## Related Topics
+
+[Array](https://leetcode.com/tag/array/) , [Backtracking](https://leetcode.com/tag/backtracking/) 
+
+## Similar Questions
+
+[Combination Sum](https://leetcode.com/problems/combination-sum/)

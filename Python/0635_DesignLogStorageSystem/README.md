@@ -28,3 +28,12 @@ Note:
 
 ## Solution
 
+
+
+## Related Topics
+
+[String](https://leetcode.com/tag/string/) , [Design](https://leetcode.com/tag/design/) 
+
+## Similar Questions
+
+[Design In-Memory File System](https://leetcode.com/problems/design-in-memory-file-system/)

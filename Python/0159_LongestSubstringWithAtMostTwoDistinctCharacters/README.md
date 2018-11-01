@@ -22,3 +22,12 @@ Explanation: t is "aabbb" which its length is 5.
 
 ## Solution
 
+
+
+## Related Topics
+
+[Hash Table](https://leetcode.com/tag/hash-table/) , [Two Pointers](https://leetcode.com/tag/two-pointers/) , [String](https://leetcode.com/tag/string/) 
+
+## Similar Questions
+
+[Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/), [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/), [Longest Substring with At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/)

@@ -13,3 +13,12 @@ Output: 1->2->3->4->5
 
 ## Solution
 
+
+
+## Related Topics
+
+[Linked List](https://leetcode.com/tag/linked-list/) 
+
+## Similar Questions
+
+[Remove Element](https://leetcode.com/problems/remove-element/), [Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/)

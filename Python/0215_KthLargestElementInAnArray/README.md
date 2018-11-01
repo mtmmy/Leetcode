@@ -23,3 +23,12 @@ You may assume k is always valid, 1 ≤ k ≤ array's length.
 
 ## Solution
 
+
+
+## Related Topics
+
+[Divide and Conquer](https://leetcode.com/tag/divide-and-conquer/) , [Heap](https://leetcode.com/tag/heap/) 
+
+## Similar Questions
+
+[Wiggle Sort II](https://leetcode.com/problems/wiggle-sort-ii/), [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/), [Third Maximum Number](https://leetcode.com/problems/third-maximum-number/), [Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/)

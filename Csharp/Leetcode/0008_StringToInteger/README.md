@@ -58,3 +58,12 @@ Explanation: The number "-91283472332" is out of the range of a 32-bit signed in
 
 ## Solution
 
+
+
+## Related Topics
+
+[Math](https://leetcode.com/tag/math/) , [String](https://leetcode.com/tag/string/) 
+
+## Similar Questions
+
+[Reverse Integer](https://leetcode.com/problems/reverse-integer/), [Valid Number](https://leetcode.com/problems/valid-number/)

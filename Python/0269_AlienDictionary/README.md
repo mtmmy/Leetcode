@@ -50,3 +50,12 @@ Note:
 
 ## Solution
 
+
+
+## Related Topics
+
+[Graph](https://leetcode.com/tag/graph/) , [Topological Sort](https://leetcode.com/tag/topological-sort/) 
+
+## Similar Questions
+
+[Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)

@@ -17,3 +17,12 @@ A linked list can be reversed either iteratively or recursively. Could you imple
 
 ## Solution
 
+
+
+## Related Topics
+
+[Linked List](https://leetcode.com/tag/linked-list/) 
+
+## Similar Questions
+
+[Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/), [Binary Tree Upside Down](https://leetcode.com/problems/binary-tree-upside-down/), [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)

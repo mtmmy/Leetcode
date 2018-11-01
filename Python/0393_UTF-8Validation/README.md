@@ -47,3 +47,8 @@ But the second continuation byte does not start with 10, so it is invalid.
 
 ## Solution
 
+
+
+## Related Topics
+
+[Bit Manipulation](https://leetcode.com/tag/bit-manipulation/) 

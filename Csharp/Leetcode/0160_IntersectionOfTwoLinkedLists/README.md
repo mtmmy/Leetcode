@@ -25,3 +25,12 @@ Special thanks to @stellari for adding this problem and creating all test cases.
 
 ## Solution
 
+
+
+## Related Topics
+
+[Linked List](https://leetcode.com/tag/linked-list/) 
+
+## Similar Questions
+
+[Minimum Index Sum of Two Lists](https://leetcode.com/problems/minimum-index-sum-of-two-lists/)

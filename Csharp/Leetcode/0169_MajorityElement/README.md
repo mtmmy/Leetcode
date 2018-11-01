@@ -22,3 +22,12 @@ Output: 2
 
 ## Solution
 
+
+
+## Related Topics
+
+[Array](https://leetcode.com/tag/array/) , [Divide and Conquer](https://leetcode.com/tag/divide-and-conquer/) , [Bit Manipulation](https://leetcode.com/tag/bit-manipulation/) 
+
+## Similar Questions
+
+[Majority Element II](https://leetcode.com/problems/majority-element-ii/)

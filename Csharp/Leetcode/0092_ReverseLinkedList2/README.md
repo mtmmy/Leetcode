@@ -15,3 +15,12 @@ Output: 1->4->3->2->5->NULL
 
 ## Solution
 
+
+
+## Related Topics
+
+[Linked List](https://leetcode.com/tag/linked-list/) 
+
+## Similar Questions
+
+[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)

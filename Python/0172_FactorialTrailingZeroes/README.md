@@ -24,3 +24,12 @@ Note: Your solution should be in logarithmic time complexity.
 
 ## Solution
 
+
+
+## Related Topics
+
+[Math](https://leetcode.com/tag/math/) 
+
+## Similar Questions
+
+[Number of Digit One](https://leetcode.com/problems/number-of-digit-one/), [Preimage Size of Factorial Zeroes Function](https://leetcode.com/problems/preimage-size-of-factorial-zeroes-function/)

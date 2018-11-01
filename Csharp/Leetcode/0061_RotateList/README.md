@@ -28,3 +28,12 @@ rotate 4 steps to the right: 2->0->1->NULL
 
 ## Solution
 
+
+
+## Related Topics
+
+[Linked List](https://leetcode.com/tag/linked-list/) , [Two Pointers](https://leetcode.com/tag/two-pointers/) 
+
+## Similar Questions
+
+[Rotate Array](https://leetcode.com/problems/rotate-array/), [Split Linked List in Parts](https://leetcode.com/problems/split-linked-list-in-parts/)

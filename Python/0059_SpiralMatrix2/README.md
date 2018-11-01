@@ -18,3 +18,12 @@ Output:
 
 ## Solution
 
+
+
+## Related Topics
+
+[Array](https://leetcode.com/tag/array/) 
+
+## Similar Questions
+
+[Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)

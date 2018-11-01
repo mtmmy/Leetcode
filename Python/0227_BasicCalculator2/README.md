@@ -31,3 +31,12 @@ Note:
 
 ## Solution
 
+
+
+## Related Topics
+
+[String](https://leetcode.com/tag/string/) 
+
+## Similar Questions
+
+[Basic Calculator](https://leetcode.com/problems/basic-calculator/), [Expression Add Operators](https://leetcode.com/problems/expression-add-operators/), [Basic Calculator III](https://leetcode.com/problems/basic-calculator-iii/)

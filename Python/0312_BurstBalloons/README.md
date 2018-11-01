@@ -19,3 +19,8 @@ Explanation: nums = [3,1,5,8] --> [3,5,8] -->   [3,8]   -->  [8]  --> []
 
 ## Solution
 
+
+
+## Related Topics
+
+[Divide and Conquer](https://leetcode.com/tag/divide-and-conquer/) , [Dynamic Programming](https://leetcode.com/tag/dynamic-programming/) 

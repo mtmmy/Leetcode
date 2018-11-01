@@ -35,3 +35,11 @@ Simply set a while loop to get the digits from right to left and add each digit 
 We take care the overflow problem by checking if the old result is greater than one tenth of maximum integer value or smaller than one tenth of minimum integer value.
 
 The relation bwtween the input size and the number of basic operations is linear. Hence the time complexity is O(n).
+
+## Related Topics
+
+[Math](https://leetcode.com/tag/math/) 
+
+## Similar Questions
+
+[String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/), [Reverse Bits](https://leetcode.com/problems/reverse-bits/)

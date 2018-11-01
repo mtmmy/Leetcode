@@ -26,3 +26,12 @@ What if the inputs contain unicode characters? How would you adapt your solution
 
 ## Solution
 
+
+
+## Related Topics
+
+[Hash Table](https://leetcode.com/tag/hash-table/) , [Sort](https://leetcode.com/tag/sort/) 
+
+## Similar Questions
+
+[Group Anagrams](https://leetcode.com/problems/group-anagrams/), [Palindrome Permutation](https://leetcode.com/problems/palindrome-permutation/), [Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/)

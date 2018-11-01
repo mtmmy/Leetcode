@@ -14,3 +14,12 @@ The sum that is closest to the target is 2. (-1 + 2 + 1 = 2).
 
 ## Solution
 
+
+
+## Related Topics
+
+[Array](https://leetcode.com/tag/array/) , [Two Pointers](https://leetcode.com/tag/two-pointers/) 
+
+## Similar Questions
+
+[3Sum](https://leetcode.com/problems/3sum/), [3Sum Smaller](https://leetcode.com/problems/3sum-smaller/)

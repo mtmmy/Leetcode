@@ -14,3 +14,12 @@ Explanation: There are 4 prime numbers less than 10, they are 2, 3, 5, 7.
 
 ## Solution
 
+
+
+## Related Topics
+
+[Hash Table](https://leetcode.com/tag/hash-table/) , [Math](https://leetcode.com/tag/math/) 
+
+## Similar Questions
+
+[Ugly Number](https://leetcode.com/problems/ugly-number/), [Ugly Number II](https://leetcode.com/problems/ugly-number-ii/), [Perfect Squares](https://leetcode.com/problems/perfect-squares/)

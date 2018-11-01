@@ -28,3 +28,12 @@ For the purpose of this problem, we will return 0 when needle is an empty string
 
 ## Solution
 
+
+
+## Related Topics
+
+[Two Pointers](https://leetcode.com/tag/two-pointers/) , [String](https://leetcode.com/tag/string/) 
+
+## Similar Questions
+
+[Shortest Palindrome](https://leetcode.com/problems/shortest-palindrome/), [Repeated Substring Pattern](https://leetcode.com/problems/repeated-substring-pattern/)

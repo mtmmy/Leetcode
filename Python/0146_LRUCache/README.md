@@ -37,3 +37,12 @@ For get function, when a key has been accessed, we move it to the end of the dic
 For put function, if key already exists, we update its value and move it to the end. Otherwise, we need to check the capacity. If there is still room in the cache, we simply add the data. Otherwise, we pop the top item of the dictionary which is our least recently used item and put the new one.
 
 The accessing time of the dictionary is O(1). Hence the operation of get and put are both O(1).
+
+
+## Related Topics
+
+[Design](https://leetcode.com/tag/design/) 
+
+## Similar Questions
+
+[LFU Cache](https://leetcode.com/problems/lfu-cache/), [Design In-Memory File System](https://leetcode.com/problems/design-in-memory-file-system/), [Design Compressed String Iterator](https://leetcode.com/problems/design-compressed-string-iterator/)

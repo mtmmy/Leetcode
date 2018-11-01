@@ -40,3 +40,12 @@ Output: "ZY"
 
 ## Solution
 
+
+
+## Related Topics
+
+[Math](https://leetcode.com/tag/math/) 
+
+## Similar Questions
+
+[Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number/)

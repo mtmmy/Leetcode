@@ -24,3 +24,12 @@ Output:
 
 ## Solution
 
+
+
+## Related Topics
+
+[Array](https://leetcode.com/tag/array/) 
+
+## Similar Questions
+
+[Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii/)

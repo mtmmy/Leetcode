@@ -28,3 +28,12 @@ Follow up:
 
 ## Solution
 
+
+
+## Related Topics
+
+[Heap](https://leetcode.com/tag/heap/) , [Design](https://leetcode.com/tag/design/) 
+
+## Similar Questions
+
+[Sliding Window Median](https://leetcode.com/problems/sliding-window-median/)

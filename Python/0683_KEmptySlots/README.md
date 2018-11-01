@@ -41,3 +41,8 @@ Note:
 
 ## Solution
 
+
+
+## Related Topics
+
+[Array](https://leetcode.com/tag/array/) , [Binary Search Tree](https://leetcode.com/tag/binary-search-tree/) 

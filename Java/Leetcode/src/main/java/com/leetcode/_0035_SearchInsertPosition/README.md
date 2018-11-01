@@ -36,3 +36,12 @@ Output: 0
 
 ## Solution
 
+
+
+## Related Topics
+
+[Array](https://leetcode.com/tag/array/) , [Binary Search](https://leetcode.com/tag/binary-search/) 
+
+## Similar Questions
+
+[First Bad Version](https://leetcode.com/problems/first-bad-version/)

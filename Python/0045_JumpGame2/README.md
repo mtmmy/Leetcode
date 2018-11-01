@@ -23,3 +23,12 @@ You can assume that you can always reach the last index.
 
 ## Solution
 
+
+
+## Related Topics
+
+[Array](https://leetcode.com/tag/array/) , [Greedy](https://leetcode.com/tag/greedy/) 
+
+## Similar Questions
+
+[Jump Game](https://leetcode.com/problems/jump-game/)

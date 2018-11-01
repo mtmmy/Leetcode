@@ -58,3 +58,12 @@ Could you do better than O(n2) per move() operation?
 
 ## Solution
 
+
+
+## Related Topics
+
+[Design](https://leetcode.com/tag/design/) 
+
+## Similar Questions
+
+[Valid Tic-Tac-Toe State](https://leetcode.com/problems/valid-tic-tac-toe-state/)

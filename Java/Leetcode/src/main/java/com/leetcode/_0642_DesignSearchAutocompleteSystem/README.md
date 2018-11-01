@@ -49,3 +49,12 @@ Note:
 
 ## Solution
 
+
+
+## Related Topics
+
+[Design](https://leetcode.com/tag/design/) , [Trie](https://leetcode.com/tag/trie/) 
+
+## Similar Questions
+
+[Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)

@@ -38,3 +38,12 @@ Explanation: We define the gray code sequence to begin with 0.
 
 ## Solution
 
+
+
+## Related Topics
+
+[Backtracking](https://leetcode.com/tag/backtracking/) 
+
+## Similar Questions
+
+[1-bit and 2-bit Characters](https://leetcode.com/problems/1-bit-and-2-bit-characters/)

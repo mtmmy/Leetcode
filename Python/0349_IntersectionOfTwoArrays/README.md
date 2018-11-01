@@ -17,3 +17,12 @@ Note:
 
 ## Solution
 
+
+
+## Related Topics
+
+[Hash Table](https://leetcode.com/tag/hash-table/) , [Two Pointers](https://leetcode.com/tag/two-pointers/) , [Binary Search](https://leetcode.com/tag/binary-search/) , [Sort](https://leetcode.com/tag/sort/) 
+
+## Similar Questions
+
+[Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/)

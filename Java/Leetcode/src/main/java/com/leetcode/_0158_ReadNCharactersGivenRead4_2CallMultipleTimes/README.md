@@ -30,3 +30,12 @@ read("abc", 1); // returns ""
 
 ## Solution
 
+
+
+## Related Topics
+
+[String](https://leetcode.com/tag/string/) 
+
+## Similar Questions
+
+[Read N Characters Given Read4](https://leetcode.com/problems/read-n-characters-given-read4/)

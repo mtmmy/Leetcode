@@ -31,3 +31,12 @@ Follow up:
 
 ## Solution
 
+
+
+## Related Topics
+
+[Array](https://leetcode.com/tag/array/) 
+
+## Similar Questions
+
+[Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)

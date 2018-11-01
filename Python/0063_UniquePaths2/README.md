@@ -35,3 +35,12 @@ There are two ways to reach the bottom-right corner:
 
 ## Solution
 
+
+
+## Related Topics
+
+[Array](https://leetcode.com/tag/array/) , [Dynamic Programming](https://leetcode.com/tag/dynamic-programming/) 
+
+## Similar Questions
+
+[Unique Paths](https://leetcode.com/problems/unique-paths/)

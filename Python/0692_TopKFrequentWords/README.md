@@ -38,3 +38,12 @@ Follow up:
 
 ## Solution
 
+
+
+## Related Topics
+
+[Hash Table](https://leetcode.com/tag/hash-table/) , [Heap](https://leetcode.com/tag/heap/) , [Trie](https://leetcode.com/tag/trie/) 
+
+## Similar Questions
+
+[Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)

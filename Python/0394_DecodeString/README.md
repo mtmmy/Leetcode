@@ -22,3 +22,12 @@ s = "2[abc]3[cd]ef", return "abcabccdcdcdef".
 
 ## Solution
 
+
+
+## Related Topics
+
+[Stack](https://leetcode.com/tag/stack/) , [Depth-first Search](https://leetcode.com/tag/depth-first-search/) 
+
+## Similar Questions
+
+[Encode String with Shortest Length](https://leetcode.com/problems/encode-string-with-shortest-length/), [Number of Atoms](https://leetcode.com/problems/number-of-atoms/)

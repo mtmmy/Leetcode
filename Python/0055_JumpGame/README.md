@@ -27,3 +27,12 @@ Explanation: You will always arrive at index 3 no matter what. Its maximum
 
 ## Solution
 
+
+
+## Related Topics
+
+[Array](https://leetcode.com/tag/array/) , [Greedy](https://leetcode.com/tag/greedy/) 
+
+## Similar Questions
+
+[Jump Game II](https://leetcode.com/problems/jump-game-ii/)

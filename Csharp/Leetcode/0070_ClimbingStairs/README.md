@@ -31,3 +31,12 @@ Explanation: There are three ways to climb to the top.
 
 ## Solution
 
+
+
+## Related Topics
+
+[Dynamic Programming](https://leetcode.com/tag/dynamic-programming/) 
+
+## Similar Questions
+
+[Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/)

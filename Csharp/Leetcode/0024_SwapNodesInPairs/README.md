@@ -14,3 +14,12 @@ Note:
 
 ## Solution
 
+
+
+## Related Topics
+
+[Linked List](https://leetcode.com/tag/linked-list/) 
+
+## Similar Questions
+
+[Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/)

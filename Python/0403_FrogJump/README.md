@@ -43,3 +43,8 @@ the gap between the 5th and 6th stone is too large.
 
 ## Solution
 
+
+
+## Related Topics
+
+[Dynamic Programming](https://leetcode.com/tag/dynamic-programming/) 

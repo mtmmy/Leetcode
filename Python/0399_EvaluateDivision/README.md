@@ -25,3 +25,8 @@ The input is always valid. You may assume that evaluating the queries will resul
 
 ## Solution
 
+
+
+## Related Topics
+
+[Graph](https://leetcode.com/tag/graph/) 

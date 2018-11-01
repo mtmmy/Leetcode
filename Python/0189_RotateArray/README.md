@@ -29,3 +29,12 @@ Note:
 
 ## Solution
 
+
+
+## Related Topics
+
+[Array](https://leetcode.com/tag/array/) 
+
+## Similar Questions
+
+[Rotate List](https://leetcode.com/problems/rotate-list/), [Reverse Words in a String II](https://leetcode.com/problems/reverse-words-in-a-string-ii/)

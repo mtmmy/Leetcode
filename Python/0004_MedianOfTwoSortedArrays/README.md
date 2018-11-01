@@ -28,3 +28,8 @@ The median is (2 + 3)/2 = 2.5
 
 ## Solution
 
+
+
+## Related Topics
+
+[Array](https://leetcode.com/tag/array/) , [Binary Search](https://leetcode.com/tag/binary-search/) , [Divide and Conquer](https://leetcode.com/tag/divide-and-conquer/) 

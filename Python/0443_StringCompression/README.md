@@ -65,3 +65,12 @@ Note:
 
 ## Solution
 
+
+
+## Related Topics
+
+[String](https://leetcode.com/tag/string/) 
+
+## Similar Questions
+
+[Count and Say](https://leetcode.com/problems/count-and-say/), [Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/), [Design Compressed String Iterator](https://leetcode.com/problems/design-compressed-string-iterator/)

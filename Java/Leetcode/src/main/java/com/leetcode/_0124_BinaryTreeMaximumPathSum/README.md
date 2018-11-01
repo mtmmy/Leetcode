@@ -34,3 +34,12 @@ Output: 42
 
 ## Solution
 
+
+
+## Related Topics
+
+[Tree](https://leetcode.com/tag/tree/) , [Depth-first Search](https://leetcode.com/tag/depth-first-search/) 
+
+## Similar Questions
+
+[Path Sum](https://leetcode.com/problems/path-sum/), [Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/), [Path Sum IV](https://leetcode.com/problems/path-sum-iv/), [Longest Univalue Path](https://leetcode.com/problems/longest-univalue-path/)

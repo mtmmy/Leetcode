@@ -40,3 +40,12 @@ Explanation: Remove all the digits from the number and it is left with nothing w
 
 ## Solution
 
+
+
+## Related Topics
+
+[Stack](https://leetcode.com/tag/stack/) , [Greedy](https://leetcode.com/tag/greedy/) 
+
+## Similar Questions
+
+[Create Maximum Number](https://leetcode.com/problems/create-maximum-number/), [Monotone Increasing Digits](https://leetcode.com/problems/monotone-increasing-digits/)

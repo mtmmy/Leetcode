@@ -37,3 +37,11 @@ If heightL is smaller than heightR, we move left to right with one and compare t
 On the contrary if heightL isn't less than heightR, we do the simliar thing. Once left go over right, we calculate all water.
 
 Time complexity of this solution is O(n) as well.
+
+## Related Topics
+
+[Array](https://leetcode.com/tag/array/) , [Two Pointers](https://leetcode.com/tag/two-pointers/) , [Stack](https://leetcode.com/tag/stack/) 
+
+## Similar Questions
+
+[Container With Most Water](https://leetcode.com/problems/container-with-most-water/), [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/), [Trapping Rain Water II](https://leetcode.com/problems/trapping-rain-water-ii/), [Pour Water](https://leetcode.com/problems/pour-water/)

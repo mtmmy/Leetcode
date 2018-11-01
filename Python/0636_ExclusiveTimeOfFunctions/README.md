@@ -36,3 +36,8 @@ Note:
 
 ## Solution
 
+
+
+## Related Topics
+
+[Stack](https://leetcode.com/tag/stack/) 

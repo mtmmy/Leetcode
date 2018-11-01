@@ -37,3 +37,11 @@ After calculating we get:
 n + nlogn
 ```
 which is O(nlogn).
+
+## Related Topics
+
+[Array](https://leetcode.com/tag/array/) , [Divide and Conquer](https://leetcode.com/tag/divide-and-conquer/) , [Dynamic Programming](https://leetcode.com/tag/dynamic-programming/) 
+
+## Similar Questions
+
+[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/), [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/), [Degree of an Array](https://leetcode.com/problems/degree-of-an-array/)

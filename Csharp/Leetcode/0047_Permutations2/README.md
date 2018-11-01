@@ -18,3 +18,12 @@ Output:
 
 ## Solution
 
+
+
+## Related Topics
+
+[Backtracking](https://leetcode.com/tag/backtracking/) 
+
+## Similar Questions
+
+[Next Permutation](https://leetcode.com/problems/next-permutation/), [Permutations](https://leetcode.com/problems/permutations/), [Palindrome Permutation II](https://leetcode.com/problems/palindrome-permutation-ii/)

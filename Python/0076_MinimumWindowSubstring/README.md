@@ -15,3 +15,12 @@ Note:
 
 ## Solution
 
+
+
+## Related Topics
+
+[Hash Table](https://leetcode.com/tag/hash-table/) , [Two Pointers](https://leetcode.com/tag/two-pointers/) , [String](https://leetcode.com/tag/string/) 
+
+## Similar Questions
+
+[Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/), [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/), [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/), [Permutation in String](https://leetcode.com/problems/permutation-in-string/), [Smallest Range](https://leetcode.com/problems/smallest-range/), [Minimum Window Subsequence](https://leetcode.com/problems/minimum-window-subsequence/)

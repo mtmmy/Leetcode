@@ -19,3 +19,12 @@ Output: 6
 
 ## Solution
 
+
+
+## Related Topics
+
+[Array](https://leetcode.com/tag/array/) , [Hash Table](https://leetcode.com/tag/hash-table/) , [Dynamic Programming](https://leetcode.com/tag/dynamic-programming/) , [Stack](https://leetcode.com/tag/stack/) 
+
+## Similar Questions
+
+[Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/), [Maximal Square](https://leetcode.com/problems/maximal-square/)

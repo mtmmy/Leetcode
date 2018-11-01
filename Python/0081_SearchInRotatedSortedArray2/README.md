@@ -26,3 +26,12 @@ Follow up:
 
 ## Solution
 
+
+
+## Related Topics
+
+[Array](https://leetcode.com/tag/array/) , [Binary Search](https://leetcode.com/tag/binary-search/) 
+
+## Similar Questions
+
+[Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)

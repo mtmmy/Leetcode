@@ -33,3 +33,8 @@ Note:  Any solutions that attempt to circumvent the judge will result in disqual
 
 ## Solution
 
+
+
+## Related Topics
+
+[Minimax](https://leetcode.com/tag/minimax/) 

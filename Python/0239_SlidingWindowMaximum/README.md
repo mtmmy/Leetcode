@@ -29,3 +29,12 @@ Could you solve it in linear time?
 
 ## Solution
 
+
+
+## Related Topics
+
+[Heap](https://leetcode.com/tag/heap/) 
+
+## Similar Questions
+
+[Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/), [Min Stack](https://leetcode.com/problems/min-stack/), [Longest Substring with At Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/), [Paint House II](https://leetcode.com/problems/paint-house-ii/)

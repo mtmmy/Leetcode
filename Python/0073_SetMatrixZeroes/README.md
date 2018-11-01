@@ -42,3 +42,12 @@ Follow up:
 
 ## Solution
 
+
+
+## Related Topics
+
+[Array](https://leetcode.com/tag/array/) 
+
+## Similar Questions
+
+[Game of Life](https://leetcode.com/problems/game-of-life/)

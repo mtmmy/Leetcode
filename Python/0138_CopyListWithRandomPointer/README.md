@@ -32,3 +32,12 @@ The horizontal arrows represent next, and go-down arrows represent random.
 Secondly, we copy the random pointers to the coressponding copied nodes. For example, the random pointer of A' points to C', so that of C' points to B' etc.
 
 Now we have two identical linked lists only entangled together. After seperating them, we get a deep copy list from the orignal one.
+
+
+## Related Topics
+
+[Hash Table](https://leetcode.com/tag/hash-table/) , [Linked List](https://leetcode.com/tag/linked-list/) 
+
+## Similar Questions
+
+[Clone Graph](https://leetcode.com/problems/clone-graph/)

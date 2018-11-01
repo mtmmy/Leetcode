@@ -23,3 +23,12 @@ Could you optimize your algorithm to use only O(k) extra space?
 
 ## Solution
 
+
+
+## Related Topics
+
+[Array](https://leetcode.com/tag/array/) 
+
+## Similar Questions
+
+[Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/)

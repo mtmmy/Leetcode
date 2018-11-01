@@ -20,3 +20,12 @@ Note: You may assume the string contain only lowercase letters.
 
 ## Solution
 
+
+
+## Related Topics
+
+[Hash Table](https://leetcode.com/tag/hash-table/) , [String](https://leetcode.com/tag/string/) 
+
+## Similar Questions
+
+[Sort Characters By Frequency](https://leetcode.com/problems/sort-characters-by-frequency/)

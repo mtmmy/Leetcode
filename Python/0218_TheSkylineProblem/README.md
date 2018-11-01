@@ -16,3 +16,12 @@ Notes:
 
 ## Solution
 
+
+
+## Related Topics
+
+[Divide and Conquer](https://leetcode.com/tag/divide-and-conquer/) , [Heap](https://leetcode.com/tag/heap/) , [Binary Indexed Tree](https://leetcode.com/tag/binary-indexed-tree/) , [Segment Tree](https://leetcode.com/tag/segment-tree/) 
+
+## Similar Questions
+
+[Falling Squares](https://leetcode.com/problems/falling-squares/)

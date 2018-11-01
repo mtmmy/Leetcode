@@ -32,3 +32,12 @@ Note:
 
 ## Solution
 
+
+
+## Related Topics
+
+[Depth-first Search](https://leetcode.com/tag/depth-first-search/) 
+
+## Similar Questions
+
+[Island Perimeter](https://leetcode.com/problems/island-perimeter/)

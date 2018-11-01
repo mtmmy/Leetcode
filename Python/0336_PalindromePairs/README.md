@@ -8,3 +8,12 @@ Example 1:
 
 ## Solution
 
+
+
+## Related Topics
+
+[Hash Table](https://leetcode.com/tag/hash-table/) , [String](https://leetcode.com/tag/string/) , [Trie](https://leetcode.com/tag/trie/) 
+
+## Similar Questions
+
+[Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/), [Shortest Palindrome](https://leetcode.com/problems/shortest-palindrome/)

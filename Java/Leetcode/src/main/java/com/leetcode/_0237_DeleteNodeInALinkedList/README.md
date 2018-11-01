@@ -32,3 +32,12 @@ Note:
 
 ## Solution
 
+
+
+## Related Topics
+
+[Linked List](https://leetcode.com/tag/linked-list/) 
+
+## Similar Questions
+
+[Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/)

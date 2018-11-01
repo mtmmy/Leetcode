@@ -20,3 +20,12 @@ Note:
 
 ## Solution
 
+
+
+## Related Topics
+
+[Hash Table](https://leetcode.com/tag/hash-table/) , [String](https://leetcode.com/tag/string/) 
+
+## Similar Questions
+
+[Valid Anagram](https://leetcode.com/problems/valid-anagram/), [Group Shifted Strings](https://leetcode.com/problems/group-shifted-strings/)

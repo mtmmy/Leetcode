@@ -29,3 +29,12 @@ Note:
 
 ## Solution
 
+
+
+## Related Topics
+
+[Depth-first Search](https://leetcode.com/tag/depth-first-search/) , [Union Find](https://leetcode.com/tag/union-find/) 
+
+## Similar Questions
+
+[Redundant Connection](https://leetcode.com/problems/redundant-connection/), [Sentence Similarity](https://leetcode.com/problems/sentence-similarity/), [Sentence Similarity II](https://leetcode.com/problems/sentence-similarity-ii/)

@@ -23,3 +23,12 @@ minStack.getMin();   --> Returns -2.
 
 ## Solution
 
+
+
+## Related Topics
+
+[Stack](https://leetcode.com/tag/stack/) , [Design](https://leetcode.com/tag/design/) 
+
+## Similar Questions
+
+[Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/), [Max Stack](https://leetcode.com/problems/max-stack/)

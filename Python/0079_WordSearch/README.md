@@ -23,3 +23,12 @@ Given word = "ABCB", return false.
 
 ## Solution
 
+
+
+## Related Topics
+
+[Array](https://leetcode.com/tag/array/) , [Backtracking](https://leetcode.com/tag/backtracking/) 
+
+## Similar Questions
+
+[Word Search II](https://leetcode.com/problems/word-search-ii/)

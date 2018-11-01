@@ -15,3 +15,12 @@ Output: ["11","69","88","96"]
 
 ## Solution
 
+
+
+## Related Topics
+
+[Math](https://leetcode.com/tag/math/) , [Recursion](https://leetcode.com/tag/recursion/) 
+
+## Similar Questions
+
+[Strobogrammatic Number](https://leetcode.com/problems/strobogrammatic-number/), [Strobogrammatic Number III](https://leetcode.com/problems/strobogrammatic-number-iii/)

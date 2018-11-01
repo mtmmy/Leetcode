@@ -30,3 +30,12 @@ Surrounded regions shouldn’t be on the border, which means that any 'O' on the
 
 ## Solution
 
+
+
+## Related Topics
+
+[Depth-first Search](https://leetcode.com/tag/depth-first-search/) , [Breadth-first Search](https://leetcode.com/tag/breadth-first-search/) , [Union Find](https://leetcode.com/tag/union-find/) 
+
+## Similar Questions
+
+[Number of Islands](https://leetcode.com/problems/number-of-islands/), [Walls and Gates](https://leetcode.com/problems/walls-and-gates/)

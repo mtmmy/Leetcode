@@ -40,3 +40,12 @@ Note:
 
 ## Solution
 
+
+
+## Related Topics
+
+[Depth-first Search](https://leetcode.com/tag/depth-first-search/) , [Union Find](https://leetcode.com/tag/union-find/) 
+
+## Similar Questions
+
+[Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/), [Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/), [Sentence Similarity](https://leetcode.com/problems/sentence-similarity/), [Sentence Similarity II](https://leetcode.com/problems/sentence-similarity-ii/)

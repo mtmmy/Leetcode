@@ -31,3 +31,12 @@ Note:
 
 ## Solution
 
+
+
+## Related Topics
+
+[Depth-first Search](https://leetcode.com/tag/depth-first-search/) , [Breadth-first Search](https://leetcode.com/tag/breadth-first-search/) , [Graph](https://leetcode.com/tag/graph/) , [Topological Sort](https://leetcode.com/tag/topological-sort/) 
+
+## Similar Questions
+
+[Course Schedule II](https://leetcode.com/problems/course-schedule-ii/), [Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/), [Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/), [Course Schedule III](https://leetcode.com/problems/course-schedule-iii/)

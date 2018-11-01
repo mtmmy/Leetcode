@@ -24,3 +24,12 @@ Given target = 20, return false.
 
 ## Solution
 
+
+
+## Related Topics
+
+[Binary Search](https://leetcode.com/tag/binary-search/) , [Divide and Conquer](https://leetcode.com/tag/divide-and-conquer/) 
+
+## Similar Questions
+
+[Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/)

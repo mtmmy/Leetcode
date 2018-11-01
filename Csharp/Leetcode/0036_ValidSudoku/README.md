@@ -52,3 +52,12 @@ Note:
 
 ## Solution
 
+
+
+## Related Topics
+
+[Hash Table](https://leetcode.com/tag/hash-table/) 
+
+## Similar Questions
+
+[Sudoku Solver](https://leetcode.com/problems/sudoku-solver/)

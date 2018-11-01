@@ -24,3 +24,12 @@ Output: 4
 
 ## Solution
 
+
+
+## Related Topics
+
+[Hash Table](https://leetcode.com/tag/hash-table/) , [Bit Manipulation](https://leetcode.com/tag/bit-manipulation/) 
+
+## Similar Questions
+
+[Single Number II](https://leetcode.com/problems/single-number-ii/), [Single Number III](https://leetcode.com/problems/single-number-iii/), [Missing Number](https://leetcode.com/problems/missing-number/), [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/), [Find the Difference](https://leetcode.com/problems/find-the-difference/)

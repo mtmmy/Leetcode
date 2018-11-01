@@ -26,3 +26,12 @@ Output: "2314"
 
 ## Solution
 
+
+
+## Related Topics
+
+[Math](https://leetcode.com/tag/math/) , [Backtracking](https://leetcode.com/tag/backtracking/) 
+
+## Similar Questions
+
+[Next Permutation](https://leetcode.com/problems/next-permutation/), [Permutations](https://leetcode.com/problems/permutations/)

@@ -34,3 +34,12 @@ You may assume both s and t have the same length.
 
 ## Solution
 
+
+
+## Related Topics
+
+[Hash Table](https://leetcode.com/tag/hash-table/) 
+
+## Similar Questions
+
+[Word Pattern](https://leetcode.com/problems/word-pattern/)

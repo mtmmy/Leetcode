@@ -13,3 +13,12 @@ The length of A and B will be between 1 and 10000.
 
 ## Solution
 
+
+
+## Related Topics
+
+[String](https://leetcode.com/tag/string/) 
+
+## Similar Questions
+
+[Repeated Substring Pattern](https://leetcode.com/problems/repeated-substring-pattern/)

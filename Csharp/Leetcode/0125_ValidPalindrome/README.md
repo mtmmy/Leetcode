@@ -22,3 +22,12 @@ Output: false
 
 ## Solution
 
+
+
+## Related Topics
+
+[Two Pointers](https://leetcode.com/tag/two-pointers/) , [String](https://leetcode.com/tag/string/) 
+
+## Similar Questions
+
+[Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/), [Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii/)

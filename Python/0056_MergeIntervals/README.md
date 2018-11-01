@@ -29,3 +29,11 @@ First we sort intervals by their starts. Secondly, we iterate the interval array
 3. Otherwise we keep this new combined interval to our result array and update the combined interval with the original interval.
 
 Since the interation part is just O(n) and the sorting part is O(nlogn), the total time complexity is O(nlogn).
+
+## Related Topics
+
+[Array](https://leetcode.com/tag/array/) , [Sort](https://leetcode.com/tag/sort/) 
+
+## Similar Questions
+
+[Insert Interval](https://leetcode.com/problems/insert-interval/), [Meeting Rooms](https://leetcode.com/problems/meeting-rooms/), [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/), [Teemo Attacking](https://leetcode.com/problems/teemo-attacking/), [Add Bold Tag in String](https://leetcode.com/problems/add-bold-tag-in-string/), [Range Module](https://leetcode.com/problems/range-module/), [Employee Free Time](https://leetcode.com/problems/employee-free-time/), [Partition Labels](https://leetcode.com/problems/partition-labels/)
