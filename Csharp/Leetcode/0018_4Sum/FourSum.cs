@@ -6,60 +6,32 @@ using System.Threading.Tasks;
 
 namespace Leetcode.Solutions {
     public class FourSum {
-        IList<IList<int>> result = new List<IList<int>>();
-        public IList<IList<int>> FourSumSolution(int[] nums, int target) {
-            Array.Sort(nums);
-            if (nums.Length == 0) {
-                return result;
+        Array.Sort(nums);
+        var length3 = nums.Length - 3;
+        var length2 = nums.Length - 2;
+        
+        for (var j = 0; j < nums.Length; j++) {
+            if (j != 0 && nums[j] == nums[j - 1]) {
+                continue;
             }
-
-            for (var i = 0; i < nums.Length; i++) {
-                if (i != 0 && nums[i] == nums[i - 1]) {
-                    continue;
-                }
-                for (var j = i + 1; j < nums.Length; j++) {
-                    if (j != i + 1 && nums[j] == nums[j - 1]) {
-                        continue;
-                    }
-                    GetTwoSum(SubArray(nums, j + 1, nums.Length - j - 1), -nums[i], -nums[j], target);
-                }
-            }
-
-            return result;
-        }
-
-        public void GetTwoSum(int[] nums, int num1, int num2, int target) {
-
-            target += num1 + num2;
-            int i = 0, j = nums.Length - 1;
-            while (i < j) {
-
-                var sum = nums[i] + nums[j];
-                if (sum == target) {
-                    var tempList = new List<int>() { -num1, -num2, nums[i], nums[j] };
-                    if (result.Count > 0) {
-                        var lastList = result[result.Count - 1];
-
-                        if (tempList[0] != lastList[0] || tempList[1] != lastList[1] || tempList[2] != lastList[2]) {
-                            result.Add(tempList);
-                        }
-                    } else {
-                        result.Add(tempList);
-                    }
-                    i++;
-                    j--;
-                } else if (sum > target) {
-                    j--;
+            int left = j + 1, right = nums.Length - 1;
+            while (left < right) {
+                var sum = nums[left] + nums[right];
+                if (sum == -nums[j]) {
+                    result.Add(new int[]{nums[j], nums[left], nums[right]});
+                    do {
+                        left++;
+                    } while (left < right && nums[left] == nums[left - 1]);                    
+                    do {
+                        right--;   
+                    } while (left < right && nums[right] == nums[right + 1]);
+                } else if (sum > -nums[j]) {
+                    right--;
                 } else {
-                    i++;
+                    left++;
                 }
             }
-        }
-
-        public int[] SubArray(int[] data, int index, int length) {
-            int[] result = new int[length];
-            Array.Copy(data, index, result, 0, length);
-            return result;
-        }
+        }        
+        return result;
     }
 }

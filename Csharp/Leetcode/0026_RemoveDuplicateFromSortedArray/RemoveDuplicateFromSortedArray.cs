@@ -8,21 +8,21 @@ namespace Leetcode.Solutions {
     public class RemoveDuplicateFromSortedArray {
         public int RemoveDuplicates(int[] nums) {
 
-            if (nums.Length == 0) {
-                return 0;
+            if (nums.Length <= 1) {
+                return nums.Length;
             }
-
-            int end = 0;
-
-            for (var i = 0; i < nums.Length; i++) {
-                if (nums[i] != nums[end]) {
-                    end++;
-                    if (i != end) {
-                        nums[end] = nums[i];
+            
+            int uniqueIdx = 0;
+            
+            for (int i = 1; i < nums.Length; i++) {
+                if (nums[i] != nums[uniqueIdx]) {
+                    uniqueIdx++;
+                    if (i != uniqueIdx) {
+                        nums[uniqueIdx] = nums[i];    
                     }
                 }
             }
-            return end + 1;
+            return uniqueIdx + 1;
         }
     }
 }

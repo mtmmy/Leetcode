@@ -14,7 +14,11 @@ The sum that is closest to the target is 2. (-1 + 2 + 1 = 2).
 
 ## Solution
 
+The logic is almost the same as [3Sum](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0015_ThreeSum). The differences are we don't neetd to find out all combinations and we find the closest sum to the target.
 
+So we compare every combination to the target and record the minimum diff. After we examine all combinations, we get the result.
+
+The length of the subarray we need to check starts from (n - 1) and all the way down to 1. Hence the total execution times is a arithmetic sequence and the order is O(n^2).
 
 ## Related Topics
 

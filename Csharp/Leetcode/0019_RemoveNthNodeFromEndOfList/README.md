@@ -22,7 +22,7 @@ Could you do this in one pass?
 
 ## Solution
 
-
+We use to pointers. The first pointer take n steps first. After that, both pointers go foward together. Once the first pointer reaches the end of the linked list, the second pointer will point exactly on the n-th nodes from end of list, and we simply elimilate it. The time complexity is O(n) and we only need constant space.
 
 ## Related Topics
 

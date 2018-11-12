@@ -11,27 +11,14 @@ namespace Leetcode.Solutions {
             if (x < 0) {
                 return false;
             }
-
-            if (x < 10) {
-                return true;
-            }
-
-            var integers = new List<int>();
+            
+            var copyX = x;
+            var reversedX = 0;
             while (x > 0) {
-                integers.Add(x % 10);
+                reversedX = reversedX * 10 + x % 10;
                 x /= 10;
             }
-
-            var count = integers.Count;
-            for (var i = 0; i < count; i++) {
-                if (i > count - i - 1) {
-                    break;
-                }
-                if (integers[i] != integers[count - i - 1]) {
-                    return false;
-                }
-            }
-            return true;
+            return copyX == reversedX;
         }
     }
 }

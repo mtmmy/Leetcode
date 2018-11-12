@@ -9,7 +9,7 @@ namespace Leetcode.Solutions {
     public class ReverseNodesInKGroup {
         public ListNode ReverseKGroup(ListNode head, int k) {
 
-            if (head == null || k == 1) {
+            if (head == null || k == 1 || head.next == null) {
                 return head;
             }
 

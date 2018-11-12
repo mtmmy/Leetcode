@@ -40,7 +40,7 @@ P     I
 
 ## Solution
 
-
+The transformed result is like a wave. So we create an array whose size is as much as rows and traverse the original string and put them into corresponding rows. In the end we join the array which is the transformed string. The time compleixty is O(n) because we simply loop the original string.
 
 ## Related Topics
 

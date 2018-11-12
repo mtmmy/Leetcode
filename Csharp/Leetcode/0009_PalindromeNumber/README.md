@@ -33,7 +33,7 @@ Coud you solve it without converting the integer to a string?
 
 ## Solution
 
-
+We first check if the input is a non-negtive number. And we compare the number with its reversed number. If they are the same then return true. The calculating times is linear with the size of the input so that the time complexity is O(n).
 
 ## Related Topics
 

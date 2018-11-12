@@ -58,7 +58,9 @@ Explanation: The number "-91283472332" is out of the range of a 32-bit signed in
 
 ## Solution
 
+First we trim the string and check if the length is valid. After that, we examine the first characters and set up sign value if it's a positive or negative sign. Afterwards, we use a long variable to store the result because the description said the range of the result is Int32 range. And we start iterating the string and converting it to an integer. Once we hit a non-numeric character, we stop the interation and return the result. We surely need to check if the result exceeds the range of Int32 during the iteration.
 
+We simply iterate the string once. Hence the time complexity is O(n) and this solution uses constant space.
 
 ## Related Topics
 

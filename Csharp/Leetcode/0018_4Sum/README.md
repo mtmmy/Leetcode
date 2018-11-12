@@ -23,7 +23,9 @@ A solution set is:
 
 ## Solution
 
+The logic is almost the same as [3Sum](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0015_ThreeSum). We only add another layer of loop and change the target which is not always zero.
 
+Since the time complexity of 3Sum is O(n^2), this solution add another loop of n elements. Hence the time complexity is O(n^3).
 
 ## Related Topics
 

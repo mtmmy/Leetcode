@@ -47,7 +47,7 @@ for (int i = 0; i < len; i++) {
 
 ## Solution
 
-
+Since the array is sorted, we can solve this problem in one iteration. First we use a variable to store the index of the unique value. While we are iterating the array, we check the value of the current index and compare it to the value of unique index. If they are the same, we know the value of the current index is a duplicate and we bypass it. Otherwise, we replace the index next to the unique index with the current value because it's not a duplicate. In the end, the unique index is the last index which is replaced by and the problem asks the length so that we return unique index plus one. It's a in-place swapping so the space untilization is constant and the time complexity is O(n). 
 
 ## Related Topics
 
