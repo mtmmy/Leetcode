@@ -16,7 +16,9 @@ Here are some examples. Inputs are in the left-hand column and its corresponding
 
 ## Solution
 
+First we find the last index where **nums[i]** > **nums[i - 1]**. If there are no such index, it means the array is stored in reversed way, we just reverse whole array. If there is a such index, it's the place we need to swap to get the next permutation. Then we find the last index where **nums[j]** > **nums[i - 1]** and swap values in j and i-1. And we need to reverse all numbers in nums[i:end] becasue they are all store in a reversed way. 
 
+The time complexity is O(n) because we only iterate whole array twice at most. 
 
 ## Related Topics
 

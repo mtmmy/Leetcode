@@ -28,7 +28,9 @@ Output: -1
 
 ## Solution
 
+We use binary search to solve this. Since the array has been rotated, we need more check than original binary search. We check nums[end] and nums[mid] first, if nums[end] is smaller or equal to snums[mid], it means the right part isn't sorted, so we check if target is in the left part. If it is, we go to the left part, otherwise we go to the right part. if nums[end] is greater than snums[mid], the right part is sorted. Then we check where the target is and go to that part. In the end, we will find a nums[mid] equals to the target, if we don't, the target is not in the array. 
 
+We need twice comparisons than the original binary search. Hence the time complexity is O(2logN) = O(logN).
 
 ## Related Topics
 

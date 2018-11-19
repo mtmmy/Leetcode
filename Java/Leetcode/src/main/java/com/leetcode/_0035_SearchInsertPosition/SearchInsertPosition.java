@@ -12,11 +12,20 @@ package com.leetcode._0035_SearchInsertPosition;
 public class SearchInsertPosition {
     public int solution(int[] nums, int target) {
         
-        for (int i=0; i<nums.length; i++) {
-            if (nums[i] >= target) {
-                return i;
+        int begin = 0;
+        int end = nums.length - 1;
+        
+        while (begin <= end) {
+            int mid = (begin + end) / 2;
+            if (nums[mid] == target) {
+                return mid;
             }
-        }        
-        return nums.length;
+            if (nums[mid] > target) {
+                end = mid - 1;
+            } else {
+                begin = mid + 1;
+            }
+        }
+        return begin;
     }
 }

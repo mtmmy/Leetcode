@@ -51,7 +51,7 @@ for (int i = 0; i < len; i++) {
 
 ## Solution
 
-
+Use variable **begin** to indicate the index excluding the element that will be removed. Iterate numbers and copy nums[i] to nums[begin] if we don't want to remove nums[i]. In the end the elemnts in nums[0, begin] are the elements we want to keep. The time complexity is O(n) and space complexity is O(1). 
 
 ## Related Topics
 

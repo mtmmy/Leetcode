@@ -24,7 +24,9 @@ Output: [-1,-1]
 
 ## Solution
 
+We use binary search twice. At the first time we find the begining from the whole array. And the we search for the end form the array started at the begining index we found at the first binary search to the end of the array. 
 
+We run the binary search twice so that the time complexity is O(2logN) = O(2logN).
 
 ## Related Topics
 
