@@ -6,37 +6,18 @@ class Solution:
         :type nums: List[int]
         :rtype: int
         """
-
-        # nums.append(0)
-        # n = len(nums)
-        # for i in range(n):
-        #     if nums[i]<0 or nums[i] >= n:
-        #         nums[i]=0
-                
-        # for i in range(n):
-        #     nums[nums[i] % n] += n
-
-        # for i in range(1, n):
-        #     if nums[i] // n == 0:
-        #         return i
-        # return n
-        n = len(nums)
-    
-        for i in range(n):
+        for i in range(len(nums)):
             val = nums[i]
-            # Swap until i matches index i - 1 (zero indexing so we can use the array as is)
-            while val > 0 and val < n and val != nums[val - 1]:
-                self.swap(nums, i, val)
+            
+            while val < len(nums) and val > 0 and val != nums[val - 1]:
+                nums[i], nums[val - 1] = nums[val - 1], val
                 val = nums[i]
-            
-        for i in range(n):
+                
+        for i in range(len(nums)):
             if nums[i] != i + 1:
-                return i + 1
-            
-        return n + 1
-    
-    def swap(self, nums, i, val):
-        nums[i], nums[val - 1] = nums[val - 1], val
+                return i + 1        
+        
+        return len(nums) + 1
 
 class TestFunc(unittest.TestCase):
     """Test fuction"""

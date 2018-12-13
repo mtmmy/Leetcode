@@ -33,7 +33,9 @@ A solution set is:
 
 ## Solution
 
+We use DFS to look for all the combinations. For every time in DFS function, we choose one number as the canditate and **new target** which is **old_target - candidate** to start a new DFS function. Once the target reaches zero, we get a combination whose sum is the **target** from the original question and store such a combination. Another scenario is that the new target is smaller than zero, which means this combination dosen't satisify the requirement. We simply stop going deeper in DFS.
 
+Since our solution is based on DFS, we can visialize this algorithm to a tree structure where the height of the tree is linear to the **target** denoted to **h** and the branch of each node is **n** (number of candidates). The time we need to traverse the whole tree is O(n<sup>t</sup>). Space complexity is the height of the tree which is O(h).
 
 ## Related Topics
 

@@ -1,17 +1,19 @@
 import unittest
+import time
 
-class Solution:
+class Solution:    
     def isMatch(self, s, p):
         """
         :type s: str
         :type p: str
         :rtype: bool
         """
+        lenS, lenP = len(s), len(p)
         i, j, s_star, p_star = 0, 0, 0, -1
-        while i < len(s):
-            if j < len(p) and (s[i] == p[j] or p[j] == '?'):
+        while i < lenS:
+            if j < lenP and (s[i] == p[j] or p[j] == '?'):
                 i ,j = i + 1, j + 1
-            elif j < len(p) and p[j] == '*':
+            elif j < lenP and p[j] == '*':
                 s_star, p_star = i, j
                 j += 1
             elif p_star != -1:
@@ -20,10 +22,10 @@ class Solution:
             else:
                 return False
 
-        while j < len(p) and p[j] == '*':
+        while j < lenP and p[j] == '*':
             j += 1
 
-        return True if j == len(p) else False
+        return True if j == lenP else False
 
     def isMatch2(self, s, p):
         """
@@ -72,4 +74,5 @@ class TestFunc(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+    
         

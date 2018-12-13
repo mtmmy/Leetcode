@@ -31,7 +31,15 @@ Your algorithm should run in O(n) time and uses constant extra space.
 
 ## Solution
 
+To solve the problem, we can rearrange the number list to:
 
+```
+num[i] = i + 1 for all i > 0
+```
+
+for example, **num[0] = 1, num[1] = 2**. After rearranging, we go through the list and the first element that **num[i] != i + 1** is the place that we miss the first postive number. Hence **i + 1** is the number.
+
+The rearranging takes O(n) and the searching takes O(n) as well. Totally, it's O(n).
 
 ## Related Topics
 

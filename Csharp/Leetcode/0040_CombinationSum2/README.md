@@ -34,7 +34,9 @@ A solution set is:
 
 ## Solution
 
+This question is similar to [39. Combination Sum](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0039_CombinationSum). The differences are candidates may be duplicates and each candidates can only be used once. Hence we can use the same algorithm as of [39. Combination Sum](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0039_CombinationSum) and eliminate duplicates.
 
+The time complexity and space complexity will be the same with [39. Combination Sum](https://github.com/mtmmy/Leetcode/tree/master/Csharp/Leetcode/0039_CombinationSum).
 
 ## Related Topics
 

@@ -52,7 +52,9 @@ Note:
 
 ## Solution
 
-
+Use three map which is good at searching elements to store states of numbers in rows, columns and sub-boxes. We go over the board and whenever we get a number, we check if this number has existed in the same row, column or sub-box. If the same number exists, the program returns false. Otherwise, we add the number to the corespoding row, column and sub-box.
+        
+Since we only go over the board once, the time complexity is O(n). However we need extra space to store states for rows, columns and sub-boxes and the space complexity is O(n). 
 
 ## Related Topics
 

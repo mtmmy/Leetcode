@@ -23,7 +23,9 @@ You can assume that you can always reach the last index.
 
 ## Solution
 
+We can solve this by dynamic programming. We use two variables, **curFurthest** representing the furthest index that the current index can jump to and **curEnd** to be used to check that we reach it and increase jump count.
 
+The time complexity is O(n) and we only need constant space.
 
 ## Related Topics
 

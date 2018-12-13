@@ -21,7 +21,11 @@ Output:
 
 ## Solution
 
+Combination and Permutation, for these kinds of problems, we generally use recursion to solve them. For this problem, we use a recursive function. For looking for all permutations of N elements, we alredy have all permutations of (N-1) elements, so we just insert N-th element to every index of all permutations of (N-1) elements.    
+    
+For example, we are looking for permutations of [1, 2, 3], so we already have permuations of [2, 3] which are [2, 3] and [3, 2]. And we insert 1 into gaps of each array. For [2, 3], after insertion, we get [1, 2, 3], [2, 1, 3] and [2, 3, 1]. For [3, 2], after insertion, we get [1, 3, 2], [3, 1, 2] and [3, 2, 1].
 
+Since the number of permutaions of N numbers is N!, the time complexity of finding all permutations is O(N!).
 
 ## Related Topics
 

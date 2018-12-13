@@ -43,39 +43,3 @@ namespace Leetcode.Solutions {
         }
     }
 }
-
-//======
-/* 
-    //======
-47. Permutations II
-    //======
-  Given a collection of numbers that might contain duplicates, return all possible unique permutations.
-
-Example:
-
-Input: [1,1,2]
-Output:
-[
-  [1,1,2],
-  [1,2,1],
-  [2,1,1]
-]
-    //======
-        This problem is similar to the problem #46. The difference is that there may be duplicates in this problem.
-        However, the method we used in #46 cannot record wheather the value is used or not so that we cannot skip duplicate permutations.
-
-        So we use a similar solution of problem #39, combination sum. We use a list to store each result and when the length of the list equals to the amount of input numbers, we store the list to the result.
-        And we skip elements when 1. It has been used or 2. The value is same as the previous one and the previous one has not been used yet.
-        By doing these, we can avoid duplicate permutations.
-
-        Since the number of permutaions of N numbers is N!, the time complexity of finding all permutations is O(N!).
-    //======
-        Permutation, Recursion
-    //======
-        07/07/2018
-    //======
-        Leetcode
-    //======
-        https://leetcode.com/problems/permutations-ii/description/
-    //======
-*/
