@@ -30,7 +30,9 @@ Note:
 
 ## Solution
 
+Let's take a look at Example 1 which is 2<sup>10</sup>. We can also write it down as (2<sup>2</sup>)<sup>5</sup>. So the algorithm we provide is keep doing square on **x**. However, the square method only applies for even power number, so we need to take care when the power number is odd. Under this situation, we multiply **x** on more time.
 
+The time compleixty is O(logN) where N is the length of the power number.
 
 ## Related Topics
 

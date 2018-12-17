@@ -27,7 +27,9 @@ Explanation: You will always arrive at index 3 no matter what. Its maximum
 
 ## Solution
 
+We use the variabel **reach** to represent the furthest index we can reach at the moment. If the current index is the same with the **reach** which means we stuck at this point. Otherwise we will finish the iteration and **reach >= len(nums) - 1** will be True.
 
+The time complexity is O(N) and space untilization is constant.
 
 ## Related Topics
 

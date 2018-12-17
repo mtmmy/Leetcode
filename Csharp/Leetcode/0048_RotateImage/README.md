@@ -50,7 +50,9 @@ rotate the input matrix in-place such that it becomes:
 
 ## Solution
 
+Let's use this matrix as an example. We start with the top-left corner and at this point, we need rotate four numbers on four coners, 5 to 11, 11 to 16, 16 to 15 and 15 to 5. So we use a SwapFour function to accomplish this task. In the main body of the solution, we use a nested loop to visit each starting point of SwapFour function. However we don't need to go over all matrix. In this, example, we only need to visit, 5, 1, 9, 4 because the top-right corner (whose value is 11) has been updated when the starting point is the top-left corner.
 
+The time complexity of the algorithm is O(n<sup>2</sup>) where n is the dimensions of the matrix and we only need constant space.
 
 ## Related Topics
 

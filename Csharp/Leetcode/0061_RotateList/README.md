@@ -28,7 +28,9 @@ rotate 4 steps to the right: 2->0->1->NULL
 
 ## Solution
 
+First, we want to know how many nodes in the list. Because for a 5-node list, the results after rotating of k = 1, 6, 16, 1006 are all the same because their remainder of being divided by 5 are all 1. After doing modulo, we can know the fewest moves (k') we need. We set two pointers and let the **leading** pointer goes k' steps ahead of the **tracking** pointer. Then two pointers keep going forward until the **leading** one hits the end of the list. At this moment, the tracking point will be the node that is right before the head after rotating. Now we already know the new head, we can easily reorganize the list and return the rotated list.
 
+The counting part takes n steps and finding new head takes n steps as well. Hence, we need 2n steps totally and the time complexity is O(n). We need only constant space.
 
 ## Related Topics
 

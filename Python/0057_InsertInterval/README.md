@@ -23,7 +23,9 @@ Explanation: Because the new interval [4,8] overlaps with [3,5],[6,7],[8,10].
 
 ## Solution
 
+Since intervals have been sorted, we can start from the first one and seperate intervals into three parts. One part of intervals are those whose end time are earlier than the new interval. We gather these intervals to the **left** array. Another part of intervals are those whose start time is behind the end time of the new interval and we put these intervals to the **right** array. The reset intervals are obviously overlaped with the new interval, so we merge them into one. The last thing we need to do is simply combining these three parts of intervals.
 
+The time complexity and the space complexity are both O(N).
 
 ## Related Topics
 
