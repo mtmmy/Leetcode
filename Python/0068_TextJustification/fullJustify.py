@@ -8,7 +8,7 @@ class Solution:
         :rtype: List[str]
         """
         result, remainWidth = [""], maxWidth
-        for w in words:            
+        for w in words:
             if remainWidth >= len(w):
                 result[-1] += w + " "
                 remainWidth -= len(w) + 1
@@ -19,15 +19,16 @@ class Solution:
                 remainWidth = maxWidth - len(w) - 1
         
         for i in range(len(result) - 1):
-            n = len(result[i])
-            if n < maxWidth:
+            lineWidth = len(result[i])
+            if lineWidth < maxWidth:
                 words = result[i].split(" ")
-                if len(words) > 1:
-                    spaces = maxWidth - n + (len(words) - 1)
-                    gap = spaces // (len(words) - 1)
-                    remainder = spaces % (len(words) - 1)
+                wordCount = len(words)
+                if wordCount > 1:
+                    spaces = maxWidth - lineWidth + (wordCount - 1)
+                    gap = spaces // (wordCount - 1)
+                    remainder = spaces % (wordCount - 1)
                     temp = ""
-                    for j in range(len(words)):
+                    for j in range(wordCount):
                         temp += words[j]
                         if spaces == 0:
                             break

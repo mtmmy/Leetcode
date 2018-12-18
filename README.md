@@ -270,4 +270,4 @@ This repository shows all of leetcode problems I'd accomplished. I use Python as
 |953|[Verifying an Alien Dictionary](https://leetcode.com/problems/verifying-an-alien-dictionary)|58.8%|Easy|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0953_VerifyingAnAlienDictionary)|
 |954|[Array of Doubled Pairs](https://leetcode.com/problems/array-of-doubled-pairs)|32.1%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0954_ArrayOfDoubledPairs)|
 |957|[Prison Cells After N Days](https://leetcode.com/problems/prison-cells-after-n-days)|33.4%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0957_PrisonCellsAfterNDays)|
-|958|[Check Completeness of a Binary Tree](https://leetcode.com/problems/check-completeness-of-a-binary-tree)|40.8%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0958_CheckCompletenessOfABinary ree)|
+|958|[Check Completeness of a Binary Tree](https://leetcode.com/problems/check-completeness-of-a-binary-tree)|40.8%|Medium|[Python](https://github.com/mtmmy/Leetcode/tree/master/Python/0958_CheckCompletenessOfABinaryTree)|

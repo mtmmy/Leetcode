@@ -35,7 +35,9 @@ Output: 28
 
 ## Solution
 
+We create a 2d-array **dp** where **dp[i][j]** stores possibile ways from start to the position **(i, j)**. Because the robot can only go right or down, the robot can only reach **(i, j)** from **(i-1, j)** or **(i, j-1)**. Hence the possible ways of reaching **(i, j)** is the sum of the possible ways of **(i-1, j)** and **(i, j-1)**. Accroding to this algorithm, we can figure out How many possible unique paths from start to finish.
 
+The time complexity and space complexity are both O(m * n).
 
 ## Related Topics
 

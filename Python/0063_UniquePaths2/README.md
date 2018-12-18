@@ -35,7 +35,11 @@ There are two ways to reach the bottom-right corner:
 
 ## Solution
 
+We can use the same algorithm from [62. Unique Paths](https://github.com/mtmmy/Leetcode/tree/master/Python/0062_UniquePaths). However, in the given board it use **1** as obstacles. So here we use a little trick, we calculate paths by negative numbers and convert it to positive number when returning.
 
+The algorithm is very similar to the one we use to solve [62. Unique Paths](https://github.com/mtmmy/Leetcode/tree/master/Python/0062_UniquePaths). What we need to do here is to ignore obstacle elements.
+
+The time complexity here is O(N) where N is the size of the given board and we just need constant space since the board has been given.
 
 ## Related Topics
 

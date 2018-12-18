@@ -22,7 +22,9 @@ Output: "10101"
 
 ## Solution
 
+First, reverse the character arrays so that they can align on the first place which makes us easier to sum up digit by digit. Sum up two numbers digit by digit and remember carry over to the next place if there is a carryover. Reverse back to the correct number.
 
+We need character arrays to store reversed numbers, so the space complexity is O(n). We use a loop to sum up two numbers bit by bit, and the executing time of the loop depends on the longer number. The time complexity is O(n). And we also have 3 reversing steps. The time complexity of resersing is O(n) as well. So the total time complexity is still O(n).
 
 ## Related Topics
 
