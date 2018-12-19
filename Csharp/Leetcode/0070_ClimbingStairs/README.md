@@ -31,7 +31,7 @@ Explanation: There are three ways to climb to the top.
 
 ## Solution
 
-
+This is a typical fibonacci sequence.
 
 ## Related Topics
 

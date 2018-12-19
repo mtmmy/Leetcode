@@ -32,7 +32,26 @@ exection -> execution (insert 'u')
 
 ## Solution
 
+The pseudocode of the algorithm shows below:
 
+```
+m, n = len(X), len(Y)
+
+for i = 0 to m do
+    T[i, 0] = i
+for j = 0 to n do
+    T[0, j] = j
+
+for i = 0 to m do
+    for j = 0 to n do
+        if X[i-1] == Y[j-1] then
+            T[i, j] = T[i-1, j-1]
+        else
+            T[i, j] = min(T[i-1, j], T[i-1, j-1], T[i, j-1]) + 1
+return T[m, n]
+```
+
+We construct a matrix T with size of (m+1)(n+1) where m is the length of X and n is the length of Y and T[i, j] stores steps needed from substring X[0, i] to substring Y[0, j]. We first set value of elements in the first column with corresponding i because we need i steps to transform X[0, i] to empty string. We apply the same logic for the elements in the first row, we need j steps to transform empty string to Y[0, j]. And we go through every elements of T and calculate corresponding steps of T[i, j]. If X[i-1] == Y[j-1], we don’t need do anything so that the steps of T[i, j] is same as T[i-1, j-1]. If X[i-1] != Y[j-1], we find the min of T[i-1, j], T[i-1, j-1], and T[i, j-1] and plus 1. T[m, n] is the less steps needed to transform X into Y. 
 
 ## Related Topics
 

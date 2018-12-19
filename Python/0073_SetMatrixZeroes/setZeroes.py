@@ -12,10 +12,12 @@ class Solution:
         for i in range(m):
             if matrix[i][0] == 0:
                 firstCol = True
+                break
         
         for j in range(n):
             if matrix[0][j] == 0:
                 firstRow = True
+                break
 
         for i in range(1, m):
             for j in range(1, n):
@@ -44,5 +46,5 @@ class Solution:
 if __name__ == "__main__":
     target = Solution()
     matrix = [[0,1,2,0],[3,4,5,2],[1,3,1,5]]
-    result = target.setZeroes(matrix)
-    print(result)
+    target.setZeroes(matrix)
+    print(matrix)

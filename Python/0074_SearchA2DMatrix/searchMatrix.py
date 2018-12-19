@@ -9,19 +9,31 @@ class Solution:
             return False
         if len(matrix[0]) == 0:
             return False
-
-        i, j = 0, 0
-        while matrix[i][-1] < target:
-            i += 1
-            if i == len(matrix):
-                return False
         
-        while matrix[i][j] < target:
-            j += 1
-            if j == len(matrix[i]):
-                return False
-                
-        return target == matrix[i][j]
+        start, end = 0, len(matrix) - 1
+        
+        while start <= end:
+            mid = (start + end) // 2
+            if matrix[mid][0] < target:
+                start = mid + 1
+            elif matrix[mid][0] > target:
+                end = mid - 1
+            else:
+                return True
+        
+        row = end
+        start, end = 0, len(matrix[row]) - 1
+        
+        while start <= end:
+            mid = (start + end) // 2
+            if matrix[row][mid] < target:
+                start = mid + 1
+            elif matrix[row][mid] > target:
+                end = mid - 1
+            else:
+                return True
+        
+        return False
         
 if __name__ == "__main__":
     target = Solution()

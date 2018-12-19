@@ -2,20 +2,18 @@
 namespace Leetcode.Solutions {
     public class ClimbingStairs {
         public int Solution(int n) {
-            var waysAry = new int[n + 1];
-
-            if (n <= 2) {
-                return n;
-            }
-
+            var waysAry = new int[2];
+        
             for (int i = 0; i <= n; i++) {
-                if (i <= 2) {
-                    waysAry[i] = i;
+                if (i < 2) {
+                    waysAry[i] = 1;
                 } else {
-                    waysAry[i] = waysAry[i - 1] + waysAry[i - 2];
+                    var temp = waysAry[1];
+                    waysAry[1] = waysAry[0] + waysAry[1];
+                    waysAry[0] = temp;
                 }
             }
-            return waysAry[n];
+            return waysAry[1];
         }
     }
 }

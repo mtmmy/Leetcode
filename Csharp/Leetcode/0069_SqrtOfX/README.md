@@ -26,7 +26,11 @@ Explanation: The square root of 8 is 2.82842..., and since
 
 ## Solution
 
+You can solve it with either [Newton's method](https://en.wikipedia.org/wiki/Newton%27s_method) or binary search.
 
+If you choose binary search, just reduce the search space to 1 ~ x/2.
+
+The time complexity of binary search is O(NlogN).
 
 ## Related Topics
 
