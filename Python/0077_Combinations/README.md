@@ -21,7 +21,7 @@ Output:
 
 ## Solution
 
-
+Implement a typical backtracking algorithm by recursion. The total amount of combinations is C(n, k) which is n!/(n-k)!k!. Hence the time coplexity is O(n!). The space of function stack we need is O(k).
 
 ## Related Topics
 

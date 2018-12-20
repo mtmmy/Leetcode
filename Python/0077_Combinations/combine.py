@@ -7,16 +7,17 @@ class Solution:
         """
         result = []
         out = []
-        self.dfs(result, out, n, k, 1)
+
+        def dfs (n, level):
+            if len(out) == k:
+                result.append(out[:])
+            for i in range (level, n + 1):
+                out.append(i)
+                dfs(n, i + 1)
+                out.pop()
+                
+        dfs(n, 1)
         return result
-    
-    def dfs (self, result, out, n, k, level):
-        if len(out) == k:
-            result.append(out.copy())
-        for i in range (level, n + 1):
-            out.append(i)
-            self.dfs(result, out, n, k, i + 1)
-            out.pop()
 
 if __name__ == "__main__":
     target = Solution()

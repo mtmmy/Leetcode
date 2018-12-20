@@ -12,34 +12,31 @@ class Solution:
         n = len(board[0])
         if n == 0:
             return False
-
-        used = [[False] * n for _ in range(m)]
         
         for i in range(m):
             for j in range(n):
-                if self.search(board, word, used, (i, j), 0):
+                if self.search(board, word, i, j, 0):
                     return True
         return False
 
-    def search(self, board, word, used, curPos, index):
-        if index == len(word):
+    def search(self, board, word, row, col, level):
+        if level == len(word):
             return True
-        row = curPos[0]
-        col = curPos[1]
 
-        if row < 0 or col < 0 or row >= len(board) or col >= len(board[0]) or used[row][col] or board[row][col] != word[index]:
+        if row < 0 or col < 0 or row >= len(board) or col >= len(board[0]) or board[row][col] != word[level]:
             return False
 
-        used[row][col] = True
-        if self.search(board, word, used, (row - 1, col), index + 1):
+        curChar = board[row][col]
+        board[row][col] = "0"
+        if self.search(board, word, row - 1, col, level + 1):
             return True
-        if self.search(board, word, used, (row + 1, col), index + 1):
+        if self.search(board, word, row + 1, col, level + 1):
             return True
-        if self.search(board, word, used, (row, col - 1), index + 1):
+        if self.search(board, word, row, col - 1, level + 1):
             return True
-        if self.search(board, word, used, (row, col + 1), index + 1):
+        if self.search(board, word, row, col + 1, level + 1):
             return True
-        used[row][col] = False
+        board[row][col] = curChar
         return False
 
 if __name__ == "__main__":

@@ -19,7 +19,15 @@ Follow up:
 
 ## Solution
 
+A simple solution is to use in-place sort algorithms such as quick sort. They take O(NlogN) time. However, we can solve this problem in just O(N).
 
+We use two pointers called **red** and **blue** to denote the index of the last red and that of the first blue. The initial position of **red** is the begining point of the array and that of **blue** is the end point of the array. The algorithm is:
+
+1. set a index **i** starting from 0
+2. if nums[i] == 0 (it's red), swap nums[i] and nums[red]; increase red by 1
+3. if nums[i] == 2 (it's blue). swap nums[i] and nums[blue]; decrease blue and i both by 1
+
+The time complexity of this algorithm is O(N).
 
 ## Related Topics
 

@@ -23,7 +23,9 @@ Given word = "ABCB", return false.
 
 ## Solution
 
+Use dfs approach to go through the whole matrix. In the dfs function, if the level is equal to the length of the target word, it means we find the target word. If not, we check if it's valid by far. The condition of the validation is written in the soruce code. If it's valid, we goes deeper by toward to 4 directions.
 
+Since we need check 4 directions for each level, the time complexity is O(n<sup>4</sup>k) where n is the length of the given word and k is the amount of elemnts in the board. And we need O(n) auxiliary space.
 
 ## Related Topics
 

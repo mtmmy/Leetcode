@@ -8,22 +8,19 @@ class Solution:
         if len(s) < len(t):
             return ""
         
-        left, count, minLength = 0, 0, len(s) + 1
+        left, count, minLength, result, counter = 0, 0, len(s) + 1, "", {}
         
-        result = ""
-        
-        dict_t = {}
         for c in t:
-            if c in dict_t:
-                dict_t[c] += 1
+            if c in counter:
+                counter[c] += 1
             else:
-                dict_t[c] = 1
+                counter[c] = 1
                 
         for right in range(len(s)):
-            if s[right] in dict_t:
-                dict_t[s[right]] -= 1
+            if s[right] in counter:
+                counter[s[right]] -= 1
             
-                if dict_t[s[right]] >= 0:
+                if counter[s[right]] >= 0:
                     count += 1
                     
                 while count == len(t):
@@ -32,9 +29,9 @@ class Solution:
                         minLength = nowLength
                         result = s[left:left + minLength]
                     
-                    if s[left] in dict_t:
-                        dict_t[s[left]] += 1
-                        if dict_t[s[left]] > 0:
+                    if s[left] in counter:
+                        counter[s[left]] += 1
+                        if counter[s[left]] > 0:
                             count -= 1
                     left += 1
         
