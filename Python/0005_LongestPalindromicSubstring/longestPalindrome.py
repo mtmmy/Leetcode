@@ -7,19 +7,27 @@ class Solution:
         if not s:
             return ""
         
-        n, left, right, length = len(s), 0, 0, 0
-        dp = [[False] * n for _ in range(n)]
+        n, left, length = len(s), 0, 1     
         
-        for i in range(n):            
-            for j in range(i):
-                dp[j][i] = s[i] == s[j] and (i - j < 2 or dp[j + 1][i - 1])
-                if dp[j][i] and i - j + 1 > length:
-                    length = i - j + 1
-                    left = j
-                    right = i
+        dp = [[False] * n for _ in range(n)]
+
+        for i in range(n):
             dp[i][i] = True
 
-            
-        print(dp)
-        return s[left:right + 1]
+        for i in range(n - 1, 0, -1):
+            if s[i] == s[i - 1]:
+                dp[i - 1][i] = True
+                length = 2
+                left = i - 1
+
+        for k in range(3, n + 1):
+            for i in range(0, n - k + 1):
+                j = i + k - 1
+                if dp[i + 1][j - 1] and s[i] == s[j]:
+                    dp[i][j] = True
+                    if k > length:
+                        length = k
+                        left = i
+
+        return s[left : left + length]
                 

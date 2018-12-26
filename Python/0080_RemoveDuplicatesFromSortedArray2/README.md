@@ -47,7 +47,9 @@ for (int i = 0; i < len; i++) {
 
 ## Solution
 
+We use two pointer **i** and **ptr** to track the array and both start at index equals 2. If **num[i] != num[ptr-2]**, this implys the number at **i** hasn't violate the rule so that we swap it to **ptr** and increament **ptr** and **i**. Otherwise, it means before **ptr**, there has already been two of the number at **i**, we increment **i** only.
 
+The time complexity is O(N), so as auxiliary space.
 
 ## Related Topics
 

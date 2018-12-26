@@ -24,9 +24,16 @@ Output: false
 
 Follow up:
 
+- This is a follow up problem to Search in Rotated Sorted Array, where nums may contain duplicates.
+- Would this affect the run-time complexity? How and why?
+
 ## Solution
 
+This is an altered binary search problem. We still use two pointers, **left** and **right**. And in the loop with the condition **left <= right**, we calculate **mid** every iteration.
 
+In the iteration, we need to decide which part we want to cut off. There are four situations shown in the source code. By keeping cutting off useless part, we can either find the target and return true or failing the condition of the loop and return false.
+
+The time complexity of binary search is O(logN) and auxiliary space is O(1).
 
 ## Related Topics
 

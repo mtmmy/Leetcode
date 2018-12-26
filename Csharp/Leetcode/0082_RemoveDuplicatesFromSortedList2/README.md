@@ -20,7 +20,7 @@ Output: 2->3
 
 ## Solution
 
-
+The key of the solution is to keep the node which is right before duplicates. The implementation is shown as the sourcecode. The time complexity is O(N) and auxiliary space is O(1).
 
 ## Related Topics
 

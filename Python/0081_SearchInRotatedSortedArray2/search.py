@@ -5,27 +5,6 @@ class Solution:
         :type target: int
         :rtype: bool
         """
-        # seems slow, but faster
-        # if len(nums) == 0:
-        #     return False        
-        
-        # if target >= nums[0]:
-        #     lastN = nums[0]
-        #     for n in nums:
-        #         if n < lastN:
-        #             return False
-        #         if n == target:
-        #             return True
-        #         lastN = n
-        # else:
-        #     lastN = nums[-1]
-        #     for n in reversed(nums):
-        #         if n > lastN:
-        #             return False
-        #         if n == target:
-        #             return True
-        #         lastN = n
-        # return False
         if len(nums) == 0:
             return False        
 

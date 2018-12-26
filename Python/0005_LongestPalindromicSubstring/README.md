@@ -21,7 +21,15 @@ Output: "bb"
 
 ## Solution
 
+We maintain a matrix **dp** where **dp[i][j]** indicates whether **s[i:j]** is a palindrome or not.
 
+First we set **dp[i][i]** for each i to true because a single character is no doubt palindromic.
+
+Later we check the length of 2. If two consective characters are the same, the string of two characters is a palindrome.
+
+Finally, we need to check the length of greater than 2. In this section, we need to get the ending index, **j**, which is the starting index, **i**, plus the length. A substring is palindromic if characters of these two indices are the same, and its substring which is **s[i+1:j-1]** is also palindromic. Among all palindromic substrings, we find the longest one and return it.
+
+The time complexity and auxiliary space are both O(N<sup>2</sup>).
 
 ## Related Topics
 
