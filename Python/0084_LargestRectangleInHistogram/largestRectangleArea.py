@@ -14,3 +14,6 @@ class Solution:
                 ans = max(ans, h * w)
             stack.append(i)
         return ans
+
+target = Solution()
+target.largestRectangleArea([2,1,5,6,2,3])

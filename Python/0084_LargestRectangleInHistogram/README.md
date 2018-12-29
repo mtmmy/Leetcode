@@ -25,7 +25,11 @@ Output: 10
 
 ## Solution
 
+We use a stack to store the index value one by one if the height of the current index is greater than that of the last index in the stack. Once we confront the condition that the current height is greater than the height of the last index in the stack, we use the last element in the stack as the pivot to calculate the area that is formed by histograms on the left side. Because the current histogram reduces the height of the rectagle, we need calculate areas by higher histogram first. 
 
+So we keep poping out the last histogram and calculate the rectangle formed by its height untill we confront a histogram which is shorter than the current one. Since histogram on the left-hand side is absolutely shorter than the last histogram, the left boundry is the last histogram in the stack and right boundry is the current histogram. By keep doing this process, we can calculate all rectangles formed by each histogram and find the maximum one.
+
+The time complexity and auxiliary space are both O(N) because we need to go through the array once and use a stack to store indices of the array.
 
 ## Related Topics
 
