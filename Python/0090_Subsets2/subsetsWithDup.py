@@ -6,21 +6,20 @@ class Solution:
         """
         if len(nums) == 0:
             return []
-
-        nums.sort()
-        result = [[]]
-        last = nums[0]
+        nums = sorted(nums)
+        result, last = [[]], nums[0]
         size = len(result)
-        for i in nums:
-            if i != last:
-                last = i
+        
+        for num in nums:
+            if num != last:
+                last = num
                 size = len(result)
             newSize = len(result)
             for j in range(newSize - size, len(result)):
                 newset = result[j].copy()
-                newset.append(i)
+                newset.append(num)
                 result.append(newset)
-            last = i
+            last = num
         return result
 if __name__ == "__main__":
     target = Solution()

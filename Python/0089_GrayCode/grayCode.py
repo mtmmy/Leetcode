@@ -4,10 +4,9 @@ class Solution:
         :type n: int
         :rtype: List[int]
         """
-        result = [0]
-        v = 1
+        result, v = [0], 1
         for i in range(1, n + 1):
-            for x in reversed(result):
+            for x in result[::-1]:
                 result.append(v + x)
             v *= 2
         return result

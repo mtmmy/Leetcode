@@ -38,6 +38,19 @@ Explanation: We define the gray code sequence to begin with 0.
 
 ## Solution
 
+```
+00 -> 01 -> 11 -> 12
+ 0     1     3     2
+```
+Let's take a look at this example. We can observe when we divide it at the point between 1 and 3, 3 = 1 + 2 and 2 = 0 + 2.
+
+```
+000 -> 001 -> 011 -> 010 -> 110 -> 111 -> 101 -> 100
+  0      1      3      2      6      7      5      4
+```
+Futhermore, in this example, 6 = 2 + 4, 7 = 3 + 4, 5 = 1 + 4, and 4 = 0 + 4.
+
+Thus we can use this pattern to generate the result. The implementation is in the sourcecode. The time complexity and auxiliary space are O(2<sup>N</sup>).
 
 
 ## Related Topics
