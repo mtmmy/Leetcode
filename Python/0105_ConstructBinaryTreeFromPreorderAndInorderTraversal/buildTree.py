@@ -13,7 +13,10 @@ class Solution:
         """
         if inorder:
             idx = inorder.index(preorder.pop(0))
-            root = TreeNode(inorder[idx])
-            root.left = self.buildTree(preorder, inorder[0:idx])
-            root.right = self.buildTree(preorder, inorder[idx+1:])
-            return root
+            curNode = TreeNode(inorder[idx])
+            curNode.left = self.buildTree(preorder, inorder[0:idx])
+            curNode.right = self.buildTree(preorder, inorder[idx+1:])
+            return curNode
+
+target = Solution()
+target.buildTree([3,9,20,15,7], [9,3,15,20,7])

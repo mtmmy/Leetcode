@@ -24,7 +24,9 @@ return true, as there exist a root-to-leaf path 5->4->11->2 which sum is 22.
 
 ## Solution
 
+We use DFS to traverse each path. For every recursive call, we have the sum from the root to the current node. If the node is a leaf and the sum is equal to the target, we find the path and return true. Otherwise we keep searching.
 
+The time complexity is O(n) and space complexity is O(log n) which is the height of the tree.
 
 ## Related Topics
 

@@ -7,15 +7,14 @@ namespace Leetcode.Solutions {
             if (root == null) {
                 return 0;
             }
-            Console.WriteLine(root.val);
 
             var leftDepth = MinDepth(root.left);
             var rightDepth = MinDepth(root.right);
 
-            if (leftDepth == 0 || rightDepth == 0) {
-                return leftDepth + rightDepth + 1;
-            } else {
+            if (leftDepth != 0 && rightDepth != 0) {
                 return Math.Min(leftDepth, rightDepth) + 1;
+            } else {
+                return Math.Max(leftDepth, rightDepth) + 1;
             }
         }
     }

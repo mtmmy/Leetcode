@@ -9,22 +9,22 @@ public class FlattenBinaryTreeToLinkedList {
     Deque<TreeNode> stack = new LinkedList<>();
     TreeNode rootNode = null;
     public void solution(TreeNode root) {
-        dfs2(root);
+        dfs(root);
         System.out.println("");
     }
 
-    private void dfs2(TreeNode root) {
+    private void dfs(TreeNode root) {
         if (root == null) {
             return;
         }
-        dfs2(root.right);
-        dfs2(root.left);
+        dfs(root.right);
+        dfs(root.left);
         root.right = rootNode;
         root.left = null;
         rootNode = root;
     }
 
-    private void dfs(TreeNode root) {
+    private void dfs2(TreeNode root) {
         if (root == null) {
             return;
         }
@@ -35,10 +35,10 @@ public class FlattenBinaryTreeToLinkedList {
             root.right = root.left;
             root.left = null;
         }
-        dfs(root.right);
+        dfs2(root.right);
         if (!stack.isEmpty() && root.right == null) {
             root.right = stack.pollLast();
-            dfs(root.right);
+            dfs2(root.right);
         }
     }
 }

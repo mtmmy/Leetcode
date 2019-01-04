@@ -7,15 +7,15 @@ import java.util.*;
 public class BinaryTreeLevelOrderTraversal {
     public List<List<Integer>> solution(TreeNode root) {
 
+        List<List<Integer>> result = new ArrayList<>();        
+        if (root == null) {
+            return result;
+        }
         Deque<TreeNode> queue = new LinkedList<>();
-        List<List<Integer>> result = new ArrayList<>();
         queue.add(root);
 
-        while (true) {
+        while (queue.size() > 0) {
             int nodeCount = queue.size();
-            if (nodeCount == 0) {
-                break;
-            }
 
             List<Integer> level = new ArrayList<>();
             while (nodeCount > 0) {

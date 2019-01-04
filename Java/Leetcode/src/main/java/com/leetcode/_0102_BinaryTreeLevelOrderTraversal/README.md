@@ -31,7 +31,9 @@ return its level order traversal as:
 
 ## Solution
 
+We use BFS to solve this problem. For every level, we create a list to store values from left to right and then add this list to the result list.
 
+The time complexity and the space complexity are both O(n).
 
 ## Related Topics
 

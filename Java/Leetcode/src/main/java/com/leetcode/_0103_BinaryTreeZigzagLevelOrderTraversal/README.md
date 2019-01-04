@@ -31,7 +31,11 @@ return its zigzag level order traversal as:
 
 ## Solution
 
+This problem is similar to [102. Binary Tree Level Order Traversal](https://github.com/mtmmy/Leetcode/tree/master/Java/Leetcode/src/main/java/com/leetcode/_0102_BinaryTreeLevelOrderTraversal). The differece is that the order of each layer is reversed from the adjacent layer. We can also use BFS just like in [102. Binary Tree Level Order Traversal](https://github.com/mtmmy/Leetcode/tree/master/Java/Leetcode/src/main/java/com/leetcode/_0102_BinaryTreeLevelOrderTraversal). Also we can use DFS and we use it in this problem.
 
+We set up a traverse function with the variable called depth which denote the current layer. If the depth is odd number, we store values from left to right. Otherwise we store values from right to left.
+
+The time complexity and space complexity are O(n).
 
 ## Related Topics
 

@@ -22,7 +22,11 @@ One possible answer is: [0,-3,9,-10,null,5], which represents the following heig
 
 ## Solution
 
+One characteristic of the BST is that all nodes in the left subtree is smaller than the current node and all nodes in the right subtree is greater than the current node. The BST is also asked to be a height-balanced.
 
+Hence we can use divide and conquer solution, to divide the sorted array at the middle. We can use the middle as the current node. The left part of the array is the left subtree and same as the right subarray.
+
+The time complexity and space complexity are both O(n).
 
 ## Related Topics
 

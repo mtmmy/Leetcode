@@ -24,7 +24,7 @@ Output:
 
 ## Solution
 
-
+The algorithm is bascally provided. The implementation is in the sourcecode.
 
 ## Related Topics
 

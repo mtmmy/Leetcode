@@ -23,7 +23,7 @@ Could you optimize your algorithm to use only O(k) extra space?
 
 ## Solution
 
-
+The idea is that we don't need create the whole triangle. We only need to remember the previous row to create the current row. Hence the extra space we need is just **k**.
 
 ## Related Topics
 

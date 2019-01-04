@@ -44,7 +44,9 @@ Output: false
 
 ## Solution
 
+This problem can be solved by using DFS on two trees. If any nodes between two trees are different, the trees are not the same.
 
+The time complexity is O(n) and space complexity is O(log n).
 
 ## Related Topics
 

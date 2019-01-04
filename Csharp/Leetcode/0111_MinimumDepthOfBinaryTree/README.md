@@ -24,7 +24,19 @@ return its minimum depth = 2.
 
 ## Solution
 
+We can use DFS to solve this problem. In the recursive function, when a node has two children, we return the lower height plus 1; when a node has less than two children, we return the higher height plus 1. The reason we return the higher in the second case is the minimum height of the following example is 3.
 
+```
+     1
+    /
+   2
+  /
+ 3
+```
+
+Because the definition of the minimum depth is the number of nodes along the shortest path from the root node down to the nearest leaf node and there is no leaf at the right subtree of the root node.
+
+The time complexity is O(n) and space complexity is O(log n).
 
 ## Related Topics
 

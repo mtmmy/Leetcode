@@ -8,18 +8,17 @@ namespace Leetcode.Solutions {
             return CreateBST(nums, 0, nums.Length - 1);
         }
 
-        private TreeNode CreateBST(int[] nums, int left, int right) {
-
-            if (left > right) {
+        private TreeNode CreateBST(int[] nums, int low, int high) {
+            if (low > high) {
                 return null;
             }
 
-            int mid = (left + right + 1) / 2;
-            var root = new TreeNode(nums[mid]);
-            root.left = CreateBST(nums, left, mid - 1);
-            root.right = CreateBST(nums, mid + 1, right);
+            int mid = (low + high + 1) / 2;
+            var cur = new TreeNode(nums[mid]);
+            cur.left = CreateBST(nums, low, mid - 1);
+            cur.right = CreateBST(nums, mid + 1, high);
 
-            return root;
+            return cur;
         }
     }
 }
