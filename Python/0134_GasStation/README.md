@@ -10,6 +10,10 @@ Return the starting gas station's index if you can travel around the circuit onc
 
 Note:
 
+1. If there exists a solution, it is guaranteed to be unique.
+2. Both input arrays are non-empty and have the same length.
+3. Each element in the input arrays is a non-negative integer.
+
 Example 1:
 
 ```
@@ -49,7 +53,13 @@ Therefore, you can't travel around the circuit once no matter where you start.
 
 ## Solution
 
+We can know if the car can travel around the circuit once by substracting total gas by total cost. If the difference is not negative, it means the car has enough gas to travel once.
 
+The next thing is that we need to find where is the starting station which allows the car to travel once. We use a variable **localSum** to indicate the gas diff. If **localSum** is negative, it means the car can't reach the current station from the **start** station. And when it's negative, we set the next station as the new starting station.
+
+After we traverse the list, we have the answer of **total** and **start**. We simply return **start** if **total** is not negative. Other wise return -1.
+
+Here we use greedy aproach so the time complexity is low which is O(n) and space complexity is O(1).
 
 ## Related Topics
 

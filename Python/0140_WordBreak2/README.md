@@ -6,6 +6,9 @@ Given a non-empty string s and a dictionary wordDict containing a list of non-em
 
 Note:
 
+- The same word in the dictionary may be reused multiple times in the segmentation.
+- You may assume the dictionary does not contain duplicate words.
+
 Example 1:
 
 ```
@@ -46,6 +49,24 @@ Output:
 
 ## Solution
 
+We can use recursion to solve this problem. Take Exapmle 1 to explain, the idea is, for the string "catsanddog", we know we can start with "cat" and "cats" and the next step is that runs the same algorithm on strings "sanddog" and "anddog". We can get all possible sentences by finishing this recursive algorithm.
+
+We can also observe that we may run the algorithm on the same substrings multiple times. What we can do is that we use a hash to save the result of these substrings and save executing time.
+
+For the time complexity, we can use this example to analyse:
+
+```
+s = "aaaaaaa......"
+wordDict = ["a", "aa", "aaa", "aaaa", ......]
+```
+
+For this example, the recurence relations is as follows:
+
+```
+T(n) = T(n - 1) + T(n - 2) + .... T(1)
+```
+
+Which will result in O(2<sup>n</sup>). And the space complexity is the same.
 
 
 ## Related Topics

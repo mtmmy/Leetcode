@@ -7,7 +7,7 @@ class Solution:
         :type wordDict: List[str]
         :rtype: bool
         """
-        if s == None or wordDict == None:
+        if not s or not wordDict:
             return False
         
         length = len(s)
@@ -16,34 +16,10 @@ class Solution:
 
         for i in range(1, length + 1):
             for j in range(i):
-                if dp[j] and s[j:i] in wordDict:
+                 if dp[j] and s[j:i] in wordDict:
                     dp[i] = True
 
-        return dp[length]
-
-        # matched = []
-        
-        # for w in wordDict:
-        #     if w == s:
-        #         return True
-        #     n = len(w)
-        #     if s[0:n] == w:
-        #         matched.append(w)
-        
-        # for m in matched:
-        #     if m == s:
-        #         return True
-        #     l = len(m)
-        #     tempS = s[l:]
-        #     for w in wordDict:
-        #         n = len(w)
-        #         if tempS[0:n] == w:
-        #             newM = m + w
-        #             matched.append(newM)
-        
-        # return False
-                    
-        
+        return dp[-1]
         
 
 class TestFunc(unittest.TestCase):

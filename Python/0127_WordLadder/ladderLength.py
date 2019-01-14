@@ -12,25 +12,27 @@ class Solution:
             return 0
         
         wordDict = set(wordList)
-        length = len(beginWord)
-        set1 = {beginWord}
-        set2 = {endWord}
-        wordDict.remove(endWord)
+        front, back = {beginWord}, {endWord}
+        wordDict -= front
         step = 0
         
-        while len(set1) > 0 and len(set2) > 0:
+        while front and back:
             step += 1
-            if len(set1) > len(set2):
-                set1, set2 = set2, set1
+            if len(front) > len(back):
+                front, back = back, front
             s = set()
-            for w in set1:
-                newWords = [w[:i] + t + w[i + 1:] for t in string.ascii_lowercase for i in range(length)]
+            for w in front:
+                newWords = [w[:i] + c + w[i + 1:] for c in string.ascii_lowercase for i in range(len(beginWord))]
                 for newWord in newWords:
-                    if newWord in set2:
+                    if newWord in back:
                         return step + 1
                     if newWord not in wordDict:
                         continue
                     wordDict.remove(newWord)
                     s.add(newWord)
-            set1 = s
+            front = s
         return 0
+
+target = Solution()
+ans = target.ladderLength("hit", "cog", ["hot","dot","dog","lot","log","cog"])
+print(ans)

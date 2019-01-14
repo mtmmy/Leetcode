@@ -30,7 +30,9 @@ Surrounded regions shouldn’t be on the border, which means that any 'O' on the
 
 ## Solution
 
+From the example we can see only circles that on the edge of the board or circles that connect to edge through other circles are not surronded. So we can start from circles on the edge and find all circles that it connects with and mark them another character. (Here we use "a".). After this step, only circles that are surronded are still shown as circles. The last thing we have to do is convert circles to crosses and convert "a" back to circles.
 
+The time complexity is O(n) where is combined from the converting not sorrunded circles to "a" which takes O(n) and the converting surronded circles to corsses and converting "a" back to circles which also takes O(n). n is the number of elements in the board. And the space complexity is O(1) since we update in place. 
 
 ## Related Topics
 

@@ -24,7 +24,16 @@ Output: 4
 
 ## Solution
 
+We can use XOR because two same numbers operated by XOR will become 0. Also XOR has commutative property which means the results of following two fomula are the same:
 
+```
+2 ^ 2 ^ 1 = 1
+1 ^ 2 ^ 2 = 1
+```
+
+So we just do XOR from the first number of the list all the way down to the last, and the result is our answer.
+
+The time complexity is O(n) and space complexity is O(1).
 
 ## Related Topics
 

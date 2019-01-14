@@ -4,41 +4,38 @@ class Solution(object):
         :type board: List[List[str]]
         :rtype: void Do not return anything, modify board in-place instead.
         """
-        if len(board) == 0:
+        if not board or not board[0]:
             return
-        if len(board[0]) == 0:
-            return
-        for i in range(len(board) - 1):
-            if board[i][0] == 'O':
-                self.dfs(board, i, 0)
-        for i in range(len(board[-1]) - 1):
-            if board[len(board) - 1][i] == 'O':
-                self.dfs(board, len(board) - 1, i)
-        for i in range(len(board) - 1, -1, -1):
-            if board[i][len(board[i]) - 1] == 'O':
-                self.dfs(board, i, len(board[i]) - 1)
-        for i in range(len(board[0]) -1, -1, -1):
-            if board[0][i] == 'O':
-                self.dfs(board, 0, i)
+        width, length = len(board), len(board[0])
         
-        for i in range(len(board)):
-            for j in range(len(board[i])):
+        def dfs(board, i, j):
+            if board[i][j] == 'O':
+                board[i][j] = 'a'
+                if i > 0:
+                    dfs(board, i - 1, j)
+                if i < width - 1:
+                    dfs(board, i + 1, j)
+                if j > 0:
+                    dfs(board, i, j - 1)
+                if j < length - 1:
+                    dfs(board, i, j + 1)
+        
+        for i in range(width - 1):
+            if board[i][0] == 'O':
+                dfs(board, i, 0)
+        for i in range(length - 1):
+            if board[-1][i] == 'O':
+                dfs(board, width - 1, i)
+        for i in range(width - 1, -1, -1):
+            if board[i][-1] == 'O':
+                dfs(board, i, length - 1)
+        for i in range(length -1, -1, -1):
+            if board[0][i] == 'O':
+                dfs(board, 0, i)
+        
+        for i in range(width):
+            for j in range(length):
                 if board[i][j] == 'a':
                     board[i][j] = 'O'
                 elif board[i][j] == 'O':
                     board[i][j] = 'X'
-            
-    def dfs(self, board, i, j):
-        if board[i][j] == 'O':
-            board[i][j] = 'a'
-            if i > 0:
-                self.dfs(board, i - 1, j)
-            if i < len(board) - 1:
-                self.dfs(board, i + 1, j)
-            if j > 0:
-                self.dfs(board, i, j - 1)
-            if j < len(board[i]) - 1:
-                self.dfs(board, i, j + 1)
-                
-            
-            

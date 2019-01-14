@@ -22,7 +22,7 @@ Output: false
 
 ## Solution
 
-
+Simply check the string via two pointers one from head and one from tail.
 
 ## Related Topics
 

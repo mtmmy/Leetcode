@@ -6,16 +6,13 @@ class Solution:
         :type nums: List[int]
         :rtype: int
         """
-        numSet = set()
-        result = 0
-        for num in nums:
-            numSet.add(num)
+        numSet, result = set(nums), 0
         
         for num in nums:
-            preNum = num - 1
-            nexNum = num + 1
             if num not in numSet:
                 continue
+            preNum = num - 1
+            nexNum = num + 1
             numSet.remove(num)
             while preNum in numSet:
                 numSet.remove(preNum)

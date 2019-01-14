@@ -11,32 +11,36 @@ class Solution(object):
         :type head: RandomListNode
         :rtype: RandomListNode
         """
-        if head is None:
+        if not head:
             return head
         
+        # copy a node right after each node
+        # example: 1 -> 2 -> 3 -> 4
+        # after copying: 1 -> 1 -> 2 -> 2 -> 3 -> 3 -> 4 -> 4
         curNode = head
-        while curNode is not None:
+        while curNode:
             copyNode = RandomListNode(curNode.label)
             copyNode.next = curNode.next
             curNode.next = copyNode
             curNode = copyNode.next
-            
+
+        # set random pointer of copied node to the copied random target    
         curNode = head
-        while curNode is not None:            
-            if curNode.random is not None:
+        while curNode:            
+            if curNode.random:
                 curNode.next.random = curNode.random.next
             curNode = curNode.next.next
-            
+
+        # separate the orignal list and the copied list
         curNode = head
         copyNode = curNode.next
-        result = curNode.next
-        while copyNode.next is not None:
+        copiedHead = curNode.next
+        while copyNode.next:
             curNode.next = curNode.next.next
-            curNode = curNode.next            
-            
+            curNode = curNode.next
             copyNode.next = copyNode.next.next
             copyNode = copyNode.next
 
         curNode.next = curNode.next.next
         
-        return result
+        return copiedHead

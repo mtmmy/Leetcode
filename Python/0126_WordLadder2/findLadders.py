@@ -8,7 +8,7 @@ class Solution:
         if endWord not in wordList:
             return []
         word_dict = set(wordList)
-        front, back = set([beginWord]), set([endWord])
+        front, back = {beginWord}, {endWord}
         direct = 1
         parents = defaultdict(set)
         while front and back:
@@ -18,21 +18,19 @@ class Solution:
             next_layer = set()
             word_dict -= front
             for word in front:
-                for i in range(len(beginWord)):
-                    prefix, postfix = word[:i], word[i+1:]
-                    for c in 'abcdefghijklmnopqrstuvwxyz':
-                        new_word = prefix + c + postfix
-                        if new_word in word_dict:
-                            next_layer.add(new_word)
-                            if direct == 1:
-                                parents[new_word].add(word)
-                            else:
-                                parents[word].add(new_word)
+                newWords = [word[:i] + c + word[i+1:] for c in string.ascii_letters for i in range(len(beginWord))]
+                for newWord in newWords:
+                    if newWord in word_dict:
+                        next_layer.add(newWord)
+                        if direct == 1:
+                            parents[newWord].add(word)
+                        else:
+                            parents[word].add(newWord)
             if next_layer & back:
-                rlt = [[endWord]]
-                while rlt[0][0] != beginWord:
-                    rlt = [[pa] + r for r in rlt for pa in parents[r[0]]]
-                return rlt
+                result = [[endWord]]
+                while result[0][0] != beginWord:
+                    result = [[pa] + r for r in result for pa in parents[r[0]]]
+                return result
             front = next_layer
         return []
     def findLadders2(self, beginWord, endWord, wordList):
@@ -61,8 +59,8 @@ class Solution:
 
             wordList -= set(newlayer.keys())
             layer = newlayer
-
         return res
+
     def findLaddersTE(self, beginWord, endWord, wordList):
         """
         :type beginWord: str
@@ -106,7 +104,7 @@ class TestFunc(unittest.TestCase):
 
     def test(self):
         target = Solution()
-        self.assertEqual([["hit","hot","dot","dog","cog"], ["hit","hot","lot","log","cog"]], target.findLadders("hit", "cog", ["hot","dot","dog","lot","log","cog"]))
+        self.assertEqual([["hit","hot","lot","log","cog"], ["hit","hot","dot","dog","cog"]], target.findLadders("hit", "cog", ["hot","dot","dog","lot","log","cog"]))
 
 if __name__ == '__main__':
     unittest.main()

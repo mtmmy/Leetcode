@@ -23,7 +23,18 @@ Bonus point if you are able to do this using only O(n) extra space, where n is t
 
 ## Solution
 
+We create the sampe shape of the input triangle and each element stores the smallest possible sum from the peak. Use the given example to illustrate:
 
+```
+[
+     [2],
+    [5,6],
+  [11,10,13],
+ [15,11,18,16]
+]
+```
+
+The time complexity and the space complexity are O(n) where n is the total amount of numbers in the input triangle.
 
 ## Related Topics
 

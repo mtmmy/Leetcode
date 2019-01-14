@@ -19,7 +19,7 @@ Output:
 
 ## Solution
 
-
+We first create a 2-d list called **isPal** using dynamic programming where **isPal[i][j]** indicates whether s[i:j] is a palindrome or not. After the list is built up, we use DFS to implement the backtracking strategy to find all possible  palindrome partitioning of s.
 
 ## Related Topics
 

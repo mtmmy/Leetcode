@@ -8,22 +8,22 @@ class Solution:
         :rtype: List[str]
         """
         knownDict = {}
-        def dfs(s, wordDict):
-            if s in knownDict:
-                return knownDict[s]
-            if len(s) == 0:
+        def dfs(subS):
+            if subS in knownDict:
+                return knownDict[subS]
+            if not subS:
                 return [""]
             result = []
             for word in wordDict:
-                if s[:len(word)] != word:
+                if subS[:len(word)] != word:
                     continue
-                memory = dfs(s[len(word):], wordDict)
-                for string in memory:
-                    result.append(word + ("" if len(string) == 0 else " ") + string)
-            knownDict[s] = result
-            return knownDict[s]
+                memory = dfs(subS[len(word):])
+                for m in memory:
+                    result.append(word + ("" if not m else " ") + m)
+            knownDict[subS] = result
+            return knownDict[subS]
 
-        return dfs(s, wordDict)
+        return dfs(s)
         
 
 class TestFunc(unittest.TestCase):
