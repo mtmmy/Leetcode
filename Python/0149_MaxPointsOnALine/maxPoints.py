@@ -24,10 +24,7 @@ class Solution:
                 dy = jy - iy
                 d = self.gcd(dx, dy)
                 tupleD = (dx // d, dy // d)
-                if tupleD in dic:
-                    dic[tupleD] += 1
-                else:
-                    dic[tupleD] = 1
+                dic[tupleD] = dic.setdefault(tupleD, 0) + 1
             result = max(result, duplicate)
             for key, val in dic.items():
                 result = max(result, val + duplicate)

@@ -34,3 +34,6 @@ class Solution:
             numerator %= denominator
             i += 1
         return result
+
+target = Solution()
+target.fractionToDecimal(1, 7)

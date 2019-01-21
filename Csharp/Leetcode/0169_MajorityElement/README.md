@@ -22,7 +22,9 @@ Output: 2
 
 ## Solution
 
+Go through the array once and use an extra space (space complexity is O(n)) to store the number of each numbers so that the time complexity is O(n).
 
+The other solution is [Moore voting algorithm](https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_majority_vote_algorithm) which takes O(n) time and constant space.
 
 ## Related Topics
 

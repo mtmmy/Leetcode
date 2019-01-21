@@ -29,7 +29,10 @@ Output: "0.(6)"
 
 ## Solution
 
+If we convert fraction to decimal by vertical division, we notice it's recurring when we see a remainder appears the second time. We introduce this idea by using a hash table who stores the position that the remainder appears at the first time. Hence the second time we see that remainder, we know the starting point of the recursion.
 
+Time complexity: O(n)<br>
+Space complexity: O(n)
 
 ## Related Topics
 

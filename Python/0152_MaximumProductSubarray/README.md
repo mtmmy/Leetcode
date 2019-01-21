@@ -22,7 +22,9 @@ Explanation: The result cannot be 2, because [-2,-1] is not a subarray.
 
 ## Solution
 
+We keep multiplying numbers from the begining of the array. Meanwhile, we need to maintain the biggest and the smallest product so far. The reason that we need not only the biggest but also the smallest is that when the smallest is negative and the next number is also negative, the product will become positive and it may be the biggest.
 
+Time complexity: O(n)<br>Space complexity: O(1)
 
 ## Related Topics
 

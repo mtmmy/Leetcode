@@ -20,7 +20,9 @@ Output: -1->0->3->4->5
 
 ## Solution
 
+We just implement merge sort. Generally merge sort needs O(n) space. However the problem gives us the linked list, so we don't need to create tmmperally space. We can just order nodes in sorted order. 
 
+Time complexity: O(n log n)<br>Space Complexity: constant
 
 ## Related Topics
 

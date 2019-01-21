@@ -26,7 +26,11 @@ Output: 0
 
 ## Solution
 
+First we check if the last number is greater than the first number, it means the array has not been rotated and we just return the first number.
 
+Otherwise, We use binary search method to solve this problem. We set the condition of the loop as left < right - 1, which helps us find the boundry of the largest number and the min number and we just return the number that the right pointer points.
+
+Time complexity: O(n log n)<br>Space complexity: O(1)
 
 ## Related Topics
 

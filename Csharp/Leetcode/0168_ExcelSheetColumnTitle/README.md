@@ -40,7 +40,10 @@ Output: "ZY"
 
 ## Solution
 
-
+We can consider it as base-26 number system (but not exactly), where A is 0 and Z is 25. However, there is a slightly different from a real number system which is when the number carries over, the new digit start from 0 (A in base-26). So we need to minus one every time we reach the new digit. 
+    
+Time complexity: O(n)<br>
+Space complexity: O(1)
 
 ## Related Topics
 

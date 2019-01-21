@@ -30,8 +30,17 @@ Input: version1 = "7.5.2.4", version2 = "7.5.3"
 Output: -1
 ```
 
+Note:
+
+1. Version strings are composed of numeric strings separated by dots . and this numeric strings may have leading zeroes.
+2. Version strings do not start or end with dots, and they will not be two consecutive dots.
+
 ## Solution
 
+First we convert two version numbers into two int list. We compare two lists number by number from heads. If there is a different number, we can return the result a this stage. Otherwise we check the tracking numbers, if there is any number greater than 0, then we know the version is different. Otherwise the two version is the same.
+
+Time complexity: O(n)<br>
+Space complexity: O(n)
 
 
 ## Related Topics

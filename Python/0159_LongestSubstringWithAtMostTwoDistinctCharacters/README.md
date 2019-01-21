@@ -22,7 +22,17 @@ Explanation: t is "aabbb" which its length is 5.
 
 ## Solution
 
+Solution 1:
 
+We use a set to store characters we've met and the size of this set is up to 2. And we use the variable **counter** to count the length of the substring. If the size of **twoChars** is less than 2, we keep increasing **counter**. And the variable **i**, its position is changed when the pointer **j** meets a different character which means the pointer **i** always points the last kind of character of the current substring. Furthermore, when **twoChars** is full and the pointer **j** meets the third kind of character, we update it by characters that **i** and **j** point.
+
+Time complexity: O(n)<br>Space complexity: O(1)
+
+Solution 2:
+
+In this solution, we use three pointers, **fstHead**, **fstTail**, and **tracker**. **tracker** keeps checking whether the character changes no not. If it changes and **fstTail** is not -1 (means the new character we meet is the third kind of character), we update the max length if needed. 
+
+Time complexity: O(n)<br>Space complexity: O(1)
 
 ## Related Topics
 

@@ -6,25 +6,6 @@ class Solution:
         :type s: str
         :rtype: int
         """
-        if not s or len(s) <= 2:
-            return 0 if not s else len(s)
-        
-        left, cur, maxLen = 0, -1, 0
-
-        for right in range(1, len(s)):
-            if s[right] == s[right - 1]:
-                continue
-            if cur != -1 and s[right] != s[cur]:
-                maxLen = max(maxLen, right - left)
-                left = cur + 1
-            cur = right - 1
-        
-        return max(maxLen, len(s) - left)    
-    def lengthOfLongestSubstringTwoDistinct2(self, s):
-        """
-        :type s: str
-        :rtype: int
-        """
         if not s:
             return 0
         
@@ -39,7 +20,6 @@ class Solution:
                 counter = j - i         
             if j > 0 and s[j] != s[j - 1]:
                 i = j
-
             if len(twoChars) < 2:
                 twoChars.add(s[j])
                 j += 1
@@ -49,6 +29,31 @@ class Solution:
                 j += 1
         
         return max(maxLength, counter)
+    
+    def lengthOfLongestSubstringTwoDistinct2(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        if not s:
+            return 0
+        if len(s) <= 2:
+            return len(s)
+        
+        # fstHead: head of the first kind of character
+        # fstTail: tail of the first kind of character
+        fstHead, fstTail, maxLen = 0, -1, 0
+
+        # tracker: to track the change of characters
+        for tracker in range(1, len(s)):
+            if s[tracker] == s[tracker - 1]:
+                continue
+            if fstTail != -1 and s[tracker] != s[fstTail]:
+                maxLen = max(maxLen, tracker - fstHead)
+                fstHead = fstTail + 1
+            fstTail = tracker - 1
+        
+        return max(maxLen, len(s) - fstHead)
 
 class TestFunc(unittest.TestCase):
     """Test fuction"""
