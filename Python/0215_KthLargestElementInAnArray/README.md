@@ -23,7 +23,10 @@ You may assume k is always valid, 1 ≤ k ≤ array's length.
 
 ## Solution
 
+We maintain a min heap with size **k** and go through the **input** and insert the number once the number is greater than the smallest number in the heap.
 
+Time complexity: O(n log n)<br>
+Space complexity: O(k)
 
 ## Related Topics
 

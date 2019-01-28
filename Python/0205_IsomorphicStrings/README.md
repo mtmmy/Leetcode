@@ -34,7 +34,10 @@ You may assume both s and t have the same length.
 
 ## Solution
 
+We use two hash tables to track the position of the last appearance of each character of each string. If at any moment that the position of two strings are different, strings are not isomorphic.
 
+Time complexity: O(n)<br>
+Space complexity: O(1)
 
 ## Related Topics
 

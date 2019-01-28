@@ -28,7 +28,11 @@ You may assume that all words are consist of lowercase letters a-z.
 
 ## Solution
 
+We set up a hash table with length of words as keys and the corresponding values is a list to store words with such length. For searching, we detect if the input contains any dot first. If it doesn't, we simply search for the word or we need to take care dots in the searching.
 
+Time complexity: <br>
+addWord(): O(1)<br>
+search(): O(n) for words without dots; O(n * l) for words with dots where l is the length of the word
 
 ## Related Topics
 

@@ -32,7 +32,10 @@ Output: 3
 
 Simplely use depth-first search and a 2-d boolean array to examine how many islands. We set a nested loop to interate all indices in the array. We only concern indices with value "1" and haven't been visted. Once we hit a "1" index, we note this index visted and start depth-first search and update all adjacent "1" indces as visted. After finishing depth-first search, we count it as one more island. And we keep interating the grid and Since we have a used matrix to track visited land, once a "1" is visited, we will not start another depth-first search from it. Hence we can add up total groups of "1"s. 
 
-Because we will not execute depth-first search on a single index twice, the time complexity is O(n). And we need an auxiliary space to record visited which has the same size with the input so that space complexity is O(n) as well.
+Because we will not execute depth-first search on a single index twice, the time complexity is O(n). And we need an auxiliary space to record visited which has the same size with the input so the space complexity is O(n) as well.
+
+Time complexity: O(n)<br>
+Space complexity: O(n)
 
 ## Related Topics
 

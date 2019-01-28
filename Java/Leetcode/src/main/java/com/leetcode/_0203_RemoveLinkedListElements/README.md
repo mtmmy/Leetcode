@@ -13,6 +13,10 @@ Output: 1->2->3->4->5
 
 ## Solution
 
+Solution is shown in the courcecode.
+
+Time compelxity: O(n)<br>
+Space complexity: O(1)
 
 
 ## Related Topics

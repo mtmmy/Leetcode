@@ -27,9 +27,35 @@ rotate 2 steps to the right: [3,99,-1,-100]
 
 Note:
 
+- Try to come up as many solutions as you can, there are at least 3 different ways to solve this problem.
+- Could you do it in-place with O(1) extra space?
+
 ## Solution
 
+Solution 1 uses reverse() three times.
 
+```
+Input: [1,2,3,4,5,6,7]
+1st reverse: [7,6,5,4,3,2,1]
+2nd reverse: [5,6,7,4,3,2,1]
+3rd reverse: [5,6,7,1,2,3,4]
+```
+Time compelxity: O(n)<br>
+Space complexity: O(1)
+
+Solution 2:
+
+Find the break point directly and tear down the array into two parts. And then merge them in reverse order.
+
+```
+Input: [1,2,3,4,5,6,7]
+sub array1: [1,2,3,4]
+sub array2: [5,6,7]
+Output: [5,6,7] + [1,2,3,4] = [5,6,7,1,2,3,4]
+```
+
+Time complexity: O(1)<br>
+Space complexity: O(n)
 
 ## Related Topics
 

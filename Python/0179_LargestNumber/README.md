@@ -22,7 +22,10 @@ Note: The result may be very large, so you need to return a string instead of an
 
 ## Solution
 
+We use sorting to slove this problem. The rule of sorting is, the two forms of concatenation of two numbers, we put the bigger one at the front. For example, 3 and 30, there are two forms after combining, 330 and 303. Since 330 > 303, we put these two numbers in [3, 30] order. After sorting, we just concatenate all numbers.
 
+Time complexity: O(n log n)<br>
+Space complexity: O(1)
 
 ## Related Topics
 

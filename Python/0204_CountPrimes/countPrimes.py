@@ -6,25 +6,18 @@ class Solution:
         :type n: int
         :rtype: int
         """
-        # isPrime = [True] * n
-        # primes = 0
-        # for i in range (2, n):
-        #     if isPrime[i]:
-        #         primes += 1
-        #         j = 2
-        #         while i * j < n:
-        #             isPrime[i * j] = False
-        #             j += 1
-        # return primes
+        # isPrime = [1] * n
+        # for i in range (2, int(n ** 0.5) + 1):
+        #     if isPrime[i] == 1:
+        #         for j in range(i * i, n, i):
+        #             isPrime[j] = 0
+        # return sum(isPrime[2:])
 
-        if n < 2:
-            return 0
         primes = [1] * n
-        primes[0] = primes[1] = 0
         for i in range(2, int(n ** 0.5) + 1):
             if primes[i]:
-                primes[i * i:n:i] = [0] * len(primes[i * i:n:i])
-        return sum(primes)
+                primes[i*i:n:i] = [0] * len(primes[i * i:n:i])
+        return sum(primes[2:])
 
         
 class TestFunc(unittest.TestCase):

@@ -19,12 +19,12 @@ class Solution:
             children = []
             val = []
             for node in nodes:
-                val.append(node.val)
-                if node.left:
+                if node:
+                    val.append(node.val)
                     children.append(node.left)
-                if node.right:
                     children.append(node.right)
-            rightSideNodes.append(val[-1])
+            if val:
+                rightSideNodes.append(val[-1])
             rightSideView(children)
         
         rightSideView([root])

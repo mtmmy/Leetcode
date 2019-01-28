@@ -14,7 +14,12 @@ Explanation: There are 4 prime numbers less than 10, they are 2, 3, 5, 7.
 
 ## Solution
 
+We can use [Sieve of Eratosthenes algorithm](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes) to find primes efficiently. Here is the visualization of the algorithm:
 
+![](https://leetcode.com/static/images/solutions/Sieve_of_Eratosthenes_animation.gif)
+
+Time complexity: O(n log log n)<br>
+Space compelxity: O(n)
 
 ## Related Topics
 

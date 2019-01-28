@@ -19,7 +19,16 @@ Output: 4
 
 ## Solution
 
+We create a **dp** whose size is the same as the **input**'s. The **dp** stores the edge length of the square that can be formed when **dp[i][j]** as the bottom right corner.
 
+For the first row and the first column, we simply check if it's one because it's the largest possible edge.
+
+For other positions, we first check if it's 1. If it is, we find the min value from its left, top, and top-left and plus one which is the edge of the square.
+
+In the end we find the max from **dp** and square it which is the maximum area of the square in the **input**.
+
+Time complexity: O(m * n)<br>
+Space compelexity: O(m * n)
 
 ## Related Topics
 

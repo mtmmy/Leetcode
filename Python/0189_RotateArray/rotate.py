@@ -7,22 +7,28 @@ class Solution:
         :type k: int
         :rtype: void Do not return anything, modify nums in-place instead.
         """
-        if nums and k % len(nums) != 0:
-            # n, start, i, cur, count = len(nums), 0, 0, nums[0], 0
+        def reverse(i, j):
+            while i < j:
+                nums[i], nums[j] = nums[j], nums[i]
+                i += 1
+                j -= 1
 
-            # while count < n:
-            #     i = (i + k) % n
-            #     temp = nums[i]
-            #     nums[i] = cur
-            #     if i == start:
-            #         start += 1
-            #         i += 1
-            #         cur = nums[i]
-            #     else:
-            #         cur = temp
-            #     count += 1
+        if k:
             n = len(nums)
-            k = k % len(nums)
+            k = k % n
+            reverse(0, n - 1)
+            reverse(0, k - 1)
+            reverse(k, n - 1)
+
+    def rotate2(self, nums, k):
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: void Do not return anything, modify nums in-place instead.
+        """
+        if k:
+            n = len(nums)
+            k = k % n
             nums[:] = nums[n - k:] + nums[0:n - k]
 
 class TestFunc(unittest.TestCase):

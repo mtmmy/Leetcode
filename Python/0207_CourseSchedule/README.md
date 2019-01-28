@@ -29,9 +29,19 @@ Explanation: There are a total of 2 courses to take.
 
 Note:
 
+1. The input prerequisites is a graph represented by a list of edges, not adjacency matrices. Read more about how a graph is represented.
+2. You may assume that there are no duplicate edges in the input prerequisites.
+
 ## Solution
 
+At the begining, we create two hash tables. One is how many prerequisites for each course; another is what courses we can take after finished a course. This setting considers all courses as vertices and the prerequisites as edges of a graph. Hence if a node has incoming edges, it has some prerequisites.
 
+After that, we put all nodes which don't have any incoming edges (courses without prerequisites) into a queue and process them one by one. When we processing it, we get all its connected nodes by outgoing edges, decrement their incoming edge (remove the edge) and put nodes if their incoming degree is zero after removing the edge. We keep doing this process until queue is empty.
+
+Finally, we check the incoming degree of each nodes. If there is any node whose degree is not zero, the schedule dosen't work. Otherwise it's a valid schedule.
+
+Time complexity: O(V + E). Since we visit every vertex and edges once. <br>
+Space compelxity: O(V + E). In the **dictPre** hash table, we stores all nodes and their edges.
 
 ## Related Topics
 

@@ -8,8 +8,8 @@ class Solution:
         if n < 5:
             return count
         while n >= 5:
-            count += n // 5
-            n = n // 5
+            n //= 5
+            count += n
         return count
         
 

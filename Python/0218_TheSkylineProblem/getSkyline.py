@@ -18,6 +18,35 @@ class Solution:
                 res.append([x, -hp[0][0]])
         return res[1:]
 
+    def getSkylineSlow(self, buildings):
+        """
+        :type buildings: List[List[int]]
+        :rtype: List[List[int]]
+        """
+        if not buildings:
+            return []
+        
+        critical = []
+        
+        for b in buildings:
+            critical += [[b[0], b[2]], [b[1], 0]]
+        
+        critical = sorted(critical, key=lambda x: x[0])
+        
+        for l, r, h in buildings:
+            for i in range(len(critical)):
+                x, y = critical[i]
+                if y < h and x >= l and x < r:
+                    critical[i][1] = h
+                    
+        result = [critical[0]]
+        
+        for i in range(1, len(critical)):
+            if critical[i][1] != critical[i - 1][1]:
+                result.append(critical[i])
+                
+        return result
+
 class TestFunc(unittest.TestCase):
     """Test fuction"""
 

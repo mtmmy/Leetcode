@@ -9,8 +9,8 @@ class Solution:
         if not nums:
             return 0
         n = len(nums)
-        if n <= 1:
-            return 0 if n == 0 else nums[0]
+        if n == 1:
+            return nums[0]
         
         dp = [0] * n
         dp[0] = nums[0]

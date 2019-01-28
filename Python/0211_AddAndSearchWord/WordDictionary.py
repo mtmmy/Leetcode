@@ -1,10 +1,11 @@
+import collections
 class WordDictionary:
 
     def __init__(self):
         """
         Initialize your data structure here.
         """
-        self.root = {}
+        self.dictionary = collections.defaultdict(list)
         
 
     def addWord(self, word):
@@ -13,11 +14,7 @@ class WordDictionary:
         :type word: str
         :rtype: void
         """
-        n = len(word)
-        if n not in self.root:
-            self.root[n] = set([word])
-        else:
-            self.root[n].add(word)
+        self.dictionary[len(word)].append(word)
             
 
     def search(self, word):
@@ -27,20 +24,18 @@ class WordDictionary:
         :rtype: bool
         """        
         n = len(word)
-        if n not in self.root:
+        if n not in self.dictionary:
             return False
         if "." not in word:
-            return word in self.root[n]
+            return word in self.dictionary[n]
         
-        for vocabulary in self.root[n]:
+        for vocabulary in self.dictionary[n]:
             for i in range(len(word)):
                 if word[i] != "." and word[i] != vocabulary[i]:
                     break
             else:
                 return True
         return False
-                
-
 
 # Your WordDictionary object will be instantiated and called as such:
 # obj = WordDictionary()

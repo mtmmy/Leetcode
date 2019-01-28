@@ -24,7 +24,14 @@ Note: Your solution should be in logarithmic time complexity.
 
 ## Solution
 
+We get a trailing zero when multiplying by 10, which is 2 x 5. Since 2s are much more than 5s, we just count how many 5s in the factorial sequence. The following example is 25! and totally we have 6 5s in the sequence.
 
+```
+1 x ... x 5 x ... x (2 x 5) x ... x (3 x 5) x ...... x (5 x 5)
+```
+
+Time complexity: O(n)<br>
+Space complexity: O(1)
 
 ## Related Topics
 

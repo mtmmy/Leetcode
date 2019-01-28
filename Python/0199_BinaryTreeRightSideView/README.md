@@ -20,7 +20,10 @@ Explanation:
 
 ## Solution
 
+We use recursion to implement BFS and for each layer we store the rightmost to the result list. Since we need a temperary space for each layer and the maximum size of the layer is leaves of a complete tree so the space we need is still O(n).
 
+Time complexity: O(n)<br>
+Space complexity: O(n)
 
 ## Related Topics
 

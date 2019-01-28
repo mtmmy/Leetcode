@@ -5,21 +5,21 @@ import com.leetcode.utils.ListNode;
 public class RemoveLinkedListElements {
     public ListNode solution(ListNode head, int val) {
 
-        ListNode newHead = new ListNode(val - 1);
-        newHead.next = head;
-
-        ListNode curNode = newHead;
-        ListNode preNode = null;
-
+        ListNode dummy = new ListNode(val - 1);
+        dummy.next = head;
+        
+        ListNode curNode = head;
+        ListNode preNode = dummy;
+        
         while (curNode != null) {
             if (curNode.val == val) {
                 preNode.next = curNode.next;
             } else {
-                preNode = curNode;
-            }
+                preNode = curNode;    
+            }   
             curNode = curNode.next;
         }
-
-        return newHead.next;
+        
+        return dummy.next;
     }
 }

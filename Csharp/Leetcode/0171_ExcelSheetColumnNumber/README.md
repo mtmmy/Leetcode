@@ -40,7 +40,10 @@ Output: 701
 
 ## Solution
 
+Just the reversed way of [168. Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title).
 
+Time complexity: O(n)<br>
+Space complexity: O(1)
 
 ## Related Topics
 

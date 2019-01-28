@@ -26,7 +26,10 @@ Explanation: Rob house 1 (money = 2), rob house 3 (money = 9) and rob house 5 (m
 
 ## Solution
 
+We use dynamic programming to solve this problem. We generate a list which has the same size of the input. In this list, **dp[i]** denotes the maximum money can be robbed at the i-th house. The way we get this value is, either we don't rob house i, the value is **dp[i - 1]**, or we rob house i and the money is **dp[i - 2] + nums[i]**, and we pick the larger one. The value of the last element of **dp** is the maximum money we can rob.
 
+Time complexiy: O(n)<br>
+Space complexity: O(n)
 
 ## Related Topics
 

@@ -17,7 +17,19 @@ A linked list can be reversed either iteratively or recursively. Could you imple
 
 ## Solution
 
+We need two nodes to track the previous and the next one, **preNode** and **nextNode**. For every node starting from the head, we do the following steps:
 
+```
+nextNode = curNode.next;
+curNode.next = preNode;
+preNode = curNode;
+curNode = nextNode;
+```
+
+We keep the next node, turn around the pointer to the previous node, and move to the next node.
+
+Time complexity: O(n)<br>
+Space complexity: O(1)
 
 ## Related Topics
 
