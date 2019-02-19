@@ -29,9 +29,14 @@ Output:
 
 Follow up:
 
+1. Could you solve it in-place? Remember that the board needs to be updated at the same time: You cannot update some cells first and then use their updated values to update other cells.
+2. In this question, we represent the board using a 2D array. In principle, the board is infinite, which would cause problems when the active area encroaches the border of the array. How would you address these problems?
+
 ## Solution
 
+Straightforwardly, we can use another board to keep the next state. This approach costs us O(n) space and the time comlexity is O(n).
 
+Actually we can do this in-place. We just use different number to represent the live state of the next state. In our implementation, we use 10 as the number. If the cell will live at the next state, we add 10 on it. Adding the doesn't effect its current state since we can use modulo of 10 to get its current state. After this we just divide all cell by 10 and we get the result. Time complexity remains O(n) and the auxiliary space is just O(1).
 
 ## Related Topics
 

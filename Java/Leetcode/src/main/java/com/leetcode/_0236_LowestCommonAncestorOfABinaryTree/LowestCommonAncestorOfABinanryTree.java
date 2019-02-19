@@ -9,10 +9,7 @@ public class LowestCommonAncestorOfABinanryTree {
         }
         TreeNode left = solution(root.left, p, q);
         TreeNode right = solution(root.right, p, q);
-
-        if (left != null && right != null) {
-            return root;
-        }
-        return left == null ? right : left;
+        
+        return left == null ? right : (right == null ? left : root);    // both not null return root, otherwise return not null one
     }
 }

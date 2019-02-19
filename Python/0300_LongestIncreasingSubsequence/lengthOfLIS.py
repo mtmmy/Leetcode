@@ -6,32 +6,29 @@ class Solution:
         :type nums: List[int]
         :rtype: int
         """
-        dp = []
+        LIS = []
         for i in range(len(nums)):
-            left, right = 0, len(dp)
+            left, right = 0, len(LIS)
             while left < right:
                 mid = left + (right - left) // 2
-                if dp[mid] < nums[i]:
+                if LIS[mid] < nums[i]:
                     left = mid + 1
                 else:
                     right = mid
-            if right >= len(dp):
-                dp.append(nums[i])
+            if right >= len(LIS):
+                LIS.append(nums[i])
             else:
-                dp[right] = nums[i]
-        return len(dp)
+                LIS[right] = nums[i]
+        return len(LIS)
 
     def lengthOfLIS_DP(self, nums):
         """
         :type nums: List[int]
         :rtype: int
         """
-        if not nums:
-            return 0
         n = len(nums)
         if n <= 1:
             return n
-
         dp = [1] * n
         result = 0
         for i in range(1, n):

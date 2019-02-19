@@ -12,3 +12,4 @@ Csharp/Leetcode/Program.cs
 /Java/Leetcode/nbproject/
 Java/Leetcode/src/main/java/com/mycompany/leetcode/Application.java
 Python/.vscode
+*.class

@@ -7,30 +7,28 @@ import java.util.*;
 public class ClosestBinarySearchTreeValue2 {
 
     public List<Integer> solution(TreeNode root, double target, int k) {
-        LinkedList<Integer> list = new LinkedList<Integer>();
-        closestKValuesHelper(list, root, target, k);
-        return list;
+        Deque<Integer> queue = new ArrayDeque<Integer>();
+        closestKValuesHelper(queue, root, target, k);
+        return new ArrayList(queue);
     }
-
-    private boolean closestKValuesHelper(LinkedList<Integer> list, TreeNode root, double target, int k) {
+    
+    private void closestKValuesHelper(Deque<Integer> queue, TreeNode root, double target, int k) {
         if (root == null) {
-            return false;
+            return;
         }
-
-        if (closestKValuesHelper(list, root.left, target, k)) {
-            return true;
-        }
-
-        if (list.size() == k) {
-            if (Math.abs(list.getFirst() - target) < Math.abs(root.val - target)) {
-                return true;
+        
+        closestKValuesHelper(queue, root.left, target, k);
+        
+        if (queue.size() == k) {
+            if (Math.abs(queue.getFirst() - target) < Math.abs(root.val - target)) {
+                return;
             } else {
-                list.removeFirst();
+                queue.removeFirst();
             }
         }
-
-        list.addLast(root.val);
-        return closestKValuesHelper(list, root.right, target, k);
+        
+        queue.addLast(root.val);
+        closestKValuesHelper(queue, root.right, target, k);
     }
 
     private class ValDiff {

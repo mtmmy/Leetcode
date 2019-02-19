@@ -12,3 +12,12 @@ Example 1:
 
 ## Solution
 
+
+
+## Related Topics
+
+[Depth-first Search](https://leetcode.com/tag/depth-first-search/) 
+
+## Similar Questions
+
+[Nested List Weight Sum](https://leetcode.com/problems/nested-list-weight-sum/), [Array Nesting](https://leetcode.com/problems/array-nesting/)

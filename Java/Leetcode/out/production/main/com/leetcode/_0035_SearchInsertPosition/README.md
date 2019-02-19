@@ -36,3 +36,12 @@ Output: 0
 
 ## Solution
 
+Use binary search to find the smallest number who is equal or greater than the target, and return its index. The time complexity is same as typical binary search which is O(logN).
+
+## Related Topics
+
+[Array](https://leetcode.com/tag/array/) , [Binary Search](https://leetcode.com/tag/binary-search/) 
+
+## Similar Questions
+
+[First Bad Version](https://leetcode.com/problems/first-bad-version/)

@@ -16,7 +16,7 @@ class Solution:
         for c in t:
             d[c] -= 1
             
-        for key, val in d.items():
+        for val in d.values():
             if val != 0:
                 return False
             

@@ -1,4 +1,6 @@
 import unittest
+import heapq
+import collections
 
 class Interval:
     def __init__(self, s=0, e=0):
@@ -11,18 +13,11 @@ class Solution:
         :type intervals: List[Interval]
         :rtype: int
         """
-        d = {}
+        d = collections.defaultdict(int)
 
         for i in intervals:
-            if i.start in d:
-                d[i.start] += 1
-            else:
-                d[i.start] = 1
-
-            if i.end in d:
-                d[i.end] -= 1
-            else:
-                d[i.end] = -1
+            d[i.start] += 1
+            d[i.end] -= 1
         
         result, room = 0, 0
 
@@ -32,6 +27,22 @@ class Solution:
             result = max(result, room)
         
         return result
+        
+    def minMeetingRooms2(self, intervals):
+        """
+        :type intervals: List[Interval]
+        :rtype: int
+        """
+        intervals = sorted(intervals, key=lambda x: x.start)
+        h = []
+        heapq.heapify(h)
+        
+        for interval in intervals:
+            if h and h[0] <= interval.start:
+                heapq.heappop(h)
+            heapq.heappush(h, interval.end)
+            
+        return len(h)
 
 class TestFunc(unittest.TestCase):
     """Test fuction"""

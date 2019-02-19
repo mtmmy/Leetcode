@@ -18,7 +18,24 @@ Could you solve it with constant space complexity? (The output array does not co
 
 ## Solution
 
+The first loop will get the product of all elements on the left. For example:
 
+```
+input: [1,2,3,4]
+result: [1, 1, 2, 6]
+```
+
+The second loop will generate the porduct on the right side.
+
+```
+inputs: [1,2,3,4]
+prodR: [24,12,4,1]
+```
+
+and we multiply it back to the result at the corresponding position and we get the correct answer.
+
+Time complexity: O(n)<br>
+Space complexity: O(n)
 
 ## Related Topics
 

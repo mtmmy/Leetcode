@@ -1,4 +1,40 @@
+import heapq
 class MedianFinder:
+
+    def __init__(self):
+        """
+        initialize your data structure here.
+        """
+        self.highHeap = []
+        self.lowHeap = []
+        
+
+    def addNum(self, num):
+        """
+        :type num: int
+        :rtype: void
+        """
+        if self.highHeap and num > self.highHeap[0]:
+            heapq.heappush(self.highHeap, num)
+        else:
+            heapq.heappush(self.lowHeap, -num)
+        lows, highs = len(self.lowHeap), len(self.highHeap)
+        if lows - highs > 1:
+            heapq.heappush(self.highHeap, -heapq.heappop(self.lowHeap))
+        elif highs - lows > 1:
+            heapq.heappush(self.lowHeap, -heapq.heappop(self.highHeap))
+            
+    def findMedian(self):
+        """
+        :rtype: float
+        """
+        lows, highs = len(self.lowHeap), len(self.highHeap)
+        if (lows + highs) & 1: # odd
+            return -self.lowHeap[0] if lows > highs else self.highHeap[0]
+        else:
+            return (-self.lowHeap[0] + self.highHeap[0]) / 2
+
+class MedianFinder2:
 
     def __init__(self):
         """

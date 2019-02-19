@@ -29,7 +29,22 @@ Could you solve it in linear time?
 
 ## Solution
 
+We use a queue to store the index within the sliding window and use a loop to go through **nums** list. In the loop, we do the following algorithm:
 
+```
+if queue and queue[0] == i - k:
+    queue.popleft()
+while queue and nums[queue[-1]] < nums[i]:
+    queue.pop()
+queue.append(i)
+if i >= k - 1:
+    result.append(nums[queue[0]])
+```
+
+The first if statement is removing the element from the sliding window if that element has not been covered. The while statement help us removing all smaller value which we don't concern and keep the larget value of the sliding window at the first place of the queue. The second if statement stroe the largest value of each sliding window.
+
+Time complexity: O(n)<br>
+Space complexity: O(k)
 
 ## Related Topics
 

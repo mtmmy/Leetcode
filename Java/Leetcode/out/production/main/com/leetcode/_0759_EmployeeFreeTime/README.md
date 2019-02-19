@@ -40,3 +40,12 @@ Note:
 
 ## Solution
 
+
+
+## Related Topics
+
+[Heap](https://leetcode.com/tag/heap/) , [Greedy](https://leetcode.com/tag/greedy/) 
+
+## Similar Questions
+
+[Merge Intervals](https://leetcode.com/problems/merge-intervals/)

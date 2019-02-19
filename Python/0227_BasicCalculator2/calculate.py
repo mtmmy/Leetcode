@@ -4,6 +4,34 @@ class Solution:
         :type s: str
         :rtype: int
         """
+        num, sign, stack = 0, "+", []
+        s = s.replace(" ", "")
+        for i in range(len(s)):
+            c = s[i]
+            if c.isdigit():
+                num = num * 10 + int(c)
+            if not c.isdigit() or i == len(s) - 1:
+                if sign == "+":
+                    stack.append(num)
+                elif sign == "-":
+                    stack.append(-num)
+                elif sign == "*":
+                    stack[-1] *= num
+                elif sign == "/":
+                    if stack[-1] ^ num < 0 and stack[-1] % num != 0:                        
+                        stack[-1] = stack[-1] // num + 1
+                    else:
+                        stack[-1] //= num
+                sign = c                
+                num = 0
+                
+        return sum(stack)
+        
+    def calculate2(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
         stack = []
         i = 0
         

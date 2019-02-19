@@ -26,7 +26,18 @@ What if the inputs contain unicode characters? How would you adapt your solution
 
 ## Solution
 
+Solution 1:
 
+Sort two string and compare them.<br>
+Time complexity: O(n log n)<br>
+Space complexity: O(1)
+
+Solution 2:
+
+Use a hash table to store how many times a character show in string **s**. And minus the number of that character that appear in the string **t**. At the end we check the value in the hash table, if there exist any chararcter whose value is not zero, two string are not valid anagram.
+
+Time complexity: O(n)<br>
+Space complexity: O(n)
 
 ## Related Topics
 

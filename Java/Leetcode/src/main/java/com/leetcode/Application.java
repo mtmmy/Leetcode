@@ -12,23 +12,12 @@ import com.leetcode.utils.ListNode;
 import com.leetcode.utils.Toolkit;
 import com.leetcode.utils.TreeNode;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 
 public class Application {
-    
+
     public static void main(String[] args) {
 
-        Toolkit toolkit = new Toolkit();
-//
-        TreeNode tree = toolkit.GenerateTreeNode("4,2,5,1,3");
-        ClosestBinarySearchTreeValue2 target = new ClosestBinarySearchTreeValue2();
-        target.solution(tree, 3.714286, 2);
-
-//        [4,2,5,1,3]
-//        3.714286
-//        2
     }
 }

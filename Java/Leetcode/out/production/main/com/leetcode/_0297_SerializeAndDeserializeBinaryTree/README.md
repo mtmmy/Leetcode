@@ -26,3 +26,24 @@ Note: Do not use class member/global/static variables to store states. Your seri
 
 ## Solution
 
+Serialize:
+
+We use the BFS approach to serialize the tree. The trick part is when we meet "null", we count its number and only append when there are nodes come after "null"s.
+
+Time complexity: O(n)<br>
+Space complexity: O(n)
+
+Deserialize:
+
+We first split the input string into string list **vals** by comma. We use the variable **i** to track which **val** we are going to convert to tree node and use a queue to squentially connect nodes with their children.
+
+Time complexity: O(n)<br>
+Space complexity: O(n)
+
+## Related Topics
+
+[Tree](https://leetcode.com/tag/tree/) , [Design](https://leetcode.com/tag/design/) 
+
+## Similar Questions
+
+[Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/), [Serialize and Deserialize BST](https://leetcode.com/problems/serialize-and-deserialize-bst/), [Find Duplicate Subtrees](https://leetcode.com/problems/find-duplicate-subtrees/), [Serialize and Deserialize N-ary Tree](https://leetcode.com/problems/serialize-and-deserialize-n-ary-tree/)

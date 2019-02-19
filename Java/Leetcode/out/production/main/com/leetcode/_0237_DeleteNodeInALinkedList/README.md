@@ -30,5 +30,22 @@ Explanation: You are given the third node with value 1, the linked list
 
 Note:
 
+- The linked list will have at least two elements.
+- All of the nodes' values will be unique.
+- The given node will not be the tail and it will always be a valid node of the linked list.
+- Do not return anything from your function.
+
 ## Solution
 
+We overwrite the value of current node by the next node. And reset the pointer of the current node to the node after the next node.
+
+Time complexity: O(1)<br>
+Sapce complexity: O(1)
+
+## Related Topics
+
+[Linked List](https://leetcode.com/tag/linked-list/) 
+
+## Similar Questions
+
+[Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/)

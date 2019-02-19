@@ -50,6 +50,8 @@ We only need O(n log n) for sorting and O(n log n) for looping depending on oper
 
 Space complexity: O(n).
 
+[Brian Gordon blog - The skyline problem](https://briangordon.github.io/2014/08/the-skyline-problem.html) A blog with detalis explaination with exquisite visualization.
+
 ## Related Topics
 
 [Divide and Conquer](https://leetcode.com/tag/divide-and-conquer/) , [Heap](https://leetcode.com/tag/heap/) , [Binary Indexed Tree](https://leetcode.com/tag/binary-indexed-tree/) , [Segment Tree](https://leetcode.com/tag/segment-tree/) 

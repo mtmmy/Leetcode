@@ -4,12 +4,6 @@ class Solution:
         :type nums: List[int]
         :rtype: int
         """
-#         nums.sort()        
-#         for i in range(1, len(nums)):
-#             if nums[i] == nums[i - 1]:
-#                 return nums[i]            
-#         return -1
-
         if nums:
             slow = nums[0]
             fast = nums[nums[0]]
@@ -26,3 +20,6 @@ class Solution:
             return slow
             
         return -1
+
+target = Solution()
+target.findDuplicate([1,3,4,2,2])

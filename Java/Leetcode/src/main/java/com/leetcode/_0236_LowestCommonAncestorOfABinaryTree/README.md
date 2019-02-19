@@ -37,9 +37,15 @@ Explanation: The LCA of nodes 5 and 4 is 5, since a node can be a descendant of 
 
 Note:
 
+- All of the nodes' values will be unique.
+- p and q are different and both values will exist in the binary tree.
+
 ## Solution
 
+Inside the recursive **lowestCommonAncestor** function, the variable **left** will not be null if **p** or **q** in the left subtree and same thing for the **right**. So when the **left** and the **right** are both not null, we find the LCS.
 
+Time complexity: O(n)<br>
+Space complexity: O(log n)
 
 ## Related Topics
 

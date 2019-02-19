@@ -23,7 +23,24 @@ Your algorithm should run in linear runtime complexity. Could you implement it u
 
 ## Solution
 
+Solution 1:
 
+Since we know the numbers will in the 0 ~ n range and there will only miss one number. Then we can sum up 0 ~ n and minus **sum(nums)** and the answer is the missing number.
+
+Time complexity: O(n)<br>
+Space complexity: O(1)
+
+Solution 2:
+
+We can use XOR to solve this problem as well becasue we know we get zero when we XOR two same numbers. The range of the number is 0 ~ n, and if there is no missing number, the answer is n. Thus we set our defaut value of result as n because if there is know missing number and we execute the following loop, n will be the remaining number. If the number is between 0 ~ n-1, n will be eliminate by **result ^ nums[i]** somewhere in the loop and the missing number is the only one number that appears once in the XOR process.
+
+```
+for i in range(len(nums)):
+    result = result ^ i ^ nums[i]
+```
+
+Time complexity: O(n)<br>
+Space complexity: O(1)
 
 ## Related Topics
 
