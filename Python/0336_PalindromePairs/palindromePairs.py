@@ -15,34 +15,30 @@ class Solution:
                 right -= 1                
             return True
 
-        result = []
-        pos = {}
-        wLength = set()
-        n = len(words)
-
-        for i in range(n):
-            pos[words[i]] = i
-            wLength.add(len(words[i]))
+        result, n = [], len(words)
+        pos, length = {}, set()
         
         for i in range(n):
-            s = words[i]
-            sLen = len(s)
-            s = s[::-1]
-            if s in pos and pos[s] != i:
-                result.append([i, pos[s]])
+            pos[words[i]] = i
+            length.add(len(words[i]))
             
-            listLen = sorted(list(wLength))
-            for d in listLen:
-                if d == sLen:
+        sortedLength = sorted(list(length))
+        for i in range(n):
+            rWord = words[i][::-1]
+            if rWord in pos and pos[rWord] != i:
+                result.append([i, pos[rWord]])
+            
+            wLen = len(rWord)
+            for l in sortedLength:
+                if l == wLen:
                     break
-                if isPalindrome(s, 0, sLen - d - 1) and s[sLen - d:] in pos:
-                    result.append([i, pos[s[sLen - d:]]])
-                if isPalindrome(s, d, sLen - 1) and s[:d] in pos:
-                    result.append([pos[s[:d]], i])
+                if isPalindrome(rWord, 0, wLen - l - 1) and rWord[wLen - l:] in pos:
+                    result.append([i, pos[rWord[wLen - l:]]])
+                if isPalindrome(rWord, l, wLen - 1) and rWord[:l] in pos:
+                    result.append([pos[rWord[:l]], i])
 
         return result
         
-
 class TestFunc(unittest.TestCase):
     """Test fuction"""
 

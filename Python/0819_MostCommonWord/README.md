@@ -20,15 +20,23 @@ that punctuation is ignored (even if adjacent to words, such as "ball,"),
 and that "hit" isn't the answer even though it occurs more because it is banned.
 ```
 
- 
-
 Note:
 
+- 1 <= paragraph.length <= 1000.
+- 1 <= banned.length <= 100.
+- 1 <= banned[i].length <= 10.
+- The answer is unique, and written in lowercase (even if its occurrences in paragraph may have uppercase symbols, and even if it is a proper noun.)
+- paragraph only consists of letters, spaces, or the punctuation symbols !?',;.
+- There are no hyphens or hyphenated words.
+- Words only consist of letters, never apostrophes or other punctuation symbols.
  
 
 ## Solution
 
+First we go through the **paragraph** and convert it into a word list which only contains non-banned words. Later we count words and return the most frequent one.
 
+Time complexity: O(n)<br>
+Space complexity: O(n)
 
 ## Related Topics
 

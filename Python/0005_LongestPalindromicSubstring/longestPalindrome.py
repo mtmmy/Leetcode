@@ -30,4 +30,24 @@ class Solution:
                         left = i
 
         return s[left : left + length]
+
+    def longestPalindrome2(self, s):
+        """
+        :type s: str
+        :rtype: str
+        """
+        start, length = 0, 1
+        
+        for i in range(1, len(s)):
+            if i - length >= 1:
+                temp = s[i - length - 1:i + 1]  # check odd length
+                if temp == temp[::-1]:
+                    start = i - length - 1
+                    length += 2
+                    continue    # if odd length is palindromic, even length is shorter so no need to check
+            temp = s[i - length:i + 1]  # check even length
+            if temp == temp[::-1]:
+                start = i - length
+                length += 1
+        return s[start:start + length]
                 
