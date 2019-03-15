@@ -1,19 +1,14 @@
 class TicTacToe:
-
-    board = []
-    player1ToWin = []
-    player2ToWin = []
     def __init__(self, n):
         """
         Initialize your data structure here.
         :type n: int
         """
-        self.board = [[0] * n for _ in range(n)]
-        self.player1ToWin = []
-        self.player2ToWin = []
-        set(self.player1ToWin)
-        set(self.player2ToWin)
-
+        self.rows = [0] * n
+        self.cols = [0] * n
+        self.diagonal1 = 0
+        self.diagonal2 = 0
+        self.n = n
 
     def move(self, row, col, player):
         """
@@ -30,97 +25,14 @@ class TicTacToe:
         :type player: int
         :rtype: int
         """
-        board = self.board
-        n = len(board)
-        toWin = self.player1ToWin if player == 1 else self.player2ToWin
-        
-        if (row, col) in toWin:
+        score = 1 if player == 1 else -1
+        self.rows[row] += score
+        self.cols[col] += score
+        if row == col:
+            self.diagonal1 += score
+        if row + col == self.n - 1:
+            self.diagonal2 += score
+        win = {self.rows[row], self.cols[col], self.diagonal1, self.diagonal2}
+        if self.n in win or -self.n in win:
             return player
-        
-        board[row][col] = player
-        self.removeToWin(row, col)
-        
-        self.setToWin(row, col, player)
         return 0
-        
-    
-    def setToWin(self, row, col, player):
-        toWin = self.player1ToWin if player == 1 else self.player2ToWin
-        board = self.board
-        n = len(board)
-        
-        zeroCount = 0
-        toWinPos = (-1, -1)
-        for i in range(n):
-            if board[row][i] == 0:
-                toWinPos = (row, i)
-                zeroCount += 1
-                if zeroCount > 1:
-                    toWinPos = (-1, -1)
-                    break
-            elif board[row][i] != player:
-                toWinPos = (-1, -1)
-                break
-            else:
-                continue
-        if toWinPos != (-1, -1):
-            toWin.append(toWinPos)
-        
-        zeroCount = 0
-        toWinPos = (-1, -1)
-        for i in range(n):
-            if board[i][col] == 0:
-                toWinPos = (i, col)
-                zeroCount += 1
-                if zeroCount > 1:
-                    toWinPos = (-1, -1)
-                    break
-            elif board[i][col] != player:
-                toWinPos = (-1, -1)
-                break
-            else:
-                continue
-        if toWinPos != (-1, -1):
-            toWin.append(toWinPos)
-            
-    
-        zeroCount = 0
-        toWinPos = (-1, -1)
-        for i in range(n):
-            if board[i][i] == 0:
-                toWinPos = (i, i)
-                zeroCount += 1
-                if zeroCount > 1:
-                    toWinPos = (-1, -1)
-                    break
-            elif board[i][i] != player:
-                toWinPos = (-1, -1)
-                break
-            else:
-                continue
-        if toWinPos != (-1, -1):
-            toWin.append(toWinPos)
-
-
-        zeroCount = 0
-        toWinPos = (-1, -1)
-        for i in range(n):
-            if board[i][n - i - 1] == 0:
-                toWinPos = (i, n - i - 1)
-                zeroCount += 1
-                if zeroCount > 1:
-                    toWinPos = (-1, -1)
-                    break
-            elif board[i][n - i - 1] != player:
-                toWinPos = (-1, -1)
-                break
-            else:
-                continue
-        if toWinPos != (-1, -1):
-            toWin.append(toWinPos)
-
-    def removeToWin(self, row, col):
-        if (row, col) in self.player1ToWin:
-            self.player1ToWin.remove((row, col))
-        if (row, col) in self.player2ToWin:
-            self.player2ToWin.remove((row, col))

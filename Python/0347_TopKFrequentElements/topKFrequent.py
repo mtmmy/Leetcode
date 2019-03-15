@@ -1,4 +1,6 @@
 import unittest
+from collections import Counter
+from heapq import heappush, heappop, nlargest
 
 class Solution:
     def topKFrequent(self, nums, k):
@@ -7,26 +9,18 @@ class Solution:
         :type k: int
         :rtype: List[int]
         """        
-        n = len(nums)
-        if n == 1:
-            return nums
+        eCounter = Counter(nums)
+        heap = []
         
-        hs = {}
-
-        for num in nums:
-            if num in hs:
-                hs[num] += 1
-            else:
-                hs[num] = 1
-
-        hs = sorted(hs, key = hs.get, reverse = True)
-        
-        i, result = 0, []
-        while i < k:
-            result.append(hs[i])
-            i += 1
-
-        return result
+        for key, val in eCounter.items():
+            heappush(heap, (val, key))
+            if len(heap) > k:
+                heappop(heap)
+        result = []
+        while heap:
+            result.append(heappop(heap)[1])
+        return result[::-1]
+        # return nlargest(k, eCounter.keys(), key=eCounter.get)
 
 class TestFunc(unittest.TestCase):
     """Test fuction"""

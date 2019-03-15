@@ -6,7 +6,9 @@ Design a Tic-tac-toe game that is played between two players on a n x n grid.
 
 You may assume the following rules:
 
-
+1. A move is guaranteed to be valid and is placed on an empty block.
+2. Once a winning condition is reached, no more moves is allowed.
+3. A player who succeeds in placing n of their marks in a horizontal, vertical, or diagonal row wins the game.
 
 Example:
 
@@ -51,14 +53,15 @@ toe.move(2, 1, 1); -> Returns 1 (player 1 wins)
 |X|X|X|
 ```
 
-
-
 Follow up:
 Could you do better than O(n2) per move() operation?
 
 ## Solution
 
+The idea is when player1 put in a place scores 1 and player2 scores -1. And we keep recording the total score of each horizontal, vertical, and diagonal rows. Once the socre of a row is **n**, player1 wins; total score is **-n**, player2 wins.
 
+Time complexity: O(1)<br>
+Space complexity: O(n)
 
 ## Related Topics
 
